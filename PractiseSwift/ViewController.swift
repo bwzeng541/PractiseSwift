@@ -11,8 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("sdf");
-        print("secned");
+        print("dels all");
         // Do any additional setup after loading the view.
     }
 
