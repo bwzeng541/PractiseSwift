@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         
     }
 
-
+    func addmian(){
+        
+    }
 }
 
