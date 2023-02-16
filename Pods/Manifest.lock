@@ -1,16 +1,59 @@
 PODS:
+  - Alamofire (5.6.4)
   - CTMediator (46)
+  - HandyJSON (5.0.2)
+  - MBProgressHUD (1.1.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+  - SwiftDate (7.0.0)
+  - SwiftyJSON (5.0.1)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
 
 DEPENDENCIES:
+  - Alamofire
   - CTMediator
+  - HandyJSON
+  - MBProgressHUD (~> 1.1.0)
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+  - SwiftDate
+  - SwiftyJSON
+  - "UITableView+FDTemplateLayoutCell"
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - HandyJSON
+    - MBProgressHUD
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftDate
+    - SwiftyJSON
+    - "UITableView+FDTemplateLayoutCell"
   trunk:
     - CTMediator
 
 SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   CTMediator: f1cf58d509fb3192086c367711f039efd769b907
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 1c6e9bb5189cf182d654e0f08a2b580f621a6c49
+PODFILE CHECKSUM: e293cf5e270cb6415346254001b9ce9491ea3805
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
