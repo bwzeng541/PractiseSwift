@@ -15,6 +15,10 @@
 		E630A53D299DE20D001FBFD0 /* HomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E630A53C299DE20D001FBFD0 /* HomeDataModel.swift */; };
 		E6373E78299DEF9800A356F1 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6373E76299DEF9800A356F1 /* HomeViewCell.swift */; };
 		E6373E7B299DF0CB00A356F1 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6373E7A299DF0CB00A356F1 /* DataItem.swift */; };
+		E6498436299F28A500B3F322 /* Mode1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6498435299F28A500B3F322 /* Mode1.swift */; };
+		E6498439299F29DB00B3F322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6498437299F29DB00B3F322 /* ViewController.swift */; };
+		E649843A299F29DB00B3F322 /* Target_Mode1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6498438299F29DB00B3F322 /* Target_Mode1.swift */; };
+		E649843C299F2FF000B3F322 /* ModelCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649843B299F2FF000B3F322 /* ModelCommon.swift */; };
 		E6AF5ADB299CB4420057E75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5ADA299CB4420057E75E /* AppDelegate.swift */; };
 		E6AF5ADD299CB4420057E75E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5ADC299CB4420057E75E /* SceneDelegate.swift */; };
 		E6AF5ADF299CB4420057E75E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5ADE299CB4420057E75E /* HomeController.swift */; };
@@ -64,6 +68,10 @@
 		E630A53C299DE20D001FBFD0 /* HomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataModel.swift; sourceTree = "<group>"; };
 		E6373E76299DEF9800A356F1 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		E6373E7A299DF0CB00A356F1 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		E6498435299F28A500B3F322 /* Mode1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mode1.swift; path = PractiseSwift/class/model1/Mode1.swift; sourceTree = SOURCE_ROOT; };
+		E6498437299F29DB00B3F322 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6498438299F29DB00B3F322 /* Target_Mode1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_Mode1.swift; sourceTree = "<group>"; };
+		E649843B299F2FF000B3F322 /* ModelCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCommon.swift; sourceTree = "<group>"; };
 		E6AF5AD7299CB4420057E75E /* PractiseSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PractiseSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AF5ADA299CB4420057E75E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6AF5ADC299CB4420057E75E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +161,24 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		E6498433299F25AD00B3F322 /* model1 */ = {
+			isa = PBXGroup;
+			children = (
+				E6498435299F28A500B3F322 /* Mode1.swift */,
+				E6498438299F29DB00B3F322 /* Target_Mode1.swift */,
+				E6498437299F29DB00B3F322 /* ViewController.swift */,
+				E649843B299F2FF000B3F322 /* ModelCommon.swift */,
+			);
+			path = model1;
+			sourceTree = "<group>";
+		};
+		E6498434299F25CE00B3F322 /* model2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model2;
+			sourceTree = "<group>";
+		};
 		E6AF5ACE299CB4420057E75E = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +239,8 @@
 		E6F453B4299E2D2900D108E1 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				E6498434299F25CE00B3F322 /* model2 */,
+				E6498433299F25AD00B3F322 /* model1 */,
 				E6AF5ADA299CB4420057E75E /* AppDelegate.swift */,
 				E6AF5ADC299CB4420057E75E /* SceneDelegate.swift */,
 				E6AF5ADE299CB4420057E75E /* HomeController.swift */,
@@ -519,7 +547,11 @@
 				E6373E7B299DF0CB00A356F1 /* DataItem.swift in Sources */,
 				E630A53D299DE20D001FBFD0 /* HomeDataModel.swift in Sources */,
 				E6AF5ADF299CB4420057E75E /* HomeController.swift in Sources */,
+				E649843C299F2FF000B3F322 /* ModelCommon.swift in Sources */,
 				E6AF5ADB299CB4420057E75E /* AppDelegate.swift in Sources */,
+				E649843A299F29DB00B3F322 /* Target_Mode1.swift in Sources */,
+				E6498439299F29DB00B3F322 /* ViewController.swift in Sources */,
+				E6498436299F28A500B3F322 /* Mode1.swift in Sources */,
 				E6AF5ADD299CB4420057E75E /* SceneDelegate.swift in Sources */,
 				E6F453BE299E3A3100D108E1 /* String+Date.swift in Sources */,
 				E6373E78299DEF9800A356F1 /* HomeViewCell.swift in Sources */,

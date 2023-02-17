@@ -10,9 +10,18 @@
 
 extern NSString * _Nonnull const kCTMediatorParamsKeySwiftTargetModuleName;
 
+@protocol CTMediatorModuleProtocol <NSObject>
+@optional
+- (void)processBusinessNotify:(NSString*_Nullable)moudel capacity:(NSString*_Nullable)capcity withInParam:(nullable id)inParam;
+@end
+
 @interface CTMediator : NSObject
 
 + (instancetype _Nonnull)sharedInstance;
+
+- (void)registerBusinessListener:(nullable id<CTMediatorModuleProtocol>) businessListener;
+- (void)unregisterBusinessListener:(nullable id<CTMediatorModuleProtocol>)businessListener ;
+- (void)broadcastBusinessNotify:(NSString*_Nullable)moudel capacity:(NSString*_Nullable)capcity  withInParam:(nullable id)inParam ;
 
 // 远程App调用入口
 - (id _Nullable)performActionWithUrl:(NSURL * _Nullable)url completion:(void(^_Nullable)(NSDictionary * _Nullable info))completion;

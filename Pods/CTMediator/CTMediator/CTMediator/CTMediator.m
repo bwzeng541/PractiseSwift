@@ -13,9 +13,9 @@
 NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParamsKeySwiftTargetModuleName";
 
 @interface CTMediator ()
-
+@property (nonatomic, strong)NSMutableArray *businessListenerArray;
 @property (nonatomic, strong) NSMutableDictionary *cachedTarget;
-
+ 
 @end
 
 @implementation CTMediator
@@ -138,6 +138,30 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     }
 }
 
+- (void)broadcastBusinessNotify:(NSString*_Nullable)moudel capacity:(NSString*_Nullable)capcity  withInParam:(nullable id)inParam {
+    
+    //for (id<BusinessListenerProtocol> listener in businessListenerArray_)
+    for (int i = 0; i < [_businessListenerArray count]; ++i){
+        
+        //todo 此句通知到viewcontroller里面， 可能发生viewcontroller切换， 调用UIBaseViewController的viewDidLoad或者viewDidUnload，从而导致businessListenerArray_数组内容发生变化。 可能有的不能通知到。
+        //for in语句会因此当机。
+        [[_businessListenerArray objectAtIndex:i] processBusinessNotify:moudel capacity:capcity withInParam:inParam];
+    }
+
+}
+
+- (void)registerBusinessListener:(nullable id<CTMediatorModuleProtocol>) businessListener {
+    if (![_businessListenerArray containsObject:businessListener]) {
+        [_businessListenerArray addObject:businessListener];
+    }
+}
+
+- (void)unregisterBusinessListener:(nullable id<CTMediatorModuleProtocol>)businessListener {
+    if ([_businessListenerArray containsObject:businessListener]) {
+        [_businessListenerArray removeObject:businessListener];
+    }
+}
+
 #pragma mark - private methods
 - (void)NoTargetActionResponseWithTargetString:(NSString *)targetString selectorString:(NSString *)selectorString originParams:(NSDictionary *)originParams
 {
@@ -224,6 +248,9 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
 {
     if (_cachedTarget == nil) {
         _cachedTarget = [[NSMutableDictionary alloc] init];
+    }
+    if (_businessListenerArray == nil) {
+        _businessListenerArray = [[NSMutableArray alloc] init];
     }
     return _cachedTarget;
 }

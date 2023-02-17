@@ -6,22 +6,20 @@
 //
 
 import UIKit
-
+import CTMediator
+import RxSwift
 private let kSessionsCellReuseIdentifier = "kSessionsCellReuseIdentifier"
 
-class HomeController: UIViewController, UITableViewDelegate ,UITableViewDataSource{
-
-    
- 
-    
-
+class HomeController: UIViewController, UITableViewDelegate ,UITableViewDataSource,CTMediatorModuleProtocol{
     @IBOutlet weak var tableView: UITableView!
     
+   private var ModeluName = Model1_Name;
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
       
-        
+        CTMediator.sharedInstance().registerBusinessListener(self);
         HomeDataModel.share.requestData();
 
          lazy var tableView: UITableView = {
@@ -59,8 +57,10 @@ class HomeController: UIViewController, UITableViewDelegate ,UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-
+        let controller = CTMediator.sharedInstance().A_showSwift { (result) in
+            print(result)
+        }
+         self.present(controller!, animated: true,completion: nil);
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,6 +81,23 @@ class HomeController: UIViewController, UITableViewDelegate ,UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return HomeDataModel.share.dataArray.count;
+    }
+    
+    
+    func processBusinessNotify(_ moudel: String?, capacity capcity: String?, withInParam inParam: Any?) {
+        if moudel != ModeluName {
+            return;
+        }
+        switch capcity {
+        case Model1_Capacity.Capactity1.rawValue:
+            print("Capactity1");
+            
+        case Model1_Capacity.Capactity2.rawValue:
+            print("Capactity2");
+        
+        default: break
+            
+        }
     }
 }
 
