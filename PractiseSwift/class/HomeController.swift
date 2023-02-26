@@ -40,7 +40,7 @@ class HomeController: UIViewController, UITableViewDelegate ,CTMediatorModulePro
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("add from dev")
         CTMediator.sharedInstance().registerBusinessListener(self);
         //HomeDataModel.share.requestData();
 
