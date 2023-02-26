@@ -1,0 +1,2379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>js</key>
+		<string>!function(){&quot;use strict&quot;;function a(e,t,n){return e.split(t).join(n)}function u(e){if(!e)return!1;for(var t=e.toLowerCase(),n=0;n&lt;L.length;n++){var i=L[n];if(0&lt;=t.indexOf(i))return!0}return!1}function s(e){return!(!L||0==L.length)&amp;&amp;(!!e.getAttribute(&quot;data-reactid&quot;)||!!u(e.tagName+&quot;&quot;+e.id+e.className))}function m(e,t,n){var i=e.getBoundingClientRect();if(!(i.height&lt;n||i.width&lt;t)){var o=getComputedStyle(e);if(&quot;visible&quot;===o.visibility&amp;&amp;&quot;none&quot;!==o.display){if(!(o.zIndex&gt;k)){var r=!0;if(i.width&gt;=document.documentElement.clientWidth&amp;&amp;i.height&gt;=document.documentElement.clientHeight){var a=e.getAttribute(&quot;onclick&quot;);a&amp;&amp;-1!=a.indexOf(&quot;display&quot;)&amp;&amp;-1!=a.indexOf(&quot;none&quot;)&amp;&amp;(r=!1)}if(r)return}var l=!0;if(ge(e))if(l=!s(e)){var d=e.getElementsByTagName(&quot;*&quot;);if(d.length&gt;N&amp;&amp;(l=!1),l)for(var c=0;c&lt;d.length;c++){if(s(d[c])){l=!1;break}}}l&amp;&amp;Ee(e)}}}function f(e,o){e.selectorText.split(&quot;,&quot;).forEach(function(e){for(var t=document.querySelectorAll(e),n=0;n&lt;t.length;n++){var i=t[n];o?m(i,x,x):m(i,document.documentElement.clientWidth,document.documentElement.clientHeight)}})}window.__firefox__||(window.__firefox__={}),Element.prototype.takeImgSrc=function(){var e=this.src;if(e&amp;&amp;0==e.indexOf(&quot;http&quot;))return e;var t=this.takeBgImgSrc();if(t)return t;if(!(this instanceof HTMLImageElement))return null;if((e=this.getAttribute(&quot;data-src&quot;))&amp;&amp;0==e.indexOf(&quot;http&quot;))return e;for(var n=this.attributes,i=0;i&lt;n.length;i++)if((e=n[i].nodeValue)&amp;&amp;0==e.indexOf(&quot;http&quot;))return e;return this.src},Element.prototype.takeBgImgSrc=function(){var e=this.style.backgroundImage;return e&amp;&amp;0&lt;e.indexOf(&quot;http&quot;)?e=(e=a(e,&quot; &quot;,&quot;&quot;)).substring(4,e.length-1):null};var t={main:1,a:1,abbr:1,acronym:1,address:1,applet:1,area:1,article:1,aside:1,audio:1,b:1,base:1,basefont:1,bdi:1,bdo:1,big:1,blockquote:1,body:1,br:1,button:1,canvas:1,caption:1,center:1,cite:1,code:1,col:1,colgroup:1,command:1,datalist:1,dd:1,del:1,details:1,dir:1,div:1,dfn:1,dialog:1,dl:1,dt:1,em:1,embed:1,fieldset:1,figcaption:1,figure:1,font:1,footer:1,form:1,frame:1,frameset:1,h1:1,h2:1,h3:1,h4:1,h5:1,h6:1,head:1,header:1,hr:1,html:1,i:1,iframe:1,img:1,input:1,ins:1,isindex:1,kbd:1,keygen:1,label:1,legend:1,li:1,link:1,map:1,mark:1,menu:1,menuitem:1,meta:1,meter:1,nav:1,noframes:1,noscript:1,object:1,ol:1,optgroup:1,option:1,output:1,p:1,param:1,pre:1,progress:1,q:1,rp:1,rt:1,ruby:1,s:1,samp:1,script:1,section:1,select:1,small:1,source:1,span:1,strike:1,strong:1,style:1,sub:1,summary:1,sup:1,table:1,tbody:1,td:1,textarea:1,tfoot:1,th:1,thead:1,time:1,title:1,tr:1,track:1,tt:1,u:1,ul:1,var:1,video:1,wbr:1,xmp:1},d=&quot;AlookElementHide&quot;,c=null,i=9,o=&quot;#|#&quot;,l=null,g=0,p=0,h=0,e=null,v=!1,n=null,w=null,r=null,y=null,E=null,_=!1,b=!1,x=70,k=0,N=20,L=null,T=null,H=!1,C=!0,M=100,S=0,I=null,A=0,O=1,B=!0,R=HTMLVideoElement.prototype.play;HTMLVideoElement.prototype.play=function(){R.apply(this,arguments),$(this)};var P=HTMLVideoElement.prototype.load;HTMLVideoElement.prototype.load=function(){P.apply(this,arguments),$(this)};var D=HTMLAudioElement.prototype.play;HTMLAudioElement.prototype.play=function(){D.apply(this,arguments),$(this)};var V=HTMLAudioElement.prototype.load;HTMLAudioElement.prototype.load=function(){V.apply(this,arguments),$(this)};var z=250,X=180;&quot;www.google.com&quot;!=document.location.host&amp;&amp;&quot;www.google.com.vn&quot;!=document.location.host&amp;&amp;&quot;www.google.ru&quot;!=document.location.host&amp;&amp;&quot;www.google.co.id&quot;!=document.location.host||(z=200);var j=-1!=document.location.host.indexOf(&quot;youtube.com&quot;);function q(){try{return window.self===window.top}catch(e){return!1}}function Y(e){var t=e.target;t&amp;&amp;(t.takeMarkLoaded=!0)}function F(e,t){for(var n=new Array,i=0;i&lt;e.length;i++)n.push(e[i]);for(i=0;i&lt;t.length;i++)n.push(t[i]);return n}function W(e){if(e&amp;&amp;e.getElementsByTagName)for(var t=F(t=e.getElementsByTagName(&quot;img&quot;),e.getElementsByTagName(&quot;input&quot;)),n=0;n&lt;t.length;n++)t[n].addEventListener(&quot;load&quot;,Y)}function U(){for(var e=window.frames,t=0;t&lt;e.length;t++)e[t].postMessage(&apos;{&quot;sendVideoPlayRate&quot;:&apos;+O+&quot;}&quot;,&quot;*&quot;)}function J(){for(var e=window.frames,t=0;t&lt;e.length;t++)e[t].postMessage(&apos;{&quot;sendClipboardEnable&quot;:&apos;+B+&quot;}&quot;,&quot;*&quot;)}function K(){I&amp;&amp;document.documentElement&amp;&amp;(document.documentElement.style.webkitTextSizeAdjust=I,document.body&amp;&amp;(document.body.style.webkitTextSizeAdjust=I))}function G(){var e=document.body?document.body:document.documentElement;if(e&amp;&amp;&quot;none&quot;==getComputedStyle(e).webkitUserSelect){e.style.webkitUserSelect=&quot;auto&quot;;var t=document.createElement(&quot;style&quot;);t.innerText=&quot;*{-webkit-user-select:auto !important;}&quot;,document.head.appendChild(t)}}function Q(e){var t=e.target;t&amp;&amp;&quot;takeHighlightCoverX&quot;!==t.id&amp;&amp;(t.parentNode&amp;&amp;&quot;takeHighlightCoverX&quot;===t.parentNode.id||(q()&amp;&amp;(fe(t)&amp;&amp;t.addEventListener(&quot;load&quot;,Y),W(t)),oe(),Z(e.relatedNode)))}function Z(e){if(e&amp;&amp;e.getElementsByTagName)for(var t=F(e.getElementsByTagName(&quot;audio&quot;),e.getElementsByTagName(&quot;video&quot;)),n=0;n&lt;t.length;n++)$(t[n])}function $(e){0&lt;e.duration&amp;&amp;e.duration!=1/0?e.playbackRate=O:e.playbackRate=1,e.isVideoPlayListened||(e.addEventListener(&quot;play&quot;,te,!1),e.addEventListener(&quot;load&quot;,te,!1),e.addEventListener(&quot;playing&quot;,te,!1),e.addEventListener(&quot;durationchange&quot;,ee,!1),e.isVideoPlayListened=!0)}function ee(e){$(e.target)}function te(e){$(e.target),webkit.messageHandlers.contextMenuMessageHandler.postMessage({action:&quot;videoPlay&quot;})}if(q()?window.addEventListener(&quot;message&quot;,function(e){&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;videoFrameReady&quot;)&amp;&amp;(U(),J())}):window.addEventListener(&quot;message&quot;,function(e){if(&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;sendImageToClient&quot;)){var t=ue(20,!0,!0),n={};n.frameImages=t,webkit.messageHandlers.contextMenuMessageHandler.postMessage(n)}if(&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;sendVideoPlayRate&quot;)){var i=JSON.parse(e.data).sendVideoPlayRate;i&amp;&amp;0&lt;i&amp;&amp;i&lt;3&amp;&amp;(O=i,Z(document))}if(&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;sendClipboardEnable&quot;)){var o=JSON.parse(e.data).sendClipboardEnable;null!=o&amp;&amp;(B=o)}}),Element.prototype.takeAddEventListener||(Element.prototype.takeAddEventListener=Element.prototype.addEventListener,Element.prototype.addEventListener=function(e,t,n){this.takeAddEventListener(e,t,n),(&quot;click&quot;===e||&quot;touchend&quot;===e&amp;&amp;t!==ce)&amp;&amp;(this.takeHaveClickEvent=!0)}),document.addEventListener(&quot;DOMContentLoaded&quot;,function(){q()&amp;&amp;(W(document),U(),J()),K(),G(),oe(),Z(document),document.addEventListener(&quot;DOMNodeInserted&quot;,Q)}),window.print=function(){webkit.messageHandlers.contextMenuMessageHandler.postMessage({action:&quot;print&quot;})},document&amp;&amp;document.execCommand){var ne=document.execCommand;document.execCommand=function(e,t,n){if(&quot;copy&quot;==e.toLowerCase()){if(!B)return!1;var i=getSelection().toString();if(i&amp;&amp;0&lt;i.length){var o={action:&quot;copy&quot;,section:i};webkit.messageHandlers.contextMenuMessageHandler.postMessage(o)}}return ne.apply(document,arguments)}}function ie(){oe(),G();var e=ue(z,!1,!1);if(8&lt;e.length){var t={};t.bigImageCount=e.length,webkit.messageHandlers.contextMenuMessageHandler.postMessage(t)}window.setTimeout(function(){b=!1},500)}function oe(){var e=window.location.host;if(&quot;baidu.com&quot;==e||&quot;www.baidu.com&quot;==e||&quot;m.baidu.com&quot;==e){for(var t=null,n=document.querySelectorAll(&quot;div&gt;p&quot;),i=0;i&lt;n.length;i++)if(&quot;手机百度&quot;===n[i].innerText){t=n[i];break}if(!t)for(n=document.querySelectorAll(&quot;div&gt;span&quot;),i=0;i&lt;n.length;i++)if(&quot;打开&quot;===n[i].innerText){t=n[i];break}if(!t)for(n=document.querySelectorAll(&quot;div&gt;div&gt;a&quot;),i=0;i&lt;n.length;i++)if(&quot;打开&quot;===n[i].innerText){t=n[i];break}if(!t)for(n=document.querySelectorAll(&quot;div&gt;div&gt;div&quot;),i=0;i&lt;n.length;i++)if(&quot;打开&quot;===n[i].innerText){t=n[i];break}if(!t){var o=document.getElementsByClassName(&quot;c-icon&quot;);0&lt;o.length&amp;&amp;(t=o[0])}if(t&amp;&amp;t.parentElement){var r=t.parentElement,a=r.className?r.className:r.id;if(a&amp;&amp;2==a.split(&quot;_&quot;).length&amp;&amp;parseInt(a.split(&quot;_&quot;)[1])){a=a.split(&quot;_&quot;)[0];for(var l=t.parentElement;l;){var d=l.parentElement;if(!d)break;var c=d.className?d.className:d.id;if(!c||-1==c.indexOf(a)){Ee(l);break}l=d}}}}if(b){var s=!0;if(T&amp;&amp;0&lt;T.length)for(i=0;i&lt;T.length;i++)if(0&lt;=e.indexOf(T[i])){s=!1;break}s&amp;&amp;function(){for(var e=document.querySelectorAll(&quot;[style*=fixed],[style*=z-index]&quot;),t=0;t&lt;e.length;t++)(n=e[t]).style&amp;&amp;(0==n.style.position.indexOf(&quot;fixed&quot;)?m(n,x,x):n.style.zIndex&gt;k&amp;&amp;m(n,document.documentElement.clientWidth,document.documentElement.clientHeight));var n;var i=function(){for(var e=new Array,t=new Array,n=document.styleSheets,i=0,o=n.length;i&lt;o;i++){var r=n[i];if(r.cssRules)for(var a=0,l=r.cssRules.length;a&lt;l;a++){var d=r.cssRules[a];if(d.style&amp;&amp;d.selectorText){0==d.style.position.indexOf(&quot;fixed&quot;)&amp;&amp;(u(d.selectorText)||e.push(d));var c=d.style[&quot;z-index&quot;];c&amp;&amp;(c=parseInt(c))&amp;&amp;k&lt;c&amp;&amp;t.push(d)}}}return{fixed:e,zIndex:t}}();i.fixed.forEach(function(e){f(e,!0)}),i.zIndex.forEach(function(e){f(e,!1)})}()}E&amp;&amp;E.forEach(function(e){var t=we(e);t&amp;&amp;&quot;takeHighlightCoverX&quot;!==t.id&amp;&amp;Ee(t)})}function re(){l&amp;&amp;(clearTimeout(l),l=null,e&amp;&amp;(document.body.removeChild(e),e=null)),r&amp;&amp;(document.body.removeChild(r),r=null),y&amp;&amp;(clearInterval(y),y=null)}function ae(e){if(&quot;HTML&quot;==e.tagName)return&quot;/HTML[1]&quot;;if(e===document.body)return&quot;/HTML[1]/BODY[1]&quot;;for(var t=0,n=e.parentNode.childNodes,i=0;i&lt;n.length;i++){var o=n[i];if(o===e)return ae(e.parentNode)+&quot;/&quot;+e.tagName+&quot;[&quot;+(t+1)+&quot;]&quot;;1===o.nodeType&amp;&amp;o.tagName===e.tagName&amp;&amp;t++}}function le(e){if(C=!1,l){var t=e.touches[0].screenX,n=e.touches[0].screenY;(Math.abs(g-t)&gt;i||Math.abs(p-n)&gt;i)&amp;&amp;re()}}function de(){if(_)return removeEventListener(&quot;touchend&quot;,ce),removeEventListener(&quot;touchcancel&quot;,de),void event.preventDefault()}function ce(e){if(_)return removeEventListener(&quot;touchend&quot;,ce),removeEventListener(&quot;touchcancel&quot;,de),void e.preventDefault();re(),removeEventListener(&quot;touchend&quot;,ce),removeEventListener(&quot;touchmove&quot;,le),H&amp;&amp;C&amp;&amp;(C=!1,window.__firefox__.scrollDidEnd&amp;&amp;setTimeout(function(){S&lt;window.innerHeight/2?xe():be()},5)),v&amp;&amp;(v=!1,e.preventDefault())}function se(e){if(!e||!e.tagName)return!1;var t=e.tagName;return&quot;FORM&quot;==t||&quot;INPUT&quot;==t||&quot;VIDEO&quot;==t||(0&lt;e.getElementsByTagName(&quot;form&quot;).length||0&lt;e.getElementsByTagName(&quot;input&quot;).length)}function ue(e,t,n){var i=F(document.getElementsByTagName(&quot;img&quot;),document.getElementsByTagName(&quot;input&quot;));t&amp;&amp;(i=F(i,document.querySelectorAll(&quot;[style*=&apos;background-image&apos;]&quot;)));for(var l=new Array,o=new Array,d=new Array,r=0;r&lt;i.length;r++){var a=i[r];if(fe(a)){var c=a.takeImgSrc();me(a,e,n,c)?(d.push(a),l.push(c)):a.takeMarkLoaded||o.push(a)}}0&lt;d.length&amp;&amp;o.forEach(function(e){var t=document.createElement(&quot;a&quot;),n=e.takeImgSrc();t.href=n;for(var i=t.host,o=0;o&lt;d.length;o++){var r=d[o];if(r.parentNode===e.parentNode||r.parentNode&amp;&amp;e.parentNode&amp;&amp;r.parentNode.parentNode===e.parentNode.parentNode){var a=r.takeImgSrc();if(t.href=a,t.host==i){l.push(n);break}}}});var s=new Array;for(r=0;r&lt;l.length;r++){var u=l[r];0!=u.length&amp;&amp;(-1==u.indexOf(&quot;/ad/&quot;)&amp;&amp;-1==u.indexOf(&quot;/ads/&quot;)&amp;&amp;-1==u.indexOf(&quot;_ads&quot;)&amp;&amp;-1==u.indexOf(&quot;ads_&quot;)&amp;&amp;-1==u.indexOf(&quot;-ad-&quot;)&amp;&amp;-1==s.indexOf(u)&amp;&amp;s.push(u))}return s}function me(e,t,n,i){if(i&amp;&amp;&quot;gif&quot;==i.split(&quot;?&quot;)[0].split(&quot;.&quot;).pop().toLowerCase()&amp;&amp;(t=X&lt;t?X:t),n&amp;&amp;e.naturalWidth&gt;t&amp;&amp;e.naturalHeight&gt;t&amp;&amp;0!=e.clientHeight&amp;&amp;0!=e.clientWidth)return!0;if(e.clientHeight&gt;t&amp;&amp;e.clientWidth&gt;t)return!0;var o=e.getBoundingClientRect();if(o.width&gt;t&amp;&amp;o.height&gt;t)return!0;var r=e.getAttribute(&quot;height&quot;),a=e.getAttribute(&quot;width&quot;);return!!(r&amp;&amp;a&amp;&amp;t&lt;r&amp;&amp;t&lt;a)}function fe(e){return!!e&amp;&amp;(!(!e.takeBgImgSrc||!e.takeBgImgSrc())||(e instanceof HTMLImageElement||e instanceof HTMLInputElement)&amp;&amp;(!(e instanceof HTMLInputElement&amp;&amp;&quot;image&quot;!==e.getAttribute(&quot;type&quot;))&amp;&amp;!(!e.takeImgSrc||!e.takeImgSrc())))}function ge(e){return-1!=location.host.indexOf(&quot;forbes.com&quot;)||!!e.tagName&amp;&amp;t[e.tagName.toLowerCase()]}function pe(e){for(var t=e;t&amp;&amp;t.parentNode&amp;&amp;&quot;html&quot;!=t.parentNode.tagName.toLowerCase();){if(!ge(t.parentNode))return!1;t=t.parentNode}return!0}function he(){var e=&quot;&quot;;if(ge(w)){if(e=ae(w),w.previousElementSibling&amp;&amp;ge(w.previousElementSibling)&amp;&amp;(e+=o,e+=ae(w.previousElementSibling)+&quot;/following-sibling::*[1]&quot;),w.nextElementSibling&amp;&amp;ge(w.nextElementSibling)&amp;&amp;(e+=o,e+=ae(w.nextElementSibling)+&quot;/preceding-sibling::*[1]&quot;),w.parentNode)for(var t=w.parentNode.children,n=0;n&lt;t.length;n++)if(t[n]===w){e+=o,e+=ae(w.parentNode)+&quot;/child::*[&quot;+(n+1)+&quot;]&quot;;break}}else e=w.previousElementSibling&amp;&amp;ge(w.previousElementSibling)?ae(w.previousElementSibling)+&quot;/following-sibling::*[1]&quot;:!w.previousElementSibling&amp;&amp;w.parentNode?ae(w.parentNode)+&quot;/child::*[1]&quot;:ae(w);return we(e)!==w?&quot;&quot;:(re(),r=function(e,t){var n=document.createElement(&quot;div&quot;);n.style.pointerEvents=&quot;none&quot;,n.style.top=&quot;0px&quot;,n.style.left=&quot;0px&quot;,n.style.position=&quot;absolute&quot;,window.isNightMode?n.style.opacity=.6:n.style.opacity=.3;var i=n.getAttribute(&quot;style&quot;);n.setAttribute(&quot;style&quot;,i+&quot;z-index:2147483647 !important&quot;),n.id=&quot;takeHighlightCoverX&quot;,document.body.appendChild(n);for(var o=new Array,r=e.getClientRects(),a=0;a!=r.length;a++)o.push(r[a]);if(t){var l=e.children;for(a=0;a&lt;l.length;a++)for(var d=l[a].getClientRects(),c=0;c!=d.length;c++)o.push(d[c])}for(a=0;a!=o.length;a++){var s=o[a],u=document.createElement(&quot;div&quot;),m=document.documentElement.scrollTop||document.body.scrollTop,f=document.documentElement.scrollLeft||document.body.scrollLeft,g=s.top+m-2.5,p=s.left+f-2.5;u.style.top=g+&quot;px&quot;,u.style.left=p+&quot;px&quot;,u.style.width=s.width+5+&quot;px&quot;,u.style.height=s.height+5+&quot;px&quot;,u.style.position=&quot;absolute&quot;,u.style.backgroundColor=&quot;#0076ff&quot;,u.style.borderRadius=&quot;2px&quot;,u.style.padding=&quot;2.5px&quot;,u.style.pointerEvents=&quot;none&quot;,n.appendChild(u)}return n}(w,!0),y=setInterval(function(){r&amp;&amp;document.body.appendChild(r)},30),e)}function ve(e,t){return-1!==e.indexOf(t,e.length-t.length)}function we(e){var t=e.split(o);if(0==t.length)return null;var n=document.evaluate(t[0],document.documentElement,null,XPathResult.ANY_TYPE,null).iterateNext();if(n&amp;&amp;(ve(t[0],&quot;following-sibling::*[1]&quot;)||ve(t[0],&quot;child::*[1]&quot;))&amp;&amp;ge(n))return null;for(var i=1;i&lt;t.length;i++){if(document.evaluate(t[i],document.documentElement,null,XPathResult.ANY_TYPE,null).iterateNext()!==n)return null}return n}function ye(e){e.target&amp;&amp;e.target.id==d&amp;&amp;(window.setTimeout(function(){document.head.appendChild(c)},1),document.head.removeEventListener(&quot;DOMNodeRemoved&quot;,ye))}function Ee(e){if(e){var t=e.getAttribute(&quot;style&quot;);t||(t=&quot;&quot;),-1==t.indexOf(&quot;display:none !important;height: 0px !important;line-height: 0px !important;&quot;)&amp;&amp;e.setAttribute(&quot;style&quot;,t+&quot;display:none !important;height: 0px !important;line-height: 0px !important;&quot;),e.classList.contains(d)||e.classList.add(d)}}function _e(){if(re(),!w)return&quot;&quot;;for(;!pe(w)&amp;&amp;w.parentNode;)w=w.parentNode;return he()}function be(){var e=(768==window.innerHeight?56:22)+A;window.scrollTo(document.body.scrollLeft,document.body.scrollTop+window.innerHeight*M/100-e)}function xe(){var e=(768==window.innerHeight?56:22)+A;window.scrollTo(document.body.scrollLeft,document.body.scrollTop-window.innerHeight*M/100+e)}q()&amp;&amp;(window.__firefox__.contextStopLoading=ie),window.addEventListener(&quot;load&quot;,ie),addEventListener(&quot;touchstart&quot;,function(e){if(_)return(n=e.target).addEventListener(&quot;touchend&quot;,ce),void n.addEventListener(&quot;touchcancel&quot;,de);if(1===e.touches.length){S=e.touches[0].clientY,C=!0;var t,o={},n=e.target;t=n,j&amp;&amp;t&amp;&amp;window.__firefox__.setVideoClick&amp;&amp;0&lt;t.getElementsByTagName(&quot;video&quot;).length&amp;&amp;window.__firefox__.setVideoClick(),(w=n).addEventListener(&quot;touchend&quot;,ce),n.addEventListener(&quot;touchmove&quot;,le),o.title=document.title;do{if(o.link||&quot;a&quot;!==n.localName||(o.link=n.href,o.textContent=n.textContent,w=n),(!o.image||o.isBackgroudImage)&amp;&amp;n instanceof HTMLImageElement&amp;&amp;(o.image=n.takeImgSrc(),o.isBackgroudImage=!1,o.imageElement=n,w=n),(!o.image||o.isBackgroudImage)&amp;&amp;n instanceof HTMLInputElement&amp;&amp;n.src){var i=n.getAttribute(&quot;type&quot;);i&amp;&amp;&quot;image&quot;==i&amp;&amp;(o.isBackgroudImage=!1,o.image=n.src,o.imageElement=n,w=n)}!o.image&amp;&amp;n.style.backgroundImage&amp;&amp;n.takeBgImgSrc()&amp;&amp;(se(n)||(o.isBackgroudImage=!0,o.image=n.takeBgImgSrc(),o.imageElement=n)),o.onclick&amp;&amp;!o.justClickEvent||!n.onclick&amp;&amp;!n.takeHaveClickEvent||se(n)||(o.onclick=&quot;1&quot;,!n.onclick&amp;&amp;n.takeHaveClickEvent?o.justClickEvent=!0:(o.justClickEvent=!1,w||(w=n))),H&amp;&amp;C&amp;&amp;(n.takeHaveClickEvent&amp;&amp;(C=!1),!C||&quot;form&quot;!==n.localName&amp;&amp;&quot;input&quot;!==n.localName&amp;&amp;&quot;video&quot;!==n.localName&amp;&amp;&quot;audio&quot;!==n.localName||(C=!1)),n=n.parentElement}while(n);if(H&amp;&amp;C&amp;&amp;window.setTimeout(function(){C=!1},500),o.link||o.image&amp;&amp;!o.isBackgroudImage||o.onclick&amp;&amp;!o.justClickEvent){var r=e.touches[0];C=!1,g=r.screenX,p=r.screenY,h=document.body.scrollTop,q()||(o.x=g,o.y=p),l=setTimeout(function(){if(v=!0,re(),!o.image&amp;&amp;w){for(var e=w.getElementsByTagName(&quot;*&quot;),t=0;t&lt;e.length;t++){if(fe(e[t]))if((n=e[t].takeImgSrc())&amp;&amp;4&lt;n.length){if(0&lt;=(i=n.split(&quot;/&quot;))[i.length-1].indexOf(&quot;default&quot;))continue;o.image=n,o.imageElement=e[t];break}}if(!o.image&amp;&amp;o.link&amp;&amp;80&lt;w.clientHeight&amp;&amp;w.parentElement&amp;&amp;w.parentElement.clientHeight-w.clientHeight&lt;100)for(e=w.parentElement.getElementsByTagName(&quot;*&quot;),t=0;t&lt;e.length;t++){var n;if(fe(e[t]))if((n=e[t].takeImgSrc())&amp;&amp;4&lt;n.length){var i;if(0&lt;=(i=n.split(&quot;/&quot;))[i.length-1].indexOf(&quot;default&quot;))continue;o.image=n,o.imageElement=e[t];break}}}o.imageElement&amp;&amp;me(o.imageElement,z,!0,o.image)&amp;&amp;(o.images=ue(z,!0,!0),o.imageElement=null),o.imageElement=null,!o.textContent&amp;&amp;w&amp;&amp;(o.textContent=w.textContent),webkit.messageHandlers.contextMenuMessageHandler.postMessage(o)},500)}}else re()},!0),addEventListener(&quot;scroll&quot;,function(){_&amp;&amp;w?_e():Math.abs(document.body.scrollTop-h)&gt;i&amp;&amp;re()}),window.__firefox__||(window.__firefox__={}),window.__firefox__.setElementHidingEditMode||(window.__firefox__.outHtml=function(e){var t;if(0==e)t=document.documentElement.outerHTML;else{for(var n=document.documentElement.cloneNode(!0),i=n.getElementsByTagName(&quot;head&quot;),o=0;o&lt;i.length;o++){(r=i[o]).parentNode&amp;&amp;r.parentNode.removeChild(r)}if(2==e){for(i=n.getElementsByTagName(&quot;style&quot;),o=0;o&lt;i.length;o++){(r=i[o]).parentNode&amp;&amp;r.parentNode.removeChild(r)}for(i=n.getElementsByTagName(&quot;script&quot;),o=0;o&lt;i.length;o++){var r;(r=i[o]).parentNode&amp;&amp;r.parentNode.removeChild(r)}}t=n.outerHTML}return t=a(t=(t=a(t,&quot;&lt;/&quot;,&quot;ALOOKCONTEXT&quot;)).split(&quot;&lt;&quot;).join(&quot;\n&lt;&quot;),&quot;ALOOKCONTEXT&quot;,&quot;&lt;/&quot;),btoa(encodeURIComponent(t))},window.__firefox__.scrollDidEnd=!0,window.__firefox__.scrollToNextPage=be,window.__firefox__.scrollToPrePage=xe,window.__firefox__.setTouchToScrollEnable=function(e,t){H=e,M=t},window.__firefox__.setVideoFloatingPageScrollOffset=function(e){A=e},window.__firefox__.setFontSize=function(e){I=e,K()},window.__firefox__.setPlayRate=function(e){e&amp;&amp;0&lt;e&amp;&amp;e&lt;3&amp;&amp;(O=e,Z(document),U())},window.__firefox__.setClicpboardEnable=function(e){B=e,J()},window.__firefox__.setElementHidingEditMode=function(e){if(0==(_=e))return re(),&quot;&quot;;var t=he();return!t||t.length,t},window.__firefox__.beginElementHiding=_e,window.__firefox__.beginElementHidingByPoint=function(e,t){var n=e-window.scrollX,i=t-window.scrollY,o=document.elementFromPoint(n,i);return o&amp;&amp;(w=o),_e()},window.__firefox__.setElementHidingArray=function(e,t,n,i,o,r,a,l){!function(e){if(document.head&amp;&amp;!document.getElementById(d)){var t=document.createElement(&quot;style&quot;);t.id=d;var n=&quot;.&quot;;e&amp;&amp;0&lt;e.length&amp;&amp;(n=e+&quot;,.&quot;),n=n+d+&quot;{display:none !important;height: 0px !important;line-height: 0px !important;}&quot;,t.innerText=n,c=t,document.head.appendChild(t),document.head.addEventListener(&quot;DOMNodeRemoved&quot;,ye),document.head.addEventListener(&quot;DOMNodeInserted&quot;,function(e){e.target&amp;&amp;e.target.tagName&amp;&amp;&quot;style&quot;==e.target.tagName.toLowerCase()&amp;&amp;e.target.id!=d&amp;&amp;(document.head.removeEventListener(&quot;DOMNodeRemoved&quot;,ye),document.head.removeChild(c),document.head.addEventListener(&quot;DOMNodeRemoved&quot;,ye),document.head.appendChild(c))})}}(l),E=e,b=t,x=n*screen.height/736,k=i,N=o,L=r,T=a,oe()},window.__firefox__.hideAdsByLoadingPercent=oe,window.__firefox__.showElementByPath=function(e){var t=we(e);return t?(function(e){if(e){e.classList.contains(d)&amp;&amp;e.classList.remove(d);var t=e.getAttribute(&quot;style&quot;);t&amp;&amp;e.setAttribute(&quot;style&quot;,t.replace(&quot;display:none !important;height: 0px !important;line-height: 0px !important;&quot;,&quot;&quot;))}}(t),w=t,he()):&quot;&quot;},window.__firefox__.elementHidingSelectPrevious=function(){return w&amp;&amp;w.previousSibling?(w=w.previousSibling,he()):&quot;&quot;},window.__firefox__.elementHidingSelectNext=function(){return w&amp;&amp;w.nextSibling?(w=w.nextSibling,he()):&quot;&quot;},window.__firefox__.cancelElementHiding=re,window.__firefox__.hideElementByPath=function(e){re();var t=we(e);return t?(Ee(t),e):&quot;&quot;},window.__firefox__.elementHidingSelectParent=function(){return w&amp;&amp;w.parentNode?(w=(n=w).parentNode,he()):&quot;&quot;},window.__firefox__.elementHidingSelectFirstChild=function(){if(w&amp;&amp;w.children&amp;&amp;0&lt;w.children.length){var e=!1;if(n)for(var t=0;t&lt;w.children.length;t++)if(w.children[t]===n){w=n,e=!0;break}return 0==e&amp;&amp;(w=w.children[0]),he()}return&quot;&quot;},window.__firefox__.getLargeImgURLsAndTitle=function(){var e=ue(z,!0,!0),t={};return t.title=document.title,t.bigImages=e,t},window.__firefox__.getImgURLsWithSizeLimitAndTitle=function(e){var t=ue(e,!0,!0),n={};if(n.title=document.title,n.bigImages=t,q()){var i=window.frames;if(0&lt;i.length){n.waitForFrame=!0;for(var o=0;o&lt;i.length;o++)i[o].postMessage(&apos;{&quot;sendImageToClient&quot;:1}&apos;,&quot;*&quot;)}}return n})}();
+</string>
+		<key>injectionTime</key>
+		<integer>0</integer>
+		<key>forMainFrameOnly</key>
+		<false/>
+		<key>message</key>
+		<array>
+			<string>contextMenuMessageHandler</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>window.setTimeout(function () {
+    window.__firefox__.hideAdsByLoadingPercent();
+},0)
+}</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){&quot;use strict&quot;;window.__firefox__||(window.__firefox__={}),window.__firefox__.favicon={};var c=[&quot;link[rel=&apos;apple-touch-icon-precomposed&apos;][sizes=&apos;171x171&apos;]&quot;,&quot;link[rel=&apos;apple-touch-icon&apos;][sizes=&apos;120x120&apos;]&quot;,&quot;link[rel=&apos;apple-touch-icon-precomposed&apos;][sizes=&apos;114x114&apos;]&quot;,&quot;link[rel=&apos;apple-touch-icon&apos;][sizes=&apos;114x114&apos;]&quot;,&quot;link[rel=&apos;apple-touch-icon-precomposed&apos;]&quot;,&quot;link[rel=&apos;apple-touch-icon&apos;]&quot;,&quot;link[rel~=&apos;icon&apos;]&quot;];function i(e){for(var n=e?c.length:c.length-1,o=0;o&lt;n;o++){var i=c[o],r=document.head.querySelector(i);if(r&amp;&amp;r.href)return r.href}return null}function e(){var e=i(!1),n=window.location.href,o=null==e?n+&quot;:#:&quot;:n+&quot;:#:&quot;+e;webkit.messageHandlers.faviconMessageHandler.postMessage(o)}window.__firefox__.favicon.getFavicon=e,window.__firefox__.favicon.getSearchEngine=function(){return i(!0)},document.addEventListener(&quot;DOMContentLoaded&quot;,function(){e()})}();
+</string>
+		<key>injectionTime</key>
+		<integer>0</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>faviconMessageHandler</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){&quot;use strict&quot;;function o(){try{return window.self===window.top}catch(e){return!1}}window.__firefox__||(window.__firefox__={});var n=!1,_=null,t=null;function y(e){n&amp;&amp;alert(e)}function m(e){if(!(e instanceof HTMLInputElement))return!1;var n=e.hasAttribute(&quot;type&quot;)?e.getAttribute(&quot;type&quot;).toLowerCase():e.type;return&quot;text&quot;==n||&quot;email&quot;==n||&quot;url&quot;==n||&quot;tel&quot;==n||&quot;number&quot;==n}function i(e,n){var t=null,r=function(e,n){for(var t=[],r=e.getElementsByTagName(&quot;input&quot;),o=0;o&lt;r.length;o++){var i=r[o];i instanceof HTMLInputElement&amp;&amp;&quot;password&quot;==i.type&amp;&amp;(n&amp;&amp;!i.value||(t[t.length]={index:o,element:i}))}return 0==t.length?(y(&quot;(form ignored -- no password fields.)&quot;),null):3&lt;t.length?(y(&quot;(form ignored -- too many password fields. [ got &quot;,t.length),null):t}(e,n);if(!r)return[null,null,null];for(var o,i,a=e.getElementsByTagName(&quot;input&quot;),s=r[0].index-1;0&lt;=s;s--){var l=a[s];if(m(l)){t=l;break}}if(t||y(&quot;(form -- no username field found)&quot;),!n||1==r.length)return[t,r[0].element,null];var u=r[0].element.value,d=r[1].element.value,f=r[2]?r[2].element.value:null;if(3==r.length)if(u==d&amp;&amp;d==f)i=r[0].element,o=null;else if(u==d)i=r[0].element,o=r[2].element;else if(d==f)o=r[0].element,i=r[2].element;else{if(u!=f)return y(&quot;(form ignored -- all 3 pw fields differ)&quot;),[null,null,null];i=r[0].element,o=r[1].element}else u==d?(i=r[0].element,o=null):(o=r[0].element,i=r[1].element);return[t,i,o]}function s(e){var n=e.style.visibility;if(n&amp;&amp;&quot;hidden&quot;===n.toLowerCase())return!1;var t=e.style.display;return!(t&amp;&amp;-1&lt;t.toLowerCase().indexOf(&quot;none&quot;))}function l(e){for(var n=document.forms,t=0;t&lt;n.length;t++){var r=i(n[t],e);if(r[0]&amp;&amp;r[1])return _=r,n[t]}return _=i(document.body,e),null}function r(e){for(var n,t=null,r=e.querySelectorAll(&quot;a[href=&apos;javascript:;&apos;],a[href=&apos;#&apos;],a[href=&apos;javascript:void(0);&apos;],button&quot;),o=r.length,i=0;i&lt;o;++i){var a=r[i];if(s(a)&amp;&amp;(-1&lt;(n=(n=a.innerHTML.toLowerCase()).replace(&quot; &quot;,&quot;&quot;)).indexOf(&quot;login&quot;)||-1&lt;n.indexOf(&quot;登录&quot;)||-1&lt;n.indexOf(&quot;登 录&quot;)||-1&lt;n.indexOf(&quot;确定&quot;)||-1&lt;n.indexOf(&quot;登陆&quot;)||-1&lt;n.indexOf(&quot;登 陆&quot;))){t=a;break}}return t}function u(){return _&amp;&amp;_[0]&amp;&amp;_[1]}var a={_getRandomId:function(){return Math.round(Math.random()*(Number.MAX_VALUE-Number.MIN_VALUE)+Number.MIN_VALUE).toString()},_messages:[&quot;RemoteLogins:loginsFound&quot;],_requests:{},_takeRequest:function(e){var n=e,t=this._requests[n.requestId];return this._requests[n.requestId]=void 0,t},_sendRequest:function(t,e){var r=this._getRandomId();e.requestId=r,webkit.messageHandlers.loginsManagerMessageHandler.postMessage(e);var o=this;return new Promise(function(e,n){t.promise={resolve:e,reject:n},o._requests[r]=t})},receiveMessage:function(e){if(&quot;RemoteLogins:loginInject&quot;!=e.name){var n=this._takeRequest(e);if(n)switch(e.name){case&quot;RemoteLogins:loginsFound&quot;:n.promise.resolve({form:n.form,loginsFound:e.logins});break;case&quot;RemoteLogins:loginsAutoCompleted&quot;:n.promise.resolve(e.logins)}else if(u()&amp;&amp;a._fillForm(!1,!1,!1,e.logins),o())for(var t=window.frames,r=0;r&lt;t.length;r++)t[r].postMessage(JSON.stringify(e),&quot;*&quot;)}else a._fillForm(!0,!0,!0,e.logins)},_asyncFindLogins:function(e){if(!u())return Promise.reject(&quot;No logins found&quot;);_[0].removeEventListener(&quot;blur&quot;,d),_[0].addEventListener(&quot;blur&quot;,d);var n={form:_[0]};return this._sendRequest(n,{type:&quot;request&quot;})},onUsernameInput:function(e){var n=e.target;if(n.value&amp;&amp;u()&amp;&amp;_[0]===n){var t=this;this._asyncFindLogins({showMasterPassword:!1}).then(function(e){t._fillForm(!0,!0,!1,e.loginsFound)}).then(null,y)}},_onFormSubmit:function(){if(l(!0),u()){var e=document.documentURI;if(e){var n=document.documentURI,t=_,r=t[0],o=t[1],i=t[2];if(null!=o){var a=r?{name:r.name,value:r.value}:null,s={name:o.name,value:o.value};i&amp;&amp;(i.name,i.value),window.opener&amp;&amp;window.opener.top;webkit.messageHandlers.loginsManagerMessageHandler.postMessage({type:&quot;submit&quot;,hostname:e,username:a.value,usernameField:a.name,password:s.value,passwordField:s.name,formSubmitURL:n})}}else y(&quot;(form submission ignored -- invalid hostname)&quot;)}},_fillForm:function(e,n,t,r){var o=_,i=o[0],a=o[1];if(null==a)return[!1,r];if(a.disabled||a.readOnly)return y(&quot;not filling form, password field disabled or read-only&quot;),[!1,r];var s=Number.MAX_VALUE,l=Number.MAX_VALUE;i&amp;&amp;0&lt;=i.maxLength&amp;&amp;(s=i.maxLength),0&lt;=a.maxLength&amp;&amp;(l=a.maxLength);var u=(r=function(e,n){var t,r,o;if(null==e)throw new TypeError(&quot; array is null or not defined&quot;);var i=Object(e),a=i.length&gt;&gt;&gt;0;if(&quot;function&quot;!=typeof n)throw new TypeError(n+&quot; is not a function&quot;);1&lt;arguments.length&amp;&amp;(t=e);r=new Array(a),o=0;for(;o&lt;a;){var s,l;o in i&amp;&amp;(s=i[o],l=n.call(t,s,o,i),r[o]=l),o++}return r}(r,function(e){return{hostname:e.hostname,formSubmitURL:e.formSubmitURL,httpReal:e.httpRealm,username:e.username,password:e.password,usernameField:e.usernameField,passwordField:e.passwordField}})).filter(function(e){var n=e.username.length&lt;=s&amp;&amp;e.password.length&lt;=l;return n||y(&quot;Ignored&quot;,e.username),n},this);if(0==u.length)return[!1,r];if(a.value&amp;&amp;!e)return[!&quot;existingPassword&quot;,r];var d=null;if(!t&amp;&amp;i&amp;&amp;(i.value||i.disabled||i.readOnly)){var f=i.value.toLowerCase();if((v=u.filter(function(e){return e.username.toLowerCase()==f})).length){for(var m=0;m&lt;v.length;m++){var c=v[m];c.username==i.value&amp;&amp;(d=c)}d||(d=v[0])}else&quot;existingUsername&quot;,y(&quot;Password not filled. None of the stored logins match the username already present.&quot;)}else if(1==u.length)d=u[0];else{var v;d=(v=i?u.filter(function(e){return e.username}):u.filter(function(e){return!e.username}))[0]}var g=!1;if(d){if(i){var w=i.disabled||i.readOnly,h=d.username!=i.value,p=n&amp;&amp;h&amp;&amp;i.value.toLowerCase()==d.username.toLowerCase();w||p||!h||(i.value=d.username,b(i,&quot;keydown&quot;,40),b(i,&quot;keyup&quot;,40))}a.value!=d.password&amp;&amp;(a.value=d.password,b(a,&quot;keydown&quot;,40),b(a,&quot;keyup&quot;,40)),g=!0}return[g,r]}};function d(e){a.onUsernameInput(e)}var e=document.body?document.body:document;function f(e){if(!u()){for(var n=0;n&lt;e.length;n++){var t=e[n];if(&quot;INPUT&quot;===t.nodeName)return void v();t.hasChildNodes()&amp;&amp;f(t.childNodes)}return!1}}function c(e){&quot;click&quot;==e.type&amp;&amp;e.target===t&amp;&amp;a._onFormSubmit()}function v(){try{var e,n=l(!1);if(u())if(n&amp;&amp;(e=r(n)),e||(e=r(document.body)),e)((t=e).parentNode?e.parentNode:e).addEventListener(&quot;click&quot;,c,!0);a._asyncFindLogins({}).then(function(e){a._fillForm(!1,!1,!1,e.loginsFound)}).then(null,y)}catch(e){y(e)}}function b(e,n,t){var r=document.createEvent(&quot;KeyboardEvent&quot;);r.initKeyboardEvent(n,!0,!0,document.defaultView,t),e.dispatchEvent(r)}new MutationObserver(function(e){for(var n=0;n&lt;e.length;++n)f(e[n].addedNodes)}).observe(e,{attributes:!1,childList:!0,characterData:!1,subtree:!0}),window.addEventListener(&quot;load&quot;,v),o()&amp;&amp;(window.__firefox__.loginStopLoading=v,window.__firefox__.searchLoginField=function(){var e=document.activeElement;return&quot;input&quot;!==e.tagName.toLowerCase()?null:e===_[0]||e===_[1]?&quot;true&quot;:void 0}),window.addEventListener(&quot;submit&quot;,function(e){try{a._onFormSubmit()}catch(e){y(e)}}),window.__firefox__||(window.__firefox__={}),window.__firefox__.logins=new function(){this.inject=function(e){try{a.receiveMessage(e)}catch(e){}}},o()||window.addEventListener(&quot;message&quot;,function(e){&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;RemoteLogins:loginsFound&quot;)&amp;&amp;a.receiveMessage(JSON.parse(e.data))})}();</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<false/>
+		<key>message</key>
+		<array>
+			<string>loginsManagerMessageHandler</string>
+			<string>errorPageHelperMessageManager</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){window.__firefox__||(window.__firefox__={}),window.__firefox__.messages||(window.__firefox__.messages={}),window.__firefox__.messages.close=&quot;FIREFOX_MESSAGE_CLOSE&quot;;var e=window.close;window.close=function(){webkit.messageHandlers.windowCloseHelper.postMessage(null),e.apply(this,arguments)},window.addEventListener(&quot;message&quot;,function(e){e.data===window.__firefox__.messages.close&amp;&amp;(window.close(),e.stopPropagation())},!0);var r=window.open;window.open=function(e,o,n){if(!e||0==e.indexOf(&quot;about:&quot;))return window;var i;opened=r.apply(this,arguments);try{i=new URL(e).origin}catch(e){i=null}if(!(window.location.origin!==i))return opened;for(var s in proxy={},opened)&quot;function&quot;==typeof opened[s]?proxy[s]=opened[s].bind(opened):Object.defineProperty(proxy,s,{get:function(){return opened[s]},set:function(e){opened[s]=e}});return proxy.close=function(){opened.postMessage(window.__firefox__.messages.close,&quot;*&quot;)},proxy}}();
+</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>windowCloseHelper</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){&quot;use strict&quot;;var l,c,t=!1,s=5,f=400,u=60,g=null,h=0,m=[];function v(e){t&amp;&amp;console.log(&quot;FindInPage: &quot;+e)}function n(e){var t=e.parentNode;if(t){for(;e.firstChild;)t.insertBefore(e.firstChild,e);e.remove(),t.normalize()}}function d(){if(0&lt;m.length){for(var e=0;e&lt;m.length;e++)n(m[e]);m=[]}g=null}function a(e){if(v(&quot;Searching: &quot;+e),d(),e.trim()){var t=document.createRange(),n=function(e){for(var t,n,o,r,i,l,d=e.toLocaleLowerCase(),a=e.toLocaleUpperCase(),c=[],s=document.createRange(),f=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,!1),u=e.length;t=f.nextNode();){var g=t.textContent;e:for(var h=0;h&lt;g.length-u+1;++h){for(var m=0;m&lt;u;++m){var v=g[h+m];if(d[m]!==v&amp;&amp;a[m]!==v)continue e}var _=t.parentNode;s.setStart(t,h),s.setEnd(t,h+u);var w=s.getBoundingClientRect();&quot;hidden&quot;!==getComputedStyle(_).visibility&amp;&amp;(o=(n=w).left+document.body.scrollLeft,r=n.right+document.body.scrollLeft,i=n.top+document.body.scrollTop,l=n.bottom+document.body.scrollTop,0&lt;n.width&amp;&amp;0&lt;n.height&amp;&amp;0&lt;=r&amp;&amp;0&lt;=l&amp;&amp;o&lt;=document.body.scrollWidth&amp;&amp;i&lt;=document.body.scrollHeight)&amp;&amp;(c.push({node:t,index:h}),h+=u-1)}}return c}(e),o=document.createElement(&quot;span&quot;);o.setAttribute(&quot;style&quot;,&quot;background-color: #ffde49 !important&quot;);for(var r=n.length-1;0&lt;=r;--r){var i=n[r],l=o.cloneNode();t.setStart(i.node,i.index),t.setEnd(i.node,i.index+e.length),t.surroundContents(l),m.unshift(l)}v(n.length+&quot; highlighted rects created!&quot;),webkit.messageHandlers.findInPageHandler.postMessage({totalResults:n.length})}else webkit.messageHandlers.findInPageHandler.postMessage({totalResults:0})}function _(){if(g&amp;&amp;g.setAttribute(&quot;style&quot;,&quot;background-color: #ffde49 !important&quot;),m.length){(g=m[h]).setAttribute(&quot;style&quot;,&quot;background-color: #f19750 !important&quot;);var n,o,r,i,l,d,e=g.getBoundingClientRect(),t=u+e.top+scrollY-window.innerHeight/2,a=e.left+scrollX-window.innerWidth/2;a=p(a,0,document.body.scrollWidth),t=p(t,0,document.body.scrollHeight),n=a,o=t,r=f,i=0,l=scrollX,d=scrollY,clearInterval(c),c=setInterval(function(){var e=w(i,l,n-l,r),t=w(i,d,o-d,r);window.scrollTo(e,t),r&lt;=(i+=s)&amp;&amp;clearInterval(c)},s),v(&quot;Scrolled to: &quot;+a+&quot;, &quot;+t)}}function w(e,t,n,o){return n*(Math.pow(e/o-1,3)+1)+t}function p(e,t,n){return Math.max(t,Math.min(e,n))}function o(e){if(l==e){var t=m.length;h=(h+t)%t}else{var n=null;if(g&amp;&amp;(n=g.getBoundingClientRect()),a(e),h=0,n)for(var o=0;o&lt;m.length;o++){var r=m[o].getBoundingClientRect();if(r.top==n.top&amp;&amp;r.left&gt;=n.left||r.top&gt;n.top){h=o;break}}l=e}var i=m.length?h+1:0;webkit.messageHandlers.findInPageHandler.postMessage({currentResult:i}),_()}window.__firefox__||(window.__firefox__={}),window.__firefox__.find=function(e){o(e)},window.__firefox__.findNext=function(e){h++,o(e)},window.__firefox__.findPrevious=function(e){h--,o(e)},window.__firefox__.findDone=function(){d(),l=null}}();
+</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>findInPageHandler</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){&quot;use strict&quot;;var i=!1;function n(){try{return window.self===window.top}catch(e){return!1}}window.__firefox__||(window.__firefox__={}),n()?(window.__firefox__.setMainFrameNoImageEnable=d,window.addEventListener(&quot;message&quot;,function(e){&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;imageFrameReady&quot;)&amp;&amp;m()})):window.addEventListener(&quot;message&quot;,function(e){&quot;string&quot;==typeof e.data&amp;&amp;-1!=e.data.indexOf(&quot;setNoImageEnable&quot;)&amp;&amp;d(!0)}),n()&amp;&amp;window.addEventListener(&quot;load&quot;,function(){m()});var r=&quot;__firefox__NoImageMode&quot;,s=null;function d(e){if(i!=e)if(i=e){m(),function(){var e=&quot;*{background-image:none !important;}img,iframe{visibility:hidden !important;}&quot;,t=document.getElementById(r);if(t)t.innerHTML=e;else{var n=document.createElement(&quot;style&quot;);n.type=&quot;text/css&quot;,n.id=r,n.appendChild(document.createTextNode(e)),document.documentElement.appendChild(n)}}();for(var t=document.getElementsByTagName(&quot;img&quot;);0&lt;t.length;)t[0].src=&quot;&quot;,t[0].remove();for(var n=document.getElementsByTagName(&quot;input&quot;),d=new Array,o=0;o&lt;n.length;o++)&quot;image&quot;===n[o].getAttribute(&quot;type&quot;)&amp;&amp;(n[o].src=&quot;&quot;,d.push(n[o]));d.forEach(function(e){e.parentNode&amp;&amp;e.parentNode.removeChild(e)}),d=[],(s=new MutationObserver(function(e){e.forEach(function(e){for(var t=0;t&lt;e.addedNodes.length;++t)e.addedNodes[t]instanceof HTMLImageElement&amp;&amp;(e.addedNodes[t].src=&quot;&quot;,e.addedNodes[t].remove()),e.addedNodes[t]instanceof HTMLInputElement&amp;&amp;&quot;image&quot;==e.addedNodes[t].getAttribute(&quot;type&quot;)&amp;&amp;(e.addedNodes[t].src=&quot;&quot;,e.addedNodes[t].remove())})})).observe(document,{childList:!0,subtree:!0})}else{var a=document.getElementById(r);a&amp;&amp;a.remove(),s.disconnect(),s=null}}function m(){if(i&amp;&amp;n())for(var e=window.frames,t=0;t&lt;e.length;t++)e[t].postMessage(&apos;{&quot;setNoImageEnable&quot;:1}&apos;,&quot;*&quot;)}document.addEventListener(&quot;DOMContentLoaded&quot;,function(e){if(n())d(i);else{var t=document.getElementsByTagName(&quot;img&quot;);0&lt;t.length&amp;&amp;t[0].src&amp;&amp;0&lt;t[0].src.length&amp;&amp;window.parent.postMessage(&apos;{&quot;imageFrameReady&quot;:1}&apos;,&quot;*&quot;)}})}();
+</string>
+		<key>injectionTime</key>
+		<integer>0</integer>
+		<key>forMainFrameOnly</key>
+		<false/>
+		<key>message</key>
+		<array>
+			<string>NoImageMode</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(e){&quot;use strict&quot;;function n(){try{return window.self===window.top}catch(e){return!1}}function s(e,t){if(!e||3==e.nodeType||8==e.nodeType)return null;var o=e.tagName.toUpperCase();if(t&amp;&amp;t.test(o))return null;var n=window.getComputedStyle(e,null);return n?i(e,o,n):null}function i(e,t,o){var n=parseInt(o.width,0),a=parseInt(o.height,0);e=p.test(o.backgroundColor)&amp;&amp;!M,t=!1,(b.test(o.borderColor)||k.test(o.borderColor))&amp;&amp;(t=!0);var i=!1,d=!1,r=!1;if(&quot;&quot;!==o.backgroundImage&amp;&amp;&quot;none&quot;!==o.backgroundImage){var s=o.backgroundImage;-1==s.indexOf(&quot;url(&quot;)&amp;&amp;N.test(s)?i=!0:&quot;no-repeat&quot;!=(o=o.backgroundRepeat)&amp;&amp;&quot;repeat&quot;==o&amp;&amp;(B&lt;n||100&lt;a)&amp;&amp;(d=!0)}else(!e||b.test(o.backgroundColor)||f.test(o.backgroundColor))&amp;&amp;(r=!0);return o=&quot;&quot;,e?o=i?o+&quot; TakeNightModeBorder TakeNightModeReplaceBgLinear&quot;:d?o+&quot; TakeNightModeBorder TakeNightModeRemoveBg TakeNightModeTransBg&quot;:o+&quot; TakeNightModeTransBg&quot;:i?o+=&quot; TakeNightModeBorder TakeNightModeReplaceBgLinear&quot;:d&amp;&amp;(o+=&quot; TakeNightModeBorder TakeNightModeBackground&quot;),r&amp;&amp;(o+=&quot; TakeNightModeReplaceBgColor&quot;),t&amp;&amp;(o+=&quot; TakeNightModeReplaceBorder&quot;),o}function d(e,t,o,n,a){function i(e,t){this.node=e,this.cls=t}o=Math.min(o,e.length);for(var d=t;d&lt;=o;d++){var r=e[d];r&amp;&amp;r.classList&amp;&amp;!r.classList.contains(&quot;TakeTheme&quot;)&amp;&amp;e[d].classList.add(&quot;TakeTheme&quot;)}for(d=[],r=t;r&lt;=o;r++)(t=s(e[r],n))&amp;&amp;0&lt;t.length&amp;&amp;(t=new i(e[r],t),d.push(t));for(e=d.length,n=0;n&lt;=e;n++)(t=d[n])&amp;&amp;t.node&amp;&amp;t.node.tagName&amp;&amp;&quot;svg&quot;!=t.node.tagName.toLowerCase()&amp;&amp;t.node.className&amp;&amp;t.cls&amp;&amp;0&lt;t.cls.length&amp;&amp;t.node.setAttribute(&quot;class&quot;,t.node.className+&quot; &quot;+t.cls+&quot; TakeThemeActionDone&quot;);d=[],a(o)}function a(o){m(&quot;Night&quot;,o),null!=y&amp;&amp;window.clearTimeout(y),document.addEventListener(&quot;DOMNodeInserted&quot;,c,!1);var e=document.body?document.body:document,n=Array.prototype.slice.call(e.getElementsByTagName(&quot;*&quot;)),a=n?n.length:0;v=Date.now(),d(n,0,100,w,function e(t){a&lt;=t?g(&quot;Night&quot;,a,o):y=window.setTimeout(d,5,n,t,t+100,w,e)})}function r(e,t){if(e){if(e&amp;&amp;3!=e.nodeType&amp;&amp;8!=e.nodeType){var o=e.tagName.toUpperCase();if(!(t&amp;&amp;t.test(o)||e.classList.contains(&quot;TakeTheme&quot;)))e.classList.add(&quot;TakeTheme&quot;),(n=window.getComputedStyle(e,null))&amp;&amp;(o=i(e,o,n),e.tagName&amp;&amp;&quot;svg&quot;!=e.tagName.toLowerCase()&amp;&amp;e.setAttribute(&quot;class&quot;,e.className+o),e.classList.add(&quot;TakeThemeActionDone&quot;))}for(var n=(o=e.children)?o.length:0,a=0;a&lt;n;a++)r(o[a],t)}}function c(e){window.setTimeout(r,1,e.target,o)}function m(e,t){M=!(!window.g_wmlBrowser||&quot;object&quot;!=typeof window.g_wmlBrowser)}function g(e,t,o){if(window.top==window){var n=Date.now()-v;e=&quot;Night&quot;==e&amp;&amp;0&lt;t?&quot;node=&quot;+t+&quot;&amp;time=&quot;+n:&quot;&quot;}}function t(e){if(n()){e=&apos;{&quot;ALOOK_THEME_&apos;+e+&apos;&quot;:1}&apos;;for(var t=window.frames,o=0;o&lt;t.length;o++)t[o].postMessage(e,&quot;*&quot;)}}function h(e){m(),null!=y&amp;&amp;window.clearTimeout(y),document.removeEventListener(&quot;DOMNodeInserted&quot;,c,!1);for(var t=Array.prototype.slice.call(document.getElementsByTagName(&quot;*&quot;)),o=t.length,n=/TakeNightMode[\s\S]*?\b/g,a=0;a&lt;o;++a){var i=t[a],d=n;if(i&amp;&amp;3!=i.nodeType&amp;&amp;8!=i.nodeType){var r=i.tagName.toUpperCase();if(!w.test(r)&amp;&amp;i.classList.contains(&quot;TakeTheme&quot;)&amp;&amp;(i.classList.remove(&quot;TakeTheme&quot;),i.classList.remove(&quot;TakeThemeActionDone&quot;),d=i.className.match(d))&amp;&amp;0&lt;(r=d.length))for(var s=0;s&lt;r;s++)i.classList.remove(d[s])}}g(&quot;Classic&quot;,o)}function l(e,t){/interactive|complete/.test(document.readyState)?C||(C=!0,e(t)):window.setTimeout(l,1e3,e,t)}function u(t,o){/interactive|complete/.test(document.readyState)?window.setTimeout(t,1,o):(document.addEventListener(&quot;readystatechange&quot;,function e(){&quot;complete&quot;==document.readyState&amp;&amp;(C||(C=!0,t(o)),document.removeEventListener(&quot;readystatechange&quot;,e,!1))},!1),null==_&amp;&amp;(_=function(){if(/iP(hone|od|ad)/.test(navigator.platform)){var e=navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);if(e)return parseInt(e[1],10)}return 8}()),7&lt;_&amp;&amp;l(t,o))}window.__firefox__||(window.__firefox__={}),window.isNightMode=!1;var T={Theme:{}};if(!e.$ALOOK){e.$ALOOK=T;var p=/rgba\(\s*?\d+?\s*?,\s*?\d+?\s*?,\s*?\d+?\s*?,\s*?0\s*?\)/i,b=/rgb\(\s*?2\d{2}\s*?,\s*?2\d{2}\s*?,\s*?2\d{2}\s*?\)/i,k=/rgb\(\s*?1(6|7|8|9)\d\s*?,\s*?1(6|7|8|9)\d\s*?,\s*?1(6|7|8|9)\d\s*?\)/i,f=/rgba\(255\, 255\, 255\,/i,N=/rgb|-webkit-gradient/i,w=/\bCANVAS\b|\bIMG\b|\bIFRAME\b|\bBR\b|\bSCRIPT\b/,o=/\bCANVAS\b|\bIMG\b|\bIFRAME\b|\bBR\b|\bSCRIPT\b|\bNOSCRIPT\b|\bSTYLE\b|\bMETA\b|\bLINK\b|\bTITLE\b/,M=!1,y=null,v=0,B=.5*window.innerWidth,L=document.createElement(&quot;style&quot;);L.id=&quot;take_theme_id&quot;,L.innerText=&apos;input[type=&quot;image&quot;]{opacity:0.62}img{opacity:0.62}.TakeTheme.TakeNightModeTransBg{background-color: transparent !important}.black_border{border: 1px solid rgba(0, 0, 0,0.2)}#bg_sheep{background-image: none !important}.TakeTheme.TakeNightModeRemoveBg{background-image: none !important}.TakeTheme.TakeNightModeReplaceBgColor{background:#212121!important}.TakeTheme.TakeNightModeBackground{background:#212121!important;color:#848484!important}.TakeTheme.TakeNightModeReplaceBgLinear{background:rgba(40,40,40,.6)!important}.TakeTheme.TakeNightModeReplaceBorder{border-color:#45484c!important}.TakeTheme.TakeNightModeBorder{outline:#45484c solid 1px}:not(.TakeTheme){border-color:#212121!important;background-color:#212121!important}*{text-shadow:none!important;box-shadow:none!important}:after,:before{-webkit-filter:brightness(0.4)}body,html{background:#212121!important;color:#848484!important}abbr,address,article,aside,b,bdi,bdo,blockquote,br,caption,cite,code,col,colgroup,data,datalist,dc,dd,dfn,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,i,kbd,keygen,label,legend,li,main,mark,meter,nav,ol,optgroup,option,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strong,sub,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,u,ul,var,wbr{background-color:none;color:#848484!important}textarea{background-color:#212121!important}div,div.TakeTheme{color:#848484!important}a,a *,a.TakeTheme,.TakeTheme{color:#848484!important}a.TakeTheme:visited,a.TakeTheme:visited .TakeTheme,a.TakeTheme:visited div.TakeTheme,a:visited,a:visited *{color:#bd8cff!important}button:not(.TakeNightModeTransBg):not(.TakeTheme),div:not(.TakeNightModeTransBg):not(.TakeTheme),input:not(.TakeNightModeTransBg):not(.TakeTheme),select:not(.TakeNightModeTransBg):not(.TakeTheme){background:#212121!important}button.TakeThemeActionDone:not(.TakeNightModeTransBg):not(.TakeNightModeReplaceBgLinear):not(.TakeNightModeBackground),div.TakeThemeActionDone:not(.TakeNightModeTransBg):not(.TakeNightModeReplaceBgLinear):not(.TakeNightModeBackground),input.TakeThemeActionDone:not(.TakeNightModeTransBg):not(.TakeNightModeReplaceBgLinear):not(.TakeNightModeBackground),select.TakeThemeActionDone:not(.TakeNightModeTransBg):not(.TakeNightModeReplaceBgLinear):not(.TakeNightModeBackground){background-color:#212121!important}input[type=date],input[type=date] *,input[type=datetime-local],input[type=datetime-local] *,input[type=month],input[type=month] *,input[type=time],input[type=time] *,select,select *{color:#fff!important}button,input:not([type=button]):not([type=submit]):not([type=reset]):not([type=image]):not([type=file]):not([type=date]):not([type=datetime-local]):not([type=month]):not([type=time]),input[type=button],input[type=file],input[type=image],input[type=reset],input[type=submit]{color:#FFFFFF!important;border-color:#45484c!important}&apos;;var _=void 0,C=!(T.Theme={theme:&quot;Classic&quot;,changeIframesTheme:t,containerHead:null,changeTheme:function(e,t){var o;B=.5*window.innerWidth,this.changeIframesTheme(e),this.theme==e&amp;&amp;this.containerHead===document.head?(m(),g(e,0)):(this.containerHead=document.head,&quot;NightMode&quot;==e?(document.head&amp;&amp;(document.head.appendChild(L),document.head.addEventListener(&quot;DOMNodeRemoved&quot;,function e(t){t.target&amp;&amp;&quot;take_theme_id&quot;==t.target.id&amp;&amp;(window.setTimeout(function(){&quot;NightMode&quot;==T.Theme.theme&amp;&amp;document.head.appendChild(L)},1),document.head.removeEventListener(&quot;DOMNodeRemoved&quot;,e,!1))},!1)),u(a,t)):((o=document.getElementById(&quot;take_theme_id&quot;))&amp;&amp;o.parentNode&amp;&amp;o.parentNode.removeChild(o),document.body&amp;&amp;document.body.clientWidth&amp;&amp;u(h,t)),this.theme=e)}});window.addEventListener(&quot;message&quot;,function(e){&quot;string&quot;==typeof e.data&amp;&amp;(-1!=e.data.indexOf(&quot;ALOOK_THEME_Classic&quot;)?T.Theme.changeTheme(&quot;Classic&quot;):-1!=e.data.indexOf(&quot;ALOOK_THEME_NightMode&quot;)?T.Theme.changeTheme(&quot;NightMode&quot;):-1!=e.data.indexOf(&quot;nightModeFrameReady&quot;)&amp;&amp;t(window.isNightMode?&quot;NightMode&quot;:&quot;Classic&quot;))},!1)}function A(){window.isNightMode?T.Theme.changeTheme(&quot;NightMode&quot;):T.Theme.changeTheme(&quot;Classic&quot;)}function E(e){if(e){var t=e.getAttribute(&quot;style&quot;);t||(t=&quot;&quot;),-1==t.indexOf(&quot;background-color:#212121 !important;&quot;)&amp;&amp;e.setAttribute(&quot;style&quot;,t+&quot;background-color:#212121 !important;&quot;)}}function R(e){if(e){var t=e.getAttribute(&quot;style&quot;);t&amp;&amp;e.setAttribute(&quot;style&quot;,t.replace(&quot;background-color:#212121 !important;&quot;,&quot;&quot;))}}n()&amp;&amp;(window.__firefox__.setMainFrameNightModeEnable=function(e){var t,o,n;window.isNightMode=e,t=e,o=document.getElementsByTagName(&quot;html&quot;),n=null,o&amp;&amp;0&lt;o.length&amp;&amp;(n=o[0]),t?(E(n),E(document.body)):(R(n),R(document.body)),document.head?A():window.setTimeout(function(){A()},20)}),document.addEventListener(&quot;DOMContentLoaded&quot;,function(e){n()?window.isNightMode&amp;&amp;&quot;NightMode&quot;!=T.theme&amp;&amp;A():window.parent.postMessage(&apos;{&quot;nightModeFrameReady&quot;:1}&apos;,&quot;*&quot;)})}(window);
+</string>
+		<key>injectionTime</key>
+		<integer>0</integer>
+		<key>forMainFrameOnly</key>
+		<false/>
+		<key>message</key>
+		<array>
+			<string>NightModeHelper</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(e){var r=!1;function l(e){webkit.messageHandlers.TranslateHelper.postMessage(e)}function s(){webkit.messageHandlers.TranslateHelper.postMessage(&quot;complete&quot;)}window.__firefox__.translatePage=function(e){var t=(n=document.head?document.head:document.documentElement,a=&quot;BingTranslateJS&quot;,o=document.getElementById(a),o||((o=document.createElement(&quot;script&quot;)).id=a,o.src=(location&amp;&amp;location.href&amp;&amp;0==location.href.indexOf(&quot;https&quot;)?&quot;https://ssl.microsofttranslator.com&quot;:&quot;http://www.microsofttranslator.com&quot;)+&quot;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=False&amp;ui=true&amp;settings=Manual&amp;from=&quot;,n.appendChild(o)),o);var n,a,o;r?Microsoft.Translator.Widget.Translate(null,e,null,l,s):t.onload=function(){r=!0,Microsoft.Translator.Widget.Translate(null,e,null,l,s)};!function(){var e=document.head?document.head:document.documentElement,t=&quot;WidgetFloaterPanelsHideSheet&quot;,n=document.getElementById(t),a=&quot;#WidgetFloaterPanels{ display:none !important}&quot;;if(n)n.innerHTML=a;else{var o=document.createElement(&quot;style&quot;);o.type=&quot;text/css&quot;,o.id=t,o.appendChild(document.createTextNode(a)),e.appendChild(o)}}()},window.__firefox__.quitTranslate=function(){try{Microsoft.Translator.Widget.RestoreOriginal()}catch(e){console.error(&quot;Translation Restore Error: &quot;+error)}}}(window);
+</string>
+		<key>injectionTime</key>
+		<integer>0</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>TranslateHelper</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){&quot;use strict&quot;;window.__firefox__||(window.__firefox__={});var e=!1,n=null,s=[&quot;余下全文&quot;,&quot;下页&quot;,&quot;下一页&quot;,&quot;下一张&quot;,&quot;下张&quot;,&quot;下章&quot;,&quot;下篇&quot;,&quot;下一章&quot;,&quot;下节&quot;,&quot;下一节&quot;,&quot;下一頁&quot;,&quot;下頁&quot;,&quot;下屏&quot;,&quot;下一屏&quot;,&quot;[-&gt;]&quot;,&quot;[&gt;]&quot;,&quot;[-&gt;&gt;]&quot;,&quot;[&gt;&gt;]&quot;,&quot;nextchapter&quot;,&quot;nextpage&quot;,&quot;[next&quot;,&quot;continuereading&quot;,&quot;siguiente&quot;,&quot;Próxima&quot;,&quot;páginasiguiente&quot;,&quot;pagesuivante&quot;,&quot;suivant&quot;,&quot;plus&quot;,&quot;próxima&quot;,&quot;próximo&quot;,&quot;продолжитьчтение&quot;,&quot;след&quot;,&quot;следующая&quot;,&quot;еще&quot;,&quot;tiếp&quot;,&quot;trangtiếp&quot;,&quot;trangkế&quot;,&quot;chươngtiếp&quot;,&quot;chươngsau&quot;,&quot;sau&quot;,&quot;다음회&quot;,&quot;次のページ&quot;,&quot;次の章&quot;,&quot;次へ&quot;,&quot;下一&quot;,&quot;next&quot;,&quot;&gt;&gt;&quot;,&quot;&gt;&quot;],o=[&quot;下一&quot;,&quot;&gt;&gt;&quot;,&quot;&gt;&quot;,&quot;next&quot;],r=[&quot;章节列表&quot;,&quot;章节目录&quot;,&quot;返回目录&quot;,&quot;目录&quot;,&quot;목록&quot;,&quot;index&quot;,&quot;contents&quot;,&quot;mục lục&quot;,&quot;Chỉ mục&quot;,&quot;索引&quot;,&quot;ディレクトリ&quot;];function u(e,n){if(!n.textContent)return!1;var t=n.textContent.replace(/\s/g,&quot;&quot;).toLowerCase();if(0==t.length)return!1;for(var r=0;r&lt;e.length;r++)if(-1!=t.indexOf(e[r]))return e[r];return null}function a(){for(var e=document.getElementsByTagName(&quot;a&quot;),n=null,t=0;t&lt;e.length;t++){var r=e[t];if(!n){var a=r.className+&quot; &quot;+r.id;-1==a.indexOf(&quot;nextpage&quot;)&amp;&amp;-1==a.indexOf(&quot;pnnext&quot;)||(n=r)}if(f=u(s,r)){if(-1==o.indexOf(f))return r;n=r}}var i=null;e=document.querySelectorAll(&quot;[class*=&apos;button&apos;],[class*=&apos;btn&apos;]&quot;);for(t=0;t&lt;e.length;t++){var f;r=e[t];if(f=u(s,r)){if(-1==o.indexOf(f))return r;i=r}}return n||i}function t(){e&amp;&amp;n?webkit.messageHandlers.nextPageMessageHandler.postMessage(1):(n=a())?(e=!0,webkit.messageHandlers.nextPageMessageHandler.postMessage(1)):(e=!1,webkit.messageHandlers.nextPageMessageHandler.postMessage(0))}window.addEventListener(&quot;load&quot;,t),window.__firefox__.nextPageStopLoading=t,window.__firefox__.getNextPageAndIndexURL=function(){var e=function(e){if(!e)return&quot;&quot;;var n=&quot;&quot;;if(e.href&amp;&amp;0==e.href.indexOf(&quot;http&quot;))n=e.href;else{var t=e.getAttribute(&quot;data-href&quot;);if(t&amp;&amp;0==t.indexOf(&quot;http&quot;))n=t;else for(var r=e.attributes,a=0;a&lt;r.length;a++)if((t=r[a].nodeValue)&amp;&amp;0==t.indexOf(&quot;http&quot;)){n=t;break}}return n}(a()),n=function(){for(var e=document.getElementsByTagName(&quot;a&quot;),n=0;n&lt;e.length;n++){var t=e[n];if(u(r,t))return t}return null}(),t=&quot;&quot;;return n&amp;&amp;n.href&amp;&amp;(t=n.href),{next:e,index:t}},document.addEventListener(&quot;DOMContentLoaded&quot;,function(){t()}),window.__firefox__.loadNextPage=function(){return null==n&amp;&amp;(n=a()),!!n&amp;&amp;(n.click(),!0)}}();
+</string>
+		<key>injectionTime</key>
+		<integer>0</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>nextPageMessageHandler</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>&quot;use strict&quot;;window.__firefox__||(window.__firefox__={}),window.__firefox__.searchQueryForField=function(){var n=document.activeElement;if(&quot;input&quot;!==n.tagName.toLowerCase())return null;var e=n.form;if(!e||&quot;get&quot;!=e.method.toLowerCase())return null;var t=e.getElementsByTagName(&quot;input&quot;),o=(t=Array.prototype.slice.call(t,0)).map(function(e){return e.name==n.name?[e.name,&quot;{searchTerms}&quot;].join(&quot;=&quot;):[e.name,e.value].map(encodeURIComponent).join(&quot;=&quot;)}),a=e.getElementsByTagName(&quot;select&quot;),r=(a=Array.prototype.slice.call(a,0)).map(function(e){return[e.name,e.options[e.selectedIndex].value].map(encodeURIComponent).join(&quot;=&quot;)});if(o=o.concat(r),!e.action)return null;var i=e.acceptCharset;return i&amp;&amp;0!=i.length||(i=document.characterSet),[e.action,o.join(&quot;&amp;&quot;)].join(&quot;?&quot;)+&quot;|:|:|&quot;+i};
+</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>customSearchHelper</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function(){var t={title:&quot;head title&quot;,description:&quot;head meta[name=&apos;description&apos;], body p&quot;};function o(e,t){var n=e.querySelector(t);if(n)return n.getAttribute(&quot;content&quot;)||n.innerText}function e(){var e=function(e,t){var n={};for(var i in t)n[i]=o(e,t[i])||&quot;&quot;;return n}(document,t);webkit.messageHandlers.spotlightMessageHandler.postMessage(e)}window.__firefox__||(window.__firefox__={}),window.addEventListener(&quot;load&quot;,e),window.__firefox__.spotlightStopLoading=e}();
+</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>spotlightMessageHandler</string>
+			<string>localRequestHelper</string>
+		</array>
+	</dict>
+	<dict>
+		<key>js</key>
+		<string>!function() {
+    function lastInteger(e) {
+        var t = e.match(/[0-9]+/g);
+        return t ? parseInt(t[t.length - 1]) : NaN
+    }
+    function escapeCharacters(e, t) {
+        for (var n = !1, i = t.length, r = 0; r &lt; i; ++r)
+            if (-1 !== e.indexOf(t.charAt(r))) {
+                n = !0;
+                break
+            }
+        if (!n)
+            return e;
+        var a = &quot;&quot;,
+            l = e.length;
+        for (r = 0; r &lt; l; ++r)
+            -1 !== t.indexOf(e.charAt(r)) &amp;&amp; (a += &quot;\\&quot;), a += e.charAt(r);
+        return a
+    }
+    function escapeForRegExp(e) {
+        return escapeCharacters(e, &quot;^[]{}()\\.$*+?|&quot;)
+    }
+    function characterNeedsScoreMultiplier(e) {
+        if (!e || 0 === e.length)
+            return !1;
+        var t = e.charCodeAt(0);
+        return 11904 &lt; t &amp;&amp; t &lt; 12031 || (12352 &lt; t &amp;&amp; t &lt; 12543 || (12736 &lt; t &amp;&amp; t &lt; 19903 || (19968 &lt; t &amp;&amp; t &lt; 40959 || (44032 &lt; t &amp;&amp; t &lt; 55215 || (63744 &lt; t &amp;&amp; t &lt; 64255 || (65072 &lt; t &amp;&amp; t &lt; 65103 || (131072 &lt; t &amp;&amp; t &lt; 173791 || 194560 &lt; t &amp;&amp; t &lt; 195103)))))))
+    }
+    function domDistance(e, t, n) {
+        for (var i = [], r = e; r;)
+            i.unshift(r), r = r.parentNode;
+        var a = [];
+        for (r = t; r;)
+            a.unshift(r), r = r.parentNode;
+        for (var l = Math.min(i.length, a.length), o = Math.abs(i.length - a.length), s = l; 0 &lt;= s &amp;&amp; i[s] !== a[s]; --s)
+            if (o += 2, n &amp;&amp; n &lt;= o)
+                return n;
+        return o
+    }
+    function fontSizeFromComputedStyle(e, t) {
+        var n = parseInt(e.fontSize);
+        return isNaN(n) &amp;&amp; (n = t || BaseFontSize), n
+    }
+    function contentTextStyleForNode(e, t) {
+        function n(e) {
+            if (isNodeWhitespace(e))
+                return null;
+            var t = getComputedStyle(e.parentNode);
+            return &quot;none&quot; !== t.float ? null : t
+        }
+        for (var i = e.evaluate(&quot;descendant::text()[not(parent::h1) and not(parent::h2) and not(parent::h3) and not(parent::h4) and not(parent::h5) and not(parent::h6)]&quot;, t, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null), r = i.snapshotLength, a = 0; a &lt; r; ++a) {
+            for (var l = i.snapshotItem(a), o = !1, s = l.parentElement; s !== t; s = s.parentElement)
+                if (NegativeRegEx.test(s.className)) {
+                    o = !0;
+                    break
+                }
+            if (!o) {
+                var c = n(l);
+                if (c)
+                    return c
+            }
+        }
+        return null
+    }
+    function isNodeWhitespace(e) {
+        return !(!e || e.nodeType !== Node.TEXT_NODE) &amp;&amp; !/\S/.test(e.data)
+    }
+    function removeWhitespace(e) {
+        return e.replace(/\s+/g, &quot;&quot;)
+    }
+    function isElementNode(e) {
+        return !(!e || e.nodeType !== Node.ELEMENT_NODE)
+    }
+    function computedStyleIndicatesElementIsInvisibleDueToClipping(e) {
+        if (&quot;absolute&quot; !== e.position)
+            return !1;
+        var t = e.clip.match(/^rect\((\d+px|auto), (\d+px|auto), (\d+px|auto), (\d+px|auto)\)$/);
+        if (!t || 5 !== t.length)
+            return !1;
+        var n = t.map(function(e) {
+                return parseInt(e)
+            }),
+            i = n[1];
+        isNaN(i) &amp;&amp; (i = 0);
+        var r = n[2],
+            a = n[3],
+            l = n[4];
+        return isNaN(l) &amp;&amp; (l = 0), a &lt;= i || l &lt;= r
+    }
+    function isElementVisible(e) {
+        var t = getComputedStyle(e);
+        if (&quot;visible&quot; !== t.visibility || &quot;none&quot; === t.display)
+            return !1;
+        if (cachedElementBoundingRect(e).height)
+            return !0;
+        var n = document.createRange();
+        return n.selectNode(e), !!n.getBoundingClientRect().height
+    }
+    function isElementPositionedOffScreen(e) {
+        var t = cachedElementBoundingRect(e);
+        return !(!t.height || !t.width) &amp;&amp; (t.bottom &lt;= 0 || t.right &lt;= 0)
+    }
+    function elementDepth(e) {
+        for (var t = 0; e; e = e.parentElement)
+            t++;
+        return t
+    }
+    function depthOfElementWithinElement(e, t) {
+        for (var n = 0; e !== t; e = e.parentElement)
+            n++;
+        return n
+    }
+    function nearestAncestorElementWithTagName(e, t) {
+        for (; e = e.parentElement;)
+            if (e.tagName === t)
+                return e;
+        return null
+    }
+    function cachedElementBoundingRect(e) {
+        if (e._cachedElementBoundingRect)
+            return e._cachedElementBoundingRect;
+        var t = e.getBoundingClientRect();
+        return ReaderArticleFinderJS._elementsWithCachedBoundingRects.push(e), ReaderArticleFinderJS._cachedScrollX || ReaderArticleFinderJS._cachedScrollY ? e._cachedElementBoundingRect = {
+            top: t.top + ReaderArticleFinderJS._cachedScrollY,
+            right: t.right + ReaderArticleFinderJS._cachedScrollX,
+            bottom: t.bottom + ReaderArticleFinderJS._cachedScrollY,
+            left: t.left + ReaderArticleFinderJS._cachedScrollX,
+            width: t.width,
+            height: t.height
+        } : e._cachedElementBoundingRect = t, e._cachedElementBoundingRect
+    }
+    function clearCachedElementBoundingRects() {
+        for (var e = ReaderArticleFinderJS._elementsWithCachedBoundingRects, t = e.length, n = 0; n &lt; t; ++n)
+            e[n]._cachedElementBoundingRect = null;
+        ReaderArticleFinderJS._elementsWithCachedBoundingRects = []
+    }
+    function innerTextOrTextContent(e) {
+        var t = e.innerText;
+        return /\S/.test(t) || (t = e.textContent), t
+    }
+    function levenshteinDistance(e, t) {
+        for (var n = e.length, i = t.length, r = new Array(n + 1), a = 0; a &lt; n + 1; ++a)
+            r[a] = new Array(i + 1), r[a][0] = a;
+        for (var l = 0; l &lt; i + 1; ++l)
+            r[0][l] = l;
+        for (l = 1; l &lt; i + 1; ++l)
+            for (a = 1; a &lt; n + 1; ++a)
+                if (e[a - 1] === t[l - 1])
+                    r[a][l] = r[a - 1][l - 1];
+                else {
+                    var o = r[a - 1][l] + 1,
+                        s = r[a][l - 1] + 1,
+                        c = r[a - 1][l - 1] + 1;
+                    r[a][l] = Math.min(o, s, c)
+                }
+        return r[n][i]
+    }
+    function stringSimilarity(e, t) {
+        var n = Math.max(e.length, t.length);
+        return n ? (n - levenshteinDistance(e, t)) / n : 0
+    }
+    function stringsAreNearlyIdentical(e, t) {
+        return e === t || stringSimilarity(e, t) &gt; StringSimilarityToDeclareStringsNearlyIdentical
+    }
+    function elementIsCommentBlock(e) {
+        if (/(^|\s)comment/.test(e.className))
+            return !0;
+        var t = e.getAttribute(&quot;id&quot;);
+        return !(!t || 0 !== t.indexOf(&quot;comment&quot;))
+    }
+    function elementLooksLikeEmbeddedTweet(e) {
+        if (&quot;IFRAME&quot; !== e.tagName)
+            return !1;
+        if (!e.contentDocument)
+            return !1;
+        var t = e.contentDocument.documentElement,
+            n = 0,
+            i = t.querySelector(&quot;blockquote&quot;);
+        return i &amp;&amp; /http.+twitter.com.*status.*[0-9]+/i.test(i.getAttribute(&quot;cite&quot;)) &amp;&amp; ++n, e.classList.contains(&quot;twitter-tweet&quot;) &amp;&amp; ++n, t.querySelector(&quot;[data-iframe-title=&apos;Embedded Tweet&apos;]&quot;) &amp;&amp; ++n, t.querySelector(&quot;[data-tweet-id]&quot;) &amp;&amp; ++n, 2 &lt; n
+    }
+    function elementLooksLikePartOfACarousel(e) {
+        for (var t = /carousel-|carousel_|-carousel|_carousel/, n = e, i = 0; i &lt; 3; ++i) {
+            if (!n)
+                return !1;
+            if (t.test(n.className) || t.test(n.getAttribute(&quot;data-analytics&quot;)))
+                return !0;
+            n = n.parentElement
+        }
+    }
+    function shouldPruneIframe(e, t) {
+        return !HostnamesKnownToContainEmbeddableMediaRegex.test(anchorForURL(e.src, t).hostname) &amp;&amp; !elementLooksLikeEmbeddedTweet(e.originalElement)
+    }
+    function languageScoreMultiplierForTextNodes(e) {
+        if (!e || !e.length)
+            return 1;
+        for (var t = Math.min(e.length, DefaultNumberOfTextNodesToCheckForLanguageMultiplier), n = 0, i = 0, r = 0; r &lt; t; r++) {
+            for (var a = e[r].nodeValue.trim(), l = Math.min(a.length, NumberOfCharactersPerTextNodeToEvaluateForLanguageMultiplier), o = 0; o &lt; l; o++)
+                characterNeedsScoreMultiplier(a[o]) &amp;&amp; n++;
+            i += l
+        }
+        return i * MinimumRatioOfCharactersForLanguageMultiplier &lt;= n ? ScoreMultiplierForChineseJapaneseKorean : 1
+    }
+    function scoreMultiplierForElementTagNameAndAttributes(e) {
+        for (var t = 1, n = e; n; n = n.parentElement) {
+            var i = n.getAttribute(&quot;id&quot;);
+            i &amp;&amp; (ArticleRegEx.test(i) &amp;&amp; (t += ArticleMatchBonus), CommentRegEx.test(i) &amp;&amp; (t -= CommentMatchPenalty));
+            var r = n.className;
+            r &amp;&amp; (ArticleRegEx.test(r) &amp;&amp; (t += ArticleMatchBonus), CommentRegEx.test(r) &amp;&amp; (t -= CommentMatchPenalty)), &quot;ARTICLE&quot; === n.tagName &amp;&amp; (t += ArticleMatchBonus)
+        }
+        return t &lt; 0 ? 0 : t
+    }
+    function elementsFromPoint(e, t) {
+        for (var n, i, r, a = [], l = []; (n = document.elementFromPoint(e, t)) &amp;&amp; -1 === a.indexOf(n) &amp;&amp; null != n;)
+            a.push(n), l.push({
+                value: n.style.getPropertyValue(&quot;pointer-events&quot;),
+                priority: n.style.getPropertyPriority(&quot;pointer-events&quot;)
+            }), n.style.setProperty(&quot;pointer-events&quot;, &quot;none&quot;, &quot;important&quot;);
+        for (i = l.length; r = l[--i];)
+            a[i].style.setProperty(&quot;pointer-events&quot;, r.value ? r.value : &quot;&quot;, r.priority);
+        return a
+    }
+    function userVisibleURLString(e) {
+        return &quot;undefined&quot; != typeof ReaderArticleFinderJSController &amp;&amp; ReaderArticleFinderJSController.userVisibleURLString ? ReaderArticleFinderJSController.userVisibleURLString(e) : e
+    }
+    function anchorForURL(e, t) {
+        var n = t.createElement(&quot;a&quot;);
+        return n.href = e, n
+    }
+    function anchorLinksToAttachment(e) {
+        return /\battachment\b/i.test(e.getAttribute(&quot;rel&quot;))
+    }
+    function anchorLinksToTagOrCategoryPage(e) {
+        return /\bcategory|tag\b/i.test(e.getAttribute(&quot;rel&quot;))
+    }
+    function elementsHaveSameTagAndClassNames(e, t) {
+        return e.tagName === t.tagName &amp;&amp; e.className === t.className
+    }
+    function selectorForElement(e) {
+        for (var t = e.tagName, n = e.classList, i = n.length, r = 0; r &lt; i; r++)
+            t += &quot;.&quot; + n[r];
+        return t
+    }
+    function elementFingerprintForDepth(e, t) {
+        var o = &quot; / &quot;,
+            s = &quot; \\&quot;,
+            c = &quot; | &quot;;
+        return function e(t, n) {
+            if (!t)
+                return &quot;&quot;;
+            var i = [];
+            i.push(selectorForElement(t));
+            var r = t.children,
+                a = r.length;
+            if (a &amp;&amp; 0 &lt; n) {
+                i.push(o);
+                for (var l = 0; l &lt; a; ++l)
+                    i.push(e(r[l], n - 1)), l !== a - 1 &amp;&amp; i.push(c);
+                i.push(s)
+            }
+            return i.join(&quot;&quot;)
+        }(e, t)
+    }
+    function childrenOfParentElement(e) {
+        var t = e.parentElement;
+        return t ? t.children : []
+    }
+    function arrayOfKeysAndValuesOfObjectSortedByValueDescending(e) {
+        var t = [];
+        for (var n in e)
+            e.hasOwnProperty(n) &amp;&amp; t.push({
+                key: n,
+                value: e[n]
+            });
+        return t.sort(function(e, t) {
+            return t.value - e.value
+        }), t
+    }
+    function walkElementSubtree(e, t, n) {
+        if (!(t &lt; 0)) {
+            for (var i = e.children, r = i.length, a = t - 1, l = 0; l &lt; r; ++l)
+                walkElementSubtree(i[l], a, n);
+            n(e, t)
+        }
+    }
+    function childrenWithParallelStructure(e) {
+        var t = e.children;
+        if (!t)
+            return [];
+        var n = t.length;
+        if (!n)
+            return [];
+        for (var i = {}, r = 0; r &lt; n; ++r) {
+            var a = t[r];
+            if (!CandidateTagNamesToIgnore[a.tagName] &amp;&amp; a.className)
+                for (var l = a.classList, o = l.length, s = 0; s &lt; o; ++s) {
+                    (u = i[h = l[s]]) ? u.push(a) : i[h] = [a]
+                }
+        }
+        var c = Math.floor(n / 2);
+        for (var h in i) {
+            var u;
+            if ((u = i[h]).length &gt; c)
+                return u
+        }
+        return []
+    }
+    var ReaderMinimumScore = 1600,
+        ReaderMinimumAdvantage = 15,
+        ArticleMinimumScoreDensity = 4.25,
+        BlacklistedHostsAllowedPathRegexMap = {
+            &quot;www.apple.com&quot;: /^\/([a-z]{2,4}\/){0,2}pr\/|^\/hotnews\//
+        },
+        ListOfHostnameAndTrustedArticleNodeSelectorPairs = [[/.*\.apple.com$/, &quot;article&quot;]],
+        CandidateMinimumWidth = 280,
+        CandidateMinimumHeight = 295,
+        CandidateMinimumArea = 17e4,
+        CandidateMaximumTop = 1300,
+        CandidateMinimumWidthPortionForIndicatorElements = .5,
+        CandidateMinumumListItemLineCount = 4,
+        CandidateTagNamesToIgnore = {
+            A: 1,
+            EMBED: 1,
+            FORM: 1,
+            HTML: 1,
+            IFRAME: 1,
+            OBJECT: 1,
+            OL: 1,
+            OPTION: 1,
+            SCRIPT: 1,
+            STYLE: 1,
+            svg: 1,
+            UL: 1
+        },
+        PrependedArticleCandidateMinimumHeight = 50,
+        AppendedArticleCandidateMinimumHeight = 200,
+        AppendedArticleCandidateMaximumVerticalDistanceFromArticle = 150,
+        StylisticClassNames = {
+            justfy: 1,
+            justify: 1,
+            left: 1,
+            right: 1,
+            small: 1
+        },
+        CommentRegEx = /comment|meta|footer|footnote/,
+        CommentMatchPenalty = .75,
+        ArticleRegEx = /(?:(?:^|\s)(?:(post|hentry|entry)[-_]?(?:content|text|body)?|article[-_]?(?:content|text|body|page)?)(?:\s|$))/i,
+        ArticleMatchBonus = .5,
+        DensityExcludedElementSelector = &quot;#disqus_thread, #comments, .userComments&quot;,
+        AttributesToRemoveRegEx = /^on|^id$|^class$|^style$/,
+        PositiveRegEx = /article|body|content|entry|hentry|page|pagination|post|text/i,
+        NegativeRegEx = /advertisement|breadcrumb|combx|comment|contact|disqus|footer|link|meta|mod-conversations|promo|related|scroll|share|shoutbox|sidebar|social|sponsor|subscribe|tags|toolbox|widget|_ad$/i,
+        VeryPositiveClassNameRegEx = /instapaper_body/,
+        VeryNegativeClassNameRegEx = /instapaper_ignore/,
+        SharingRegex = /email|print|rss|digg|slashdot|delicious|reddit|share/i,
+        HostnamesKnownToContainEmbeddableMediaRegex = /youtube|vimeo|dailymotion/,
+        MinimumAverageDistanceBetweenHRElements = 400,
+        MinimumAverageDistanceBetweenHeaderElements = 400,
+        PortionOfCandidateHeightToIgnoreForHeaderCheck = .1,
+        DefaultNumberOfTextNodesToCheckForLanguageMultiplier = 3,
+        NumberOfCharactersPerTextNodeToEvaluateForLanguageMultiplier = 12,
+        MinimumRatioOfCharactersForLanguageMultiplier = .5,
+        ScoreMultiplierForChineseJapaneseKorean = 3,
+        MinimumContentMediaHeight = 150,
+        MinimumContentMediaWidthToArticleWidthRatio = .25,
+        MaximumContentMediaAreaToArticleAreaRatio = .2,
+        LinkContinueMatchRegEx = /continue/gi,
+        LinkNextMatchRegEx = /next/gi,
+        LinkPageMatchRegEx = /page/gi,
+        LinkListItemBonus = 5,
+        LinkPageMatchBonus = 10,
+        LinkNextMatchBonus = 15,
+        LinkContinueMatchBonus = 15,
+        LinkNextOrdinalValueBase = 3,
+        LinkMismatchValueBase = 2,
+        LinkMatchWeight = 200,
+        LinkMaxVerticalDistanceFromArticle = 200,
+        LinkVerticalDistanceFromArticleWeight = 150,
+        LinkCandidateXPathQuery = &quot;descendant-or-self::*[(not(@id) or (@id!=&apos;disqus_thread&apos; and @id!=&apos;comments&apos;)) and (not(@class) or @class!=&apos;userComments&apos;)]/a&quot;,
+        LinkDateRegex = /\D(?:\d\d(?:\d\d)?[\-\/](?:10|11|12|0?[1-9])[\-\/](?:30|31|[12][0-9]|0?[1-9])|\d\d(?:\d\d)?\/(?:10|11|12|0[1-9])|(?:10|11|12|0?[1-9])\-(?:30|31|[12][0-9]|0?[1-9])\-\d\d(?:\d\d)?|(?:30|31|[12][0-9]|0?[1-9])\-(?:10|11|12|0?[1-9])\-\d\d(?:\d\d)?)\D/,
+        LinkURLSearchParameterKeyMatchRegex = /(page|^p$|^pg$)/i,
+        LinkURLPageSlashNumberMatchRegex = /\/.*page.*\/\d+/i,
+        LinkURLSlashDigitEndMatchRegex = /\/\d+\/?$/,
+        LinkURLArchiveSlashDigitEndMatchRegex = /archives?\/\d+\/?$/,
+        LinkURLBadSearchParameterKeyMatchRegex = /author|comment|feed|id|nonce|related/i,
+        LinkURLSemanticMatchBonus = 100,
+        LinkMinimumURLSimilarityRatio = .75,
+        HeaderMinimumDistanceFromArticleTop = 200,
+        HeaderLevenshteinDistanceToLengthRatio = .75,
+        MinimumRatioOfListItemsBeingRelatedToSharingToPruneEntireList = .5,
+        FloatMinimumHeight = 130,
+        ImageSizeTiny = 32,
+        ToleranceForLeadingImageWidthToArticleWidthForFullWidthPresentation = 50,
+        MaximumFloatWidth = 325,
+        AnchorImageMinimumWidth = 100,
+        AnchorImageMinimumHeight = 100,
+        MinimumHeightForImagesAboveTheArticleTitle = 50,
+        MainImageMinimumWidthAndHeight = 83,
+        BaseFontSize = 16,
+        BaseLineHeightRatio = 1.125,
+        MaximumExactIntegralValue = 9007199254740992,
+        TitleCandidateDepthScoreMultiplier = .1,
+        DocumentPositionDisconnected = 1,
+        DocumentPositionPreceding = 2,
+        DocumentPositionFollowing = 4,
+        DocumentPositionContains = 8,
+        DocumentPositionContainedBy = 16,
+        TextNodeLengthPower = 1.25,
+        KnownImageLazyLoadingAttributes = {
+            &quot;data-lazy-src&quot;: 1,
+            &quot;data-original&quot;: 1,
+            &quot;data-src&quot;: 1,
+            &quot;original-src&quot;: 1,
+            &quot;rel:bf_image_src&quot;: 1
+        },
+        StringSimilarityToDeclareStringsNearlyIdentical = .97;
+    CandidateElement = function(e, t) {
+        this.element = e, this.contentDocument = t, this.textNodes = this.usableTextNodesInElement(this.element), this.rawScore = this.calculateRawScore(), this.tagNameAndAttributesScoreMultiplier = this.calculateElementTagNameAndAttributesScoreMultiplier(), this.languageScoreMultiplier = 0, this.depthInDocument = 0
+    }, CandidateElement.extraArticleCandidateIfElementIsViable = function(e, t, n, i) {
+        var r = cachedElementBoundingRect(e),
+            a = cachedElementBoundingRect(t.element);
+        if ((i &amp;&amp; r.height &lt; PrependedArticleCandidateMinimumHeight || !i &amp;&amp; r.height &lt; AppendedArticleCandidateMinimumHeight) &amp;&amp; e.childElementCount &amp;&amp; e.querySelectorAll(&quot;*&quot;).length !== e.querySelectorAll(&quot;a, b, strong, i, em, u, span&quot;).length)
+            return null;
+        if (i) {
+            if (r.bottom &gt; a.top)
+                return null
+        } else if (r.top &lt; a.bottom)
+            return null;
+        if (!i) {
+            var l = r.top - a.bottom;
+            if (AppendedArticleCandidateMaximumVerticalDistanceFromArticle &lt; l)
+                return null
+        }
+        if (r.left &gt; a.right || r.right &lt; a.left)
+            return null;
+        if (elementLooksLikePartOfACarousel(e))
+            return null;
+        var o = new CandidateElement(e, n);
+        return o.isPrepended = i, o
+    }, CandidateElement.candidateIfElementIsViable = function(e, t, n) {
+        var i = cachedElementBoundingRect(e);
+        return i.width &lt; CandidateMinimumWidth || i.height &lt; CandidateMinimumHeight ? null : i.width * i.height &lt; CandidateMinimumArea ? null : !n &amp;&amp; i.top &gt; CandidateMaximumTop ? null : CandidateElement.candidateElementAdjustedHeight(e) &lt; CandidateMinimumHeight ? null : new CandidateElement(e, t)
+    }, CandidateElement.candidateElementAdjustedHeight = function(e) {
+        for (var t = cachedElementBoundingRect(e), n = t.height, i = e.getElementsByTagName(&quot;form&quot;), r = i.length, a = 0; a &lt; r; ++a) {
+            var l = cachedElementBoundingRect(i[a]);
+            l.width &gt; t.width * CandidateMinimumWidthPortionForIndicatorElements &amp;&amp; (n -= l.height)
+        }
+        var o = e.querySelectorAll(&quot;ol, ul&quot;),
+            s = o.length,
+            c = null;
+        for (a = 0; a &lt; s; ++a) {
+            var h = o[a];
+            if (!(c &amp;&amp; c.compareDocumentPosition(h) &amp; DocumentPositionContainedBy)) {
+                var u = h.getElementsByTagName(&quot;li&quot;),
+                    d = u.length,
+                    m = cachedElementBoundingRect(h);
+                if (d) {
+                    var g = m.height / d,
+                        f = getComputedStyle(u[0]),
+                        p = parseInt(f.lineHeight);
+                    if (isNaN(p))
+                        p = fontSizeFromComputedStyle(f) * BaseLineHeightRatio;
+                    m.width &gt; t.width * CandidateMinimumWidthPortionForIndicatorElements &amp;&amp; g / p &lt; CandidateMinumumListItemLineCount &amp;&amp; (n -= m.height, c = h)
+                } else
+                    n -= m.height
+            }
+        }
+        return n
+    }, CandidateElement.prototype = {
+        calculateRawScore: function() {
+            for (var e = 0, t = this.textNodes, n = t.length, i = 0; i &lt; n; ++i)
+                e += this.rawScoreForTextNode(t[i]);
+            return e
+        },
+        calculateElementTagNameAndAttributesScoreMultiplier: function() {
+            return scoreMultiplierForElementTagNameAndAttributes(this.element)
+        },
+        calculateLanguageScoreMultiplier: function() {
+            0 === this.languageScoreMultiplier &amp;&amp; (this.languageScoreMultiplier = languageScoreMultiplierForTextNodes(this.textNodes))
+        },
+        depth: function() {
+            return this.depthInDocument || (this.depthInDocument = elementDepth(this.element)), this.depthInDocument
+        },
+        finalScore: function() {
+            return this.calculateLanguageScoreMultiplier(), this.basicScore() * this.languageScoreMultiplier
+        },
+        basicScore: function() {
+            return this.rawScore * this.tagNameAndAttributesScoreMultiplier
+        },
+        scoreDensity: function() {
+            var e = 0,
+                t = this.element.querySelector(DensityExcludedElementSelector);
+            t &amp;&amp; (e = t.clientWidth * t.clientHeight);
+            for (var n = this.element.children || [], i = n.length, r = 0; r &lt; i; ++r) {
+                var a = n[r];
+                elementIsCommentBlock(a) &amp;&amp; (e += a.clientWidth * a.clientHeight)
+            }
+            var l = cachedElementBoundingRect(this.element).width * cachedElementBoundingRect(this.element).height,
+                o = l * MaximumContentMediaAreaToArticleAreaRatio,
+                s = cachedElementBoundingRect(this.element).width * MinimumContentMediaWidthToArticleWidthRatio,
+                c = this.element.querySelectorAll(&quot;img, object, video&quot;),
+                h = c.length;
+            for (r = 0; r &lt; h; ++r) {
+                var u = cachedElementBoundingRect(c[r]);
+                if (u.width &gt;= s &amp;&amp; u.height &gt; MinimumContentMediaHeight) {
+                    var d = u.width * u.height;
+                    d &lt; o &amp;&amp; (e += d)
+                }
+            }
+            var m = this.basicScore(),
+                g = l - e,
+                f = this.textNodes.length,
+                p = 0,
+                v = 0;
+            for (r = 0; r &lt; f; ++r) {
+                var E = this.textNodes[r].parentNode;
+                E &amp;&amp; (v += fontSizeFromComputedStyle(getComputedStyle(E)), p++)
+            }
+            var N = BaseFontSize;
+            return p &amp;&amp; (N = v /= p), this.calculateLanguageScoreMultiplier(), m / g * 1e3 * (N / BaseFontSize) * this.languageScoreMultiplier
+        },
+        usableTextNodesInElement: function(e) {
+            var a = [];
+            if (!e)
+                return a;
+            var l = {
+                    A: 1,
+                    DD: 1,
+                    DT: 1,
+                    NOSCRIPT: 1,
+                    OL: 1,
+                    OPTION: 1,
+                    PRE: 1,
+                    SCRIPT: 1,
+                    STYLE: 1,
+                    TD: 1,
+                    UL: 1,
+                    IFRAME: 1
+                },
+                o = this.contentDocument,
+                t = function(e) {
+                    for (var t = o.evaluate(&quot;text()|*/text()|*/a/text()|*/li/text()|*/span/text()|*/em/text()|*/i/text()|*/strong/text()|*/b/text()|*/font/text()|blockquote/*/text()|div[count(./p)=count(./*)]/p/text()&quot;, e, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null), n = t.snapshotLength, i = 0; i &lt; n; ++i) {
+                        var r = t.snapshotItem(i);
+                        l[r.parentNode.tagName] || r._countedTextNode || isNodeWhitespace(r) || (r._countedTextNode = !0, a.push(r))
+                    }
+                };
+            t(e);
+            for (var n = childrenWithParallelStructure(e), i = n.length, r = 0; r &lt; i; ++r) {
+                t(n[r])
+            }
+            var s = a.length;
+            for (r = 0; r &lt; s; ++r)
+                delete a[r]._countedTextNode;
+            return a
+        },
+        addTextNodesFromCandidateElement: function(e) {
+            for (var t = this.textNodes.length, n = 0; n &lt; t; ++n)
+                this.textNodes[n].alreadyCounted = !0;
+            var i = e.textNodes,
+                r = i.length;
+            for (n = 0; n &lt; r; ++n)
+                i[n].alreadyCounted || this.textNodes.push(i[n]);
+            for (t = this.textNodes.length, n = 0; n &lt; t; ++n)
+                this.textNodes[n].alreadyCounted = null;
+            this.rawScore = this.calculateRawScore()
+        },
+        rawScoreForTextNode: function(e) {
+            if (!e)
+                return 0;
+            var t = e.length;
+            if (t &lt; 20)
+                return 0;
+            var n = e.parentNode;
+            if (!isElementVisible(n))
+                return 0;
+            for (var i = 1; n &amp;&amp; n !== this.element;)
+                i -= .1, n = n.parentNode;
+            return Math.pow(t * i, TextNodeLengthPower)
+        },
+        shouldDisqualifyDueToScoreDensity: function() {
+            return this.scoreDensity() &lt; ArticleMinimumScoreDensity
+        },
+        shouldDisqualifyDueToHorizontalRuleDensity: function() {
+            for (var e = this.element.getElementsByTagName(&quot;hr&quot;), t = e.length, n = 0, i = cachedElementBoundingRect(this.element), r = .7 * i.width, a = 0; a &lt; t; ++a)
+                e[a].clientWidth &gt; r &amp;&amp; n++;
+            if (n &amp;&amp; i.height / n &lt; MinimumAverageDistanceBetweenHRElements)
+                return !0;
+            return !1
+        },
+        shouldDisqualifyDueToHeaderDensity: function() {
+            var e = this.contentDocument.evaluate(&quot;(h1|h2|h3|h4|h5|h6|*/h1|*/h2|*/h3|*/h4|*/h5|*/h6)[a[@href]]&quot;, this.element, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null),
+                t = e.snapshotLength;
+            if (2 &lt; t) {
+                for (var n = 0, i = cachedElementBoundingRect(this.element), r = i.height * PortionOfCandidateHeightToIgnoreForHeaderCheck, a = 0; a &lt; t; ++a) {
+                    var l = cachedElementBoundingRect(e.snapshotItem(a));
+                    l.top - i.top &gt; r &amp;&amp; i.bottom - l.bottom &gt; r &amp;&amp; n++
+                }
+                if (i.height / n &lt; MinimumAverageDistanceBetweenHeaderElements)
+                    return !0
+            }
+            return !1
+        },
+        shouldDisqualifyDueToSimilarElements: function(e) {
+            function t(e) {
+                return !!{
+                    H1: 1,
+                    H2: 1,
+                    H3: 1,
+                    H4: 1,
+                    H5: 1,
+                    H6: 1
+                }[e.tagName]
+            }
+            function n(e, t) {
+                if (!e || !t)
+                    return !1;
+                return e.className ? e.className === t.className : elementFingerprintForDepth(e, 1) === elementFingerprintForDepth(t, 1)
+            }
+            var i = /clearfix/i,
+                r = &quot;h1, h2, h3, h4, h5, h6&quot;,
+                a = this.element;
+            if (&quot;LI&quot; === a.tagName || &quot;DD&quot; === a.tagName)
+                if (&quot;LI&quot; === a.tagName &amp;&amp; 480 &lt; a.getBoundingClientRect().height)
+                    a.removeAttribute(&quot;style&quot;);
+                else
+                    for (var l = a.parentNode, o = l.children.length, s = 0; s &lt; o; ++s) {
+                        if ((v = l.children[s]).tagName === a.tagName &amp;&amp; v.className === a.className &amp;&amp; v !== a)
+                            return !0
+                    }
+            var c = a.getAttribute(&quot;class&quot;);
+            if (c || (a = a.parentElement) &amp;&amp; ((c = a.getAttribute(&quot;class&quot;)) || (a = a.parentElement) &amp;&amp; (c = a.getAttribute(&quot;class&quot;))), c) {
+                e || (e = []);
+                var h,
+                    u = e.length;
+                for (s = 0; s &lt; u; ++s)
+                    e[s].element.candidateElement = e[s];
+                try {
+                    var d = c.split(&quot; &quot;),
+                        m = &quot;&quot;;
+                    for (s = 0; s &lt; d.length; ++s)
+                        i.test(d[s]) || d[s].length &amp;&amp; (m += &quot;.&quot; + d[s]);
+                    h = this.contentDocument.querySelectorAll(m)
+                } catch (e) {
+                    h = []
+                }
+                var g = !1,
+                    f = elementDepth(a),
+                    p = h.length;
+                for (s = 0; s &lt; p; ++s) {
+                    var v;
+                    if ((v = h[s]) !== a &amp;&amp; (v.parentElement !== a &amp;&amp; a.parentElement !== v &amp;&amp; isElementVisible(v))) {
+                        var E = v.candidateElement;
+                        if ((E || (E = new CandidateElement(v, this.contentDocument))) &amp;&amp; E.basicScore() * ReaderMinimumAdvantage &gt; this.basicScore()) {
+                            if (!g &amp;&amp; cachedElementBoundingRect(v).bottom &lt; cachedElementBoundingRect(this.element).top) {
+                                g = !0;
+                                continue
+                            }
+                            if (n(a.previousElementSibling, v.previousElementSibling) || n(a.nextElementSibling, v.nextElementSibling)) {
+                                var N = a.querySelector(r),
+                                    S = v.querySelector(r);
+                                if (N &amp;&amp; S &amp;&amp; elementsHaveSameTagAndClassNames(N, S))
+                                    return !0;
+                                if (N = a.previousElementSibling, S = v.previousElementSibling, N &amp;&amp; S &amp;&amp; t(N) &amp;&amp; t(S) &amp;&amp; elementsHaveSameTagAndClassNames(N, S))
+                                    return !0
+                            }
+                            if (elementDepth(v) === f)
+                                for (; v.parentElement &amp;&amp; a.parentElement &amp;&amp; v.parentElement !== a.parentElement;)
+                                    v = v.parentElement, a = a.parentElement;
+                            for (; a.childElementCount &lt;= 1;) {
+                                if (!a.childElementCount || !v.childElementCount)
+                                    return !1;
+                                if (1 &lt; v.childElementCount)
+                                    return !1;
+                                if (a.firstElementChild.tagName !== v.firstElementChild.tagName)
+                                    return !1;
+                                a = a.firstElementChild, v = v.firstElementChild
+                            }
+                            if (v.childElementCount &lt;= 1)
+                                return !1;
+                            S = v.firstElementChild;
+                            var T = v.lastElementChild,
+                                A = (N = a.firstElementChild, a.lastElementChild);
+                            if (S.tagName !== N.tagName)
+                                return !1;
+                            if (T.tagName !== A.tagName)
+                                return !1;
+                            var x = S.className,
+                                C = T.className,
+                                y = N.className,
+                                b = T.className,
+                                R = b === y ? 2 : 1;
+                            if (x.length || y.length) {
+                                if (!x.length || !y.length)
+                                    return !1;
+                                if (x === y &amp;&amp; a.querySelectorAll(&quot;.&quot; + y.replace(/\s+/, &quot;.&quot;)).length &lt;= R)
+                                    return !0
+                            }
+                            if (C.length || b.length) {
+                                if (!C.length || !b.length)
+                                    return !1;
+                                if (C === b &amp;&amp; a.querySelectorAll(&quot;.&quot; + b.replace(/\s+/, &quot;.&quot;)).length &lt;= R)
+                                    return !0
+                            }
+                            var D = N.clientHeight,
+                                L = A.clientHeight;
+                            return !(!D || !S.clientHeight) &amp;&amp; (!(!L || !T.clientHeight) &amp;&amp; (D === S.clientHeight || L === T.clientHeight))
+                        }
+                    }
+                }
+                for (s = 0; s &lt; u; ++s)
+                    e[s].element.candidateElement = null
+            }
+            return !1
+        },
+        shouldDisqualifyForDeepLinking: function() {
+            function e(e) {
+                var t = e.pathname.substring(1).split(&quot;/&quot;);
+                return t[t.length - 1] || t.pop(), t
+            }
+            for (var t = this.element, n = this.contentDocument.location, i = e(n).length, r = [], a = t.getElementsByTagName(&quot;a&quot;), l = a.length, o = 0; o &lt; l; o++) {
+                var s = a[o];
+                if (n.host === s.host &amp;&amp; !(e(s).length &lt;= i || 0 !== (s.host + s.pathname).indexOf(n.host + n.pathname) || anchorLinksToAttachment(s) || (r.push(s), r.length &lt; 5))) {
+                    var c = t.offsetTop + t.offsetHeight / 5;
+                    return r[0].offsetTop &lt; c
+                }
+            }
+            return !1
+        }
+    }, ReaderArticleFinder = function(e) {
+        this.contentDocument = e, this.didSearchForArticleNode = !1, this.article = null, this.didSearchForExtraArticleNode = !1, this.extraArticle = null, this.leadingImage = null, this._cachedScrollY = 0, this._cachedScrollX = 0, this._elementsWithCachedBoundingRects = [], this._cachedContentTextStyle = null, this.pageNumber = 1, this.prefixWithDateForNextPageURL = null, this._elementsEvaluatedForTextContent = [], this.previouslyDiscoveredPageURLStrings = []
+    }, ReaderArticleFinder.prototype = {
+        isReaderModeAvailable: function() {
+            return this.canRunReaderDetection() ? !!this.findArticleBySearchingWhitelist() || (this.cacheWindowScrollPosition(), this.article = this.findArticleByVisualExamination(), this.article &amp;&amp; this.articleIsLTR(), !!this.article) : null
+        },
+        prepareToTransitionToReader: function() {
+            this.adoptableArticle(!0), this.nextPageURL(), this.articleIsLTR()
+        },
+        nextPageURL: function() {
+            return null
+        },
+        containerElementsForMultiPageContent: function() {
+            for (var e, t = /(.*page.*)(\d{1,2})(.*)/i, n = [], i = this.articleNode(), r = 0; !(e = t.exec(i.getAttribute(&quot;id&quot;)));)
+                if (!(i = i.parentElement) || 3 == r++)
+                    return [];
+            for (var a = childrenOfParentElement(i), l = a.length, o = 0; o &lt; l; ++o) {
+                var s = a[o];
+                if (s !== i) {
+                    var c = t.exec(s.getAttribute(&quot;id&quot;));
+                    c &amp;&amp; c[1] === e[1] &amp;&amp; c[3] === e[3] &amp;&amp; (isElementVisible(s) &amp;&amp; !isElementPositionedOffScreen(s) || n.push(s))
+                }
+            }
+            return n
+        },
+        adoptableMultiPageContentElements: function() {
+            return this.containerElementsForMultiPageContent().map(function(e) {
+                return this.cleanArticleNode(e, e.cloneNode(!0), !1)
+            }, this)
+        },
+        classNameIsSignificantInRouteComputation: function(e) {
+            return !!e &amp;&amp; !(e.toLowerCase() in StylisticClassNames)
+        },
+        shouldIgnoreInRouteComputation: function(e) {
+            return &quot;SCRIPT&quot; === e.tagName || &quot;LINK&quot; === e.tagName || &quot;STYLE&quot; === e.tagName || &quot;TR&quot; === e.tagName &amp;&amp; !e.offsetHeight
+        },
+        routeToArticleNode: function() {
+            for (var e = [], t = this.articleNode(); t;) {
+                var n = {};
+                n.tagName = t.tagName;
+                var i = t.getAttribute(&quot;id&quot;);
+                i &amp;&amp; (n.id = i), this.classNameIsSignificantInRouteComputation(t.className) &amp;&amp; (n.className = t.className), n.index = 1;
+                for (var r = t.previousElementSibling; r; r = r.previousElementSibling)
+                    this.shouldIgnoreInRouteComputation(r) || n.index++;
+                e.unshift(n), t = t.parentElement
+            }
+            return e
+        },
+        adjustArticleNode: function() {
+            if (this.article) {
+                var e;
+                for (e = this.article.element; e; e = e.parentElement)
+                    if (VeryPositiveClassNameRegEx.test(e.className))
+                        return void (this.article.element = e);
+                if (&quot;SECTION&quot; === (e = this.article.element).tagName &amp;&amp; e.parentElement &amp;&amp; &quot;articleBody&quot; === e.parentElement.getAttribute(&quot;itemprop&quot;))
+                    this.article.element = e.parentElement;
+                else if (!(e = this.article.element).getAttribute(&quot;id&quot;) &amp;&amp; e.className)
+                    for (var t = e.tagName, n = e.className, i = e.parentElement, r = i.children, a = 0, l = r.length; a &lt; l; ++a) {
+                        var o = r[a];
+                        if (o !== e &amp;&amp; (o.tagName === t &amp;&amp; o.className === n)) {
+                            var s = CandidateElement.candidateIfElementIsViable(o, this.contentDocument, !0);
+                            if (s &amp;&amp; !(s.finalScore() &lt; ReaderMinimumScore))
+                                return void (this.article.element = i)
+                        }
+                    }
+            }
+        },
+        findArticleBySearchingWhitelist: function() {
+            for (var e = ListOfHostnameAndTrustedArticleNodeSelectorPairs.length, t = 0; t &lt; e; ++t) {
+                var n = ListOfHostnameAndTrustedArticleNodeSelectorPairs[t];
+                if (n[0].test(this.contentDocument.location.hostname)) {
+                    var i = n[1],
+                        r = this.contentDocument.querySelectorAll(i);
+                    if (1 === r.length)
+                        return new CandidateElement(r[0], this.contentDocument)
+                }
+            }
+            return null
+        },
+        fixRelativeUris: function(e) {
+            if (e) {
+                var t = document.location,
+                    n = {
+                        spec: t.href,
+                        host: t.host,
+                        prePath: t.protocol + &quot;//&quot; + t.host,
+                        scheme: t.protocol.substr(0, t.protocol.indexOf(&quot;:&quot;)),
+                        pathBase: t.protocol + &quot;//&quot; + t.host + t.pathname.substr(0, t.pathname.lastIndexOf(&quot;/&quot;) + 1)
+                    },
+                    i = n.scheme,
+                    r = n.prePath,
+                    a = n.pathBase;
+                o(e.getElementsByTagName(&quot;a&quot;), function(e) {
+                    var t = e.getAttribute(&quot;href&quot;);
+                    if (t)
+                        if (0 === t.indexOf(&quot;javascript:&quot;)) {
+                            var n = document.createTextNode(e.textContent);
+                            e.parentNode.replaceChild(n, e)
+                        } else
+                            e.setAttribute(&quot;href&quot;, l(t))
+                }), o(e.getElementsByTagName(&quot;img&quot;), function(e) {
+                    var t = e.getAttribute(&quot;src&quot;);
+                    t &amp;&amp; e.setAttribute(&quot;src&quot;, l(t))
+                })
+            }
+            function l(e) {
+                return /^[a-zA-Z][a-zA-Z0-9\+\-\.]*:/.test(e) ? e : &quot;//&quot; == e.substr(0, 2) ? i + &quot;://&quot; + e.substr(2) : &quot;/&quot; == e[0] ? r + e : 0 === e.indexOf(&quot;./&quot;) ? a + e.slice(2) : &quot;#&quot; == e[0] ? e : a + e
+            }
+            function o(e, t) {
+                for (var n = 0; n &lt; e.length; n++)
+                    t(e[n])
+            }
+        },
+        articleNode: function(e) {
+            return this.didSearchForArticleNode || (this.article = this.findArticleBySearchingWhitelist(), this.article || (this.article = this.findArticleBySearchingAllElements()), this.article || (this.article = this.findArticleByVisualExamination()), !this.article &amp;&amp; e &amp;&amp; (this.article = this.findArticleBySearchingAllElements(!0)), this.adjustArticleNode(), this.didSearchForArticleNode = !0, this.article &amp;&amp; this.articleIsLTR()), this.article ? this.article.element : null
+        },
+        extraArticleNode: function() {
+            return this.didSearchForArticleNode || this.articleNode(), this.didSearchForExtraArticleNode || (this.extraArticle = this.findExtraArticle(), this.didSearchForExtraArticleNode = !0), this.extraArticle ? this.extraArticle.element : null
+        },
+        cacheWindowScrollPosition: function() {
+            this._cachedScrollY = window.scrollY, this._cachedScrollX = window.scrollX
+        },
+        contentTextStyle: function() {
+            return this._cachedContentTextStyle || (this._cachedContentTextStyle = contentTextStyleForNode(this.contentDocument, this.articleNode()), this._cachedContentTextStyle || (this._cachedContentTextStyle = getComputedStyle(this.articleNode()))), this._cachedContentTextStyle
+        },
+        commaCountIsLessThan: function(e, t) {
+            for (var n = 0, i = e.textContent, r = -1; n &lt; t &amp;&amp; 0 &lt;= (r = i.indexOf(&quot;,&quot;, r + 1));)
+                n++;
+            return n &lt; t
+        },
+        calculateLinkDensity: function(e) {
+            var t = removeWhitespace(e.textContent).length;
+            if (!t)
+                return 0;
+            for (var n = e.getElementsByTagName(&quot;a&quot;), i = 0, r = n.length, a = 0; a &lt; r; ++a)
+                i += removeWhitespace(n[a].textContent).length;
+            return i / t
+        },
+        shouldPruneElement: function(e, t) {
+            var n = e.tagName;
+            if (!e.parentElement)
+                return !1;
+            if (&quot;IFRAME&quot; === n)
+                return shouldPruneIframe(e, this.contentDocument);
+            if (&quot;OBJECT&quot; !== n &amp;&amp; &quot;EMBED&quot; !== n &amp;&amp; &quot;CANVAS&quot; !== n) {
+                for (var i = !1, r = e.childNodes.length, a = 0; a &lt; r; ++a) {
+                    var l = e.childNodes[a],
+                        o = l.nodeType;
+                    if (o === Node.ELEMENT_NODE || o === Node.TEXT_NODE &amp;&amp; !isNodeWhitespace(l)) {
+                        i = !0;
+                        break
+                    }
+                }
+                if (!i) {
+                    if (&quot;P&quot; === n) {
+                        var s = e.previousSibling,
+                            c = e.nextSibling;
+                        if (s &amp;&amp; s.nodeType === Node.TEXT_NODE &amp;&amp; !isNodeWhitespace(s) &amp;&amp; c &amp;&amp; c.nodeType === Node.TEXT_NODE &amp;&amp; !isNodeWhitespace(c))
+                            return !1
+                    }
+                    return !0
+                }
+                if (&quot;P&quot; === n)
+                    return !1
+            }
+            if (&quot;CANVAS&quot; === n)
+                return &quot;CUFON&quot; === e.parentNode.tagName;
+            var h = 0;
+            if (t) {
+                if (VeryNegativeClassNameRegEx.test(t.className))
+                    return !0;
+                var u = t.className,
+                    d = t.getAttribute(&quot;id&quot;);
+                PositiveRegEx.test(u) &amp;&amp; h++, PositiveRegEx.test(d) &amp;&amp; h++, NegativeRegEx.test(u) &amp;&amp; h--, NegativeRegEx.test(d) &amp;&amp; h--
+            }
+            if (h &lt; 0)
+                return !0;
+            if (e.querySelector(&quot;.tweet-wrapper&quot;))
+                return !1;
+            if (&quot;UL&quot; === n || &quot;OL&quot; === n) {
+                if (t.querySelector(&quot;iframe&quot;) &amp;&amp; t.querySelector(&quot;script&quot;))
+                    return !0;
+                var m = t.children,
+                    g = m.length;
+                if (!g)
+                    return !0;
+                var f = 0,
+                    p = 0;
+                for (a = 0; a &lt; g; ++a)
+                    SharingRegex.test(m[a].className) &amp;&amp; f++, NegativeRegEx.test(m[a].className) &amp;&amp; p++;
+                return MinimumRatioOfListItemsBeingRelatedToSharingToPruneEntireList &lt;= f / g || MinimumRatioOfListItemsBeingRelatedToSharingToPruneEntireList &lt;= p / g
+            }
+            if (&quot;OBJECT&quot; === n) {
+                var v = e.querySelector(&quot;embed[src]&quot;),
+                    E = v ? anchorForURL(v.src, this.contentDocument) : null;
+                if (E &amp;&amp; HostnamesKnownToContainEmbeddableMediaRegex.test(E.hostname))
+                    return !1;
+                var N = e.getAttribute(&quot;data&quot;);
+                return !(E = N ? anchorForURL(N, this.contentDocument) : null) || !HostnamesKnownToContainEmbeddableMediaRegex.test(E.hostname)
+            }
+            if (1 === e.childElementCount) {
+                var S = e.firstElementChild;
+                if (&quot;A&quot; === S.tagName)
+                    return !1;
+                if (&quot;SPAN&quot; === S.tagName &amp;&amp; &quot;converted-anchor&quot; === S.className &amp;&amp; nearestAncestorElementWithTagName(S, &quot;TABLE&quot;))
+                    return !1
+            }
+            var T = e.getElementsByTagName(&quot;img&quot;),
+                A = T.length;
+            if (A) {
+                var x = 0;
+                for (a = 0; a &lt; A; ++a) {
+                    var C = T[a].originalElement;
+                    if (isElementVisible(C)) {
+                        var y = cachedElementBoundingRect(C);
+                        x += y.width / A * (y.height / A)
+                    }
+                }
+                if (4e4 &lt; x)
+                    return !1
+            }
+            if (!this.commaCountIsLessThan(e, 10))
+                return !1;
+            var b = e.getElementsByTagName(&quot;p&quot;).length,
+                R = e.getElementsByTagName(&quot;br&quot;).length,
+                D = b + Math.floor(R / 2);
+            if (D &lt; A)
+                return !0;
+            if (e.getElementsByTagName(&quot;li&quot;).length &gt; D)
+                return !0;
+            if (.33 &lt; e.getElementsByTagName(&quot;input&quot;).length / D)
+                return !0;
+            if (e.textContent.length &lt; 25 &amp;&amp; 1 !== A)
+                return !0;
+            if (e.querySelector(&quot;embed&quot;))
+                return !0;
+            var L = this.calculateLinkDensity(e);
+            if (1 &lt;= h &amp;&amp; .5 &lt; L)
+                return !0;
+            if (h &lt; 1 &amp;&amp; .2 &lt; L)
+                return !0;
+            if (&quot;TABLE&quot; === n &amp;&amp; removeWhitespace(e.innerText).length &lt;= .5 * removeWhitespace(t.innerText).length)
+                return !0;
+            return !1
+        },
+        wordCountIsLessThan: function(e, t) {
+            for (var n = 0, i = e.textContent, r = -1; 0 &lt;= (r = i.indexOf(&quot; &quot;, r + 1)) &amp;&amp; n &lt; t;)
+                n++;
+            return n &lt; t
+        },
+        leadingImageIsAppropriateWidth: function(e) {
+            return !(!this.article || !e) &amp;&amp; e.getBoundingClientRect().width &gt;= this.article.element.getBoundingClientRect().width - ToleranceForLeadingImageWidthToArticleWidthForFullWidthPresentation
+        },
+        newDivFromNode: function(e) {
+            var t = this.contentDocument.createElement(&quot;div&quot;);
+            return e &amp;&amp; (t.innerHTML = e.innerHTML), t
+        },
+        adoptableLeadingImage: function() {
+            var e = /credit/,
+                t = /caption/,
+                n = /src|alt/;
+            if (!this.article || !this.leadingImage || !this.leadingImageIsAppropriateWidth(this.leadingImage))
+                return null;
+            var i = this.leadingImage.parentNode,
+                r = null,
+                a = null,
+                l = i.children.length;
+            if (&quot;DIV&quot; === i.tagName &amp;&amp; 1 &lt; l &amp;&amp; l &lt; 5)
+                for (var o = i.cloneNode(!0).querySelectorAll(&quot;p, div&quot;), s = o.length, c = 0; c &lt; s; ++c) {
+                    var h = o[c];
+                    e.test(h.className) ? r = h.cloneNode(!0) : t.test(h.className) &amp;&amp; (a = h.cloneNode(!0))
+                }
+            var u = this.leadingImage.cloneNode(!1),
+                d = u.attributes;
+            for (c = 0; c &lt; d.length; ++c) {
+                var m = d[c].nodeName;
+                n.test(m) || (u.removeAttribute(m), c--)
+            }
+            var g = this.contentDocument.createElement(&quot;div&quot;);
+            if (g.className = &quot;leading-image&quot;, g.appendChild(u), r) {
+                var f = this.newDivFromNode(r);
+                f.className = &quot;credit&quot;, g.appendChild(f)
+            }
+            if (a) {
+                var p = this.newDivFromNode(a);
+                p.className = &quot;caption&quot;, g.appendChild(p)
+            }
+            return g
+        },
+        adoptableArticle: function(e) {
+            if (this._adoptableArticle)
+                return this._adoptableArticle.cloneNode(!0);
+            clearCachedElementBoundingRects(), this.cacheWindowScrollPosition();
+            var t = this.articleNode(e);
+            if (this._adoptableArticle = t ? t.cloneNode(!0) : null, !this._adoptableArticle)
+                return this._adoptableArticle;
+            if (this._articleBoundingRect = cachedElementBoundingRect(this.article.element), this._adoptableArticle = this.cleanArticleNode(t, this._adoptableArticle, !1), &quot;P&quot; === this._adoptableArticle.tagName) {
+                var n = document.createElement(&quot;div&quot;);
+                n.appendChild(this._adoptableArticle), this._adoptableArticle = n
+            }
+            var i = this.extraArticleNode();
+            if (i) {
+                var r = this.cleanArticleNode(i, i.cloneNode(!0), !0);
+                r &amp;&amp; (this.extraArticle.isPrepended ? this._adoptableArticle.insertBefore(r, this._adoptableArticle.firstChild) : this._adoptableArticle.appendChild(r));
+                var a = cachedElementBoundingRect(this.article.element),
+                    l = cachedElementBoundingRect(this.extraArticle.element),
+                    o = {
+                        top: Math.min(a.top, l.top),
+                        right: Math.max(a.right, l.right),
+                        bottom: Math.max(a.bottom, l.bottom),
+                        left: Math.min(a.left, l.left)
+                    };
+                o.width = o.right - o.left, o.height = o.bottom - o.top, this._articleBoundingRect = o
+            }
+            this._articleTextContent = this._adoptableArticle.innerText;
+            var s = this.adoptableLeadingImage(),
+                c = (s &amp;&amp; this._adoptableArticle.insertBefore(s, this._adoptableArticle.firstChild), this._adoptableArticle);
+            return this.fixRelativeUris(c), c
+        },
+        elementPinToEdge: function(e) {
+            if (window.scrollY &lt; 120)
+                return null;
+            var t = cachedElementBoundingRect(e),
+                n = e.ownerDocument.elementFromPoint((t.left + t.right) / 2, 0);
+            n &amp;&amp; n.tagName in {
+                AREA: 1,
+                BR: 1,
+                CANVAS: 1,
+                EMBED: 1,
+                FRAME: 1,
+                HR: 1,
+                IMG: 1,
+                INPUT: 1
+            } &amp;&amp; (n = n.parentElement);
+            for (var i = n; i &amp;&amp; i !== e;)
+                i = i.parentNode;
+            return i ? n : null
+        },
+        dominantContentSelectorAndDepth: function(e) {
+            var i = {},
+                r = {};
+            walkElementSubtree(e, 2, function(e, t) {
+                if (isElementVisible(e)) {
+                    var n = selectorForElement(e) + &quot; | &quot; + t;
+                    r[n] ? r[n] += 1 : (r[n] = 1, i[n] = e)
+                }
+            });
+            var t,
+                n = arrayOfKeysAndValuesOfObjectSortedByValueDescending(r);
+            switch (n.length) {
+            case 0:
+                break;
+            case 1:
+                t = n[0].key;
+                break;
+            default:
+                var a = n[0];
+                a.value &gt; n[1].value &amp;&amp; (t = a.key)
+            }
+            if (!t)
+                return null;
+            var l = i[t];
+            return {
+                selector: selectorForElement(l),
+                depth: depthOfElementWithinElement(l, e)
+            }
+        },
+        functionToPreventPruningElementDueToInvisibility: function() {
+            for (var e = [[/nytimes.com/, function(e, t) {
+                    var n = e;
+                    if (!t)
+                        return !1;
+                    for (; n &amp;&amp; n !== t;) {
+                        if (n.classList.contains(&quot;hidden&quot;))
+                            return !0;
+                        n = n.parentElement
+                    }
+                    return !1
+                }]], t = e.length, n = 0; n &lt; t; ++n) {
+                var i = e[n];
+                if (i[0].test(this.contentDocument.location.hostname))
+                    return i[1]
+            }
+            return function() {
+                return !1
+            }
+        },
+        cleanArticleNode: function(d, e, t) {
+            function n(e) {
+                c += e, h &amp;&amp; (h += e), u &amp;&amp; (u += e), m &amp;&amp; (m += e), g &amp;&amp; (g += e)
+            }
+            function i(e) {
+                if (50 &lt; cachedElementBoundingRect(e).height)
+                    return !1;
+                return !!{
+                        UL: 1,
+                        LI: 1,
+                        NAV: 1
+                    }[e.tagName] || e.parentElement === d &amp;&amp; !e.nextElementSibling
+            }
+            var r = {
+                    FORM: 1,
+                    SCRIPT: 1,
+                    STYLE: 1,
+                    LINK: 1
+                },
+                a = {
+                    DIV: 1,
+                    TABLE: 1,
+                    OBJECT: 1,
+                    UL: 1,
+                    CANVAS: 1,
+                    P: 1,
+                    IFRAME: 1,
+                    ASIDE: 1,
+                    SECTION: 1,
+                    FOOTER: 1,
+                    NAV: 1,
+                    OL: 1
+                },
+                l = {
+                    I: 1,
+                    EM: 1
+                },
+                o = {
+                    B: 1,
+                    STRONG: 1,
+                    H1: 1,
+                    H2: 1,
+                    H3: 1,
+                    H4: 1,
+                    H5: 1,
+                    H6: 1
+                },
+                s = [],
+                c = 0,
+                h = 0,
+                u = 0,
+                m = 0,
+                g = 0,
+                f = d,
+                p = f.ownerDocument.defaultView,
+                v = e,
+                E = this.articleTitle(),
+                N = this._articleTitleElement,
+                S = this.elementPinToEdge(d),
+                T = null,
+                A = isElementVisible(d),
+                x = this.dominantContentSelectorAndDepth(d),
+                C = function() {
+                    var e = cachedElementBoundingRect(d);
+                    if (0 === e.width || 0 === e.height)
+                        return !0;
+                    var t,
+                        n = childrenWithParallelStructure(d),
+                        i = n.length;
+                    if (i) {
+                        t = [];
+                        for (var r = 0; r &lt; i; ++r) {
+                            var a = n[r];
+                            if (&quot;none&quot; === getComputedStyle(a).float)
+                                for (var l = a.children, o = l.length, s = 0; s &lt; o; ++s)
+                                    t.push(l[s]);
+                            else
+                                t.push(a)
+                        }
+                    } else
+                        t = d.children;
+                    var c = t.length,
+                        h = 0;
+                    for (r = 0; r &lt; c; ++r) {
+                        var u = t[r];
+                        &quot;none&quot; !== getComputedStyle(u).float &amp;&amp; (h += u.innerText.length)
+                    }
+                    return .8 &lt; h / d.innerText.length
+                }(),
+                y = new Set;
+            this.previouslyDiscoveredPageURLStrings.forEach(function(e) {
+                y.add(e)
+            });
+            var b = this.nextPageURL();
+            b &amp;&amp; y.add(b);
+            var R = null;
+            this._articleTitleElement &amp;&amp; (R = cachedElementBoundingRect(this._articleTitleElement));
+            for (var D = this.functionToPreventPruningElementDueToInvisibility(); f;) {
+                var L,
+                    M = null,
+                    I = v.tagName;
+                if ((v.originalElement = f) === S &amp;&amp; (T = v), I in r &amp;&amp; (M = v), !M &amp;&amp; f === N &amp;&amp; (M = v), !M &amp;&amp; (&quot;H1&quot; === I || &quot;H2&quot; === I))
+                    if (f.offsetTop - d.offsetTop &lt; HeaderMinimumDistanceFromArticleTop) {
+                        var B = innerTextOrTextContent(f),
+                            P = B.length * HeaderLevenshteinDistanceToLengthRatio;
+                        levenshteinDistance(E, B) &lt;= P &amp;&amp; (M = v)
+                    }
+                if (M || this.isMediaWikiPage() &amp;&amp; /editsection/.test(f.className) &amp;&amp; (M = v), M || (L = getComputedStyle(f)), !M &amp;&amp; &quot;DIV&quot; === I &amp;&amp; v.parentNode) {
+                    var w = f.querySelectorAll(&quot;a, blockquote, dl, div, img, ol, p, pre, table, ul&quot;);
+                    if (!(h || &quot;none&quot; !== L.float) &amp;&amp; !w.length) {
+                        for (var F = v.parentNode, O = this.contentDocument.createElement(&quot;p&quot;); v.firstChild;) {
+                            var _ = v.firstChild;
+                            O.appendChild(_)
+                        }
+                        F.replaceChild(O, v), T === v &amp;&amp; (T = O), (v = O).originalElement = f, I = v.tagName
+                    }
+                }
+                if (!M &amp;&amp; v.parentNode &amp;&amp; I in a &amp;&amp; s.push(v), !M) {
+                    if (A)
+                        if (&quot;none&quot; === L.display || &quot;visible&quot; !== L.visibility || computedStyleIndicatesElementIsInvisibleDueToClipping(L))
+                            !(!!x &amp;&amp; (c === x.depth &amp;&amp; selectorForElement(f) === x.selector)) &amp;&amp; !D(f, d) &amp;&amp; (M = v);
+                    isElementPositionedOffScreen(f) ? M = v : f !== d &amp;&amp; !h &amp;&amp; &quot;none&quot; !== L.float &amp;&amp; !C &amp;&amp; (cachedElementBoundingRect(f).height &gt;= FloatMinimumHeight || 1 &lt; f.childElementCount) &amp;&amp; (h = 1)
+                }
+                if (!M) {
+                    for (var k = v.attributes, H = 0; H &lt; k.length; ++H) {
+                        var W = k[H].nodeName;
+                        AttributesToRemoveRegEx.test(W) &amp;&amp; (v.removeAttribute(W), H--)
+                    }
+                    if (&quot;both&quot; === L.clear &amp;&amp; v.classList.add(&quot;clear&quot;), (&quot;UL&quot; === I || &quot;OL&quot; === I) &amp;&amp; &quot;none&quot; === L[&quot;list-style-type&quot;] &amp;&amp; &quot;none&quot; === L[&quot;background-image&quot;]) {
+                        var V = f.children,
+                            q = V.length,
+                            U = !0;
+                        for (H = 0; H &lt; q; ++H) {
+                            var z = getComputedStyle(V[H]);
+                            if (&quot;none&quot; !== z[&quot;list-style-type&quot;] || 0 !== parseInt(z[&quot;-webkit-padding-start&quot;])) {
+                                U = !1;
+                                break
+                            }
+                        }
+                        U &amp;&amp; v.classList.add(&quot;list-style-type-none&quot;)
+                    }
+                    if (!m &amp;&amp; &quot;normal&quot; !== L.fontStyle &amp;&amp; (I in l || (v.style.fontStyle = L.fontStyle), m = 1), !g &amp;&amp; &quot;normal&quot; !== L.fontWeight &amp;&amp; (I in o || (v.style.fontWeight = L.fontWeight), g = 1), h) {
+                        1 === h &amp;&amp; (cachedElementBoundingRect(f).width &lt;= MaximumFloatWidth ? v.setAttribute(&quot;class&quot;, &quot;auxiliary float &quot; + L.float) : v.classList.add(&quot;auxiliary&quot;));
+                        var X = f.style.getPropertyValue(&quot;width&quot;);
+                        if (X)
+                            v.style.width = X;
+                        else {
+                            var Y = p.getMatchedCSSRules(f, &quot;&quot;, !0);
+                            if (Y)
+                                for (H = Y.length - 1; 0 &lt;= H; --H)
+                                    if (X = Y[H].style.getPropertyValue(&quot;width&quot;)) {
+                                        v.style.width = X;
+                                        break
+                                    }
+                        }
+                        1 === h &amp;&amp; !X &amp;&amp; (v.style.width = cachedElementBoundingRect(f).width + &quot;px&quot;);
+                        var J = v.parentNode === e ? 36 : 12,
+                            K = v.style.width;
+                        K &amp;&amp; parseInt(K) &gt;= screen.width - J &amp;&amp; v.setAttribute(&quot;class&quot;, &quot;large-element&quot;)
+                    }
+                    if (&quot;TABLE&quot; === I)
+                        u || (u = 1);
+                    else if (&quot;VIDEO&quot; === I) {
+                        cachedElementBoundingRect(f).width &gt; screen.width - 36 &amp;&amp; v.setAttribute(&quot;class&quot;, &quot;large-element&quot;)
+                    } else if (&quot;IMG&quot; === I) {
+                        var j = !1,
+                            $ = k.length;
+                        for (H = 0; H &lt; $; ++H) {
+                            W = k[H].nodeName;
+                            if (KnownImageLazyLoadingAttributes[W.toLowerCase()]) {
+                                v.setAttribute(&quot;src&quot;, v.getAttribute(W)), j = !0;
+                                break
+                            }
+                        }
+                        v.removeAttribute(&quot;border&quot;), v.removeAttribute(&quot;hspace&quot;), v.removeAttribute(&quot;vspace&quot;);
+                        var G = v.getAttribute(&quot;align&quot;);
+                        if (v.removeAttribute(&quot;align&quot;), &quot;left&quot; !== G &amp;&amp; &quot;right&quot; !== G || (v.classList.add(&quot;float&quot;), v.classList.add(G)), !h &amp;&amp; !j) {
+                            var Q = cachedElementBoundingRect(f),
+                                Z = Q.width,
+                                ee = Q.height;
+                            1 === Z &amp;&amp; 1 === ee ? M = v : R &amp;&amp; ee &lt; MinimumHeightForImagesAboveTheArticleTitle &amp;&amp; Q.bottom &lt; R.top ? M = v : Z &lt; ImageSizeTiny &amp;&amp; ee &lt; ImageSizeTiny &amp;&amp; v.setAttribute(&quot;class&quot;, &quot;reader-image-tiny&quot;)
+                        }
+                    } else if (&quot;FONT&quot; === I)
+                        v.removeAttribute(&quot;size&quot;), v.removeAttribute(&quot;face&quot;), v.removeAttribute(&quot;color&quot;);
+                    else if (&quot;A&quot; === I &amp;&amp; v.parentNode) {
+                        var te = v.getAttribute(&quot;href&quot;);
+                        if (te &amp;&amp; te.length &amp;&amp; (&quot;#&quot; === te[0] || &quot;javascript:&quot; === te.substring(0, 11))) {
+                            if (!u &amp;&amp; !v.childElementCount &amp;&amp; 1 === v.parentElement.childElementCount &amp;&amp; &quot;LI&quot; !== v.parentElement.tagName)
+                                this.contentDocument.evaluate(&quot;text()&quot;, v.parentElement, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotLength || (M = v);
+                            if (!M) {
+                                O = this.contentDocument.createElement(&quot;span&quot;);
+                                if (1 === v.childElementCount &amp;&amp; &quot;IMG&quot; === v.firstElementChild.tagName) {
+                                    var ne = v.firstElementChild;
+                                    ne.width &gt; AnchorImageMinimumWidth &amp;&amp; ne.height &gt; AnchorImageMinimumHeight &amp;&amp; O.setAttribute(&quot;class&quot;, &quot;converted-image-anchor&quot;)
+                                }
+                                for (O.className || O.setAttribute(&quot;class&quot;, &quot;converted-anchor&quot;); v.firstChild;)
+                                    O.appendChild(v.firstChild);
+                                v.parentNode.replaceChild(O, v), T === (v = O) &amp;&amp; (T = O)
+                            }
+                        }
+                    }
+                }
+                if (!M &amp;&amp; elementIsCommentBlock(f) &amp;&amp; (M = v), !M &amp;&amp; &quot;A&quot; === I &amp;&amp; y.has(f.href)) {
+                    for (var ie, re, ae = f, le = v; (ae = ae.parentElement) &amp;&amp; (le = le.parentElement);) {
+                        if (10 &lt; cachedElementBoundingRect(ae).top - cachedElementBoundingRect(f).top)
+                            break;
+                        if (ae === d)
+                            break;
+                        i(ae) &amp;&amp; (ie = ae, re = le)
+                    }
+                    ie &amp;&amp; (f = ie, (v = M = re).originalElement = f, I = v.tagName), re = ie = le = ae = null
+                }
+                var oe = M ? null : f.firstElementChild;
+                if (oe)
+                    f = oe, v = v.firstElementChild, n(1);
+                else {
+                    for (var se; f !== d &amp;&amp; !(se = f.nextElementSibling);)
+                        f = f.parentElement, v = v.parentElement, n(-1);
+                    if (f === d) {
+                        if (M)
+                            if (M.parentElement)
+                                M.remove();
+                            else if (t)
+                                return null;
+                        break
+                    }
+                    f = se, v = v.nextElementSibling, 1 === h &amp;&amp; (h = 0), 1 === u &amp;&amp; (u = 0), 1 === m &amp;&amp; (m = 0), 1 === g &amp;&amp; (g = 0)
+                }
+                if (M)
+                    if (M.parentElement)
+                        M.remove();
+                    else if (t)
+                        return null
+            }
+            var ce = e.querySelectorAll(&quot;iframe&quot;),
+                he = ce.length;
+            for (H = 0; H &lt; he; ++H) {
+                var ue = ce[H];
+                if (elementLooksLikeEmbeddedTweet(ue.originalElement)) {
+                    var de = this.adoptableSimpleTweetFromTwitterIframe(ue);
+                    de &amp;&amp; ue.parentElement.replaceChild(de, ue)
+                }
+            }
+            for (H = s.length - 1; 0 &lt;= H; --H) {
+                var me = s[H];
+                me.parentNode &amp;&amp; this.shouldPruneElement(me, me.originalElement) &amp;&amp; (T === me &amp;&amp; ((T = me.nextElementSibling) || (T = me.parentElement)), me.remove())
+            }
+            var ge = e.querySelectorAll(&quot;.float&quot;);
+            for (H = 0; H &lt; ge.length; ++H) {
+                var fe = !1,
+                    pe = ge[H];
+                if (!fe) {
+                    var ve = pe.querySelectorAll(&quot;a, span.converted-image-anchor&quot;),
+                        Ee = pe.querySelectorAll(&quot;span.converted-anchor&quot;);
+                    fe = pe.parentNode &amp;&amp; Ee.length &gt; ve.length
+                }
+                if (!fe) {
+                    var Ne = pe.querySelectorAll(&quot;embed, object&quot;).length,
+                        Se = pe.originalElement.querySelectorAll(&quot;embed, object&quot;).length;
+                    !Ne &amp;&amp; Se &amp;&amp; (fe = !0)
+                }
+                if (!fe) {
+                    for (var Te = pe.originalElement.getElementsByTagName(&quot;img&quot;), Ae = Te.length, xe = 0, Ce = 0; Ce &lt; Ae &amp;&amp; (A &amp;&amp; isElementVisible(Te[Ce]) &amp;&amp; xe++, !(1 &lt; xe)); ++Ce)
+                        ;
+                    if (1 === xe)
+                        pe.getElementsByTagName(&quot;img&quot;).length || (fe = !0)
+                }
+                fe &amp;&amp; (T === pe &amp;&amp; ((T = pe.nextElementSibling) || (T = pe.parentElement)), pe.remove())
+            }
+            if (t &amp;&amp; !removeWhitespace(e.innerText).length)
+                return null;
+            if (T) {
+                var ye = document.createElement(&quot;div&quot;),
+                    be = T.originalElement.getBoundingClientRect(),
+                    Re = 0 &lt; be.height ? 100 * be.top / be.height : 0;
+                ye.style.position = &quot;relative&quot;, ye.style.top = Math.round(-Re) + &quot;%&quot;, ye.setAttribute(&quot;id&quot;, &quot;safari-reader-element-marker&quot;), T.insertBefore(ye, T.firstChild)
+            }
+            return e
+        },
+        adoptableSimpleTweetFromTwitterIframe: function(e) {
+            var t = e.originalElement.contentDocument.documentElement.querySelector(&quot;[data-tweet-id].expanded&quot;);
+            if (!t)
+                return null;
+            var n = this.contentDocument.createElement(&quot;div&quot;);
+            n.classList.add(&quot;tweet-wrapper&quot;);
+            var i = this.contentDocument.createElement(&quot;blockquote&quot;);
+            i.classList.add(&quot;simple-tweet&quot;), n.appendChild(i);
+            var r = t.getAttribute(&quot;data-tweet-id&quot;);
+            n.setAttribute(&quot;data-reader-tweet-id&quot;, r);
+            var a = t.querySelector(&quot;.dateline&quot;),
+                l = t.querySelector(&apos;[data-scribe=&quot;element:screen_name&quot;]&apos;),
+                o = t.querySelector(&apos;[data-scribe=&quot;element:name&quot;]&apos;),
+                s = t.querySelector(&quot;.e-entry-title&quot;);
+            if (!(a &amp;&amp; l &amp;&amp; o &amp;&amp; s))
+                return n;
+            var c = &quot;&amp;mdash; &quot; + o.innerText + &quot; (&quot; + l.innerText + &quot;)&quot;,
+                h = this.contentDocument.createElement(&quot;p&quot;);
+            h.innerHTML = s.innerHTML, i.appendChild(h), i.insertAdjacentHTML(&quot;beforeend&quot;, c);
+            var u = this.contentDocument.createElement(&quot;span&quot;);
+            u.innerHTML = a.innerHTML, i.appendChild(u);
+            for (var d = i.querySelectorAll(&quot;img.twitter-emoji&quot;), m = d.length, g = 0; g &lt; m; ++g) {
+                var f = d[g],
+                    p = f.getAttribute(&quot;alt&quot;);
+                if (p &amp;&amp; 0 &lt; p.length) {
+                    var v = this.contentDocument.createElement(&quot;span&quot;);
+                    v.innerText = p, f.parentNode.replaceChild(v, f)
+                }
+            }
+            return n
+        },
+        leadingImageNode: function() {
+            if (!this.article || !this.article.element)
+                return null;
+            for (var e = this.article.element, t = 0; t &lt; 3 &amp;&amp; e.parentNode; ++t) {
+                var n = (e = e.parentNode).getElementsByTagName(&quot;img&quot;)[0];
+                if (n) {
+                    var i = cachedElementBoundingRect(n);
+                    if (250 &lt;= i.height &amp;&amp; i.width &gt;= .5 * this._articleWidth) {
+                        var r = this.article.element.compareDocumentPosition(n);
+                        if (!(r &amp; DocumentPositionPreceding) || r &amp; DocumentPositionContainedBy)
+                            continue;
+                        if ((r = this.extraArticle ? this.extraArticle.element.compareDocumentPosition(n) : null) &amp;&amp; (!(r &amp; DocumentPositionPreceding) || r &amp; DocumentPositionContainedBy))
+                            continue;
+                        return n
+                    }
+                }
+            }
+            return null
+        },
+        mainImageNode: function() {
+            var e = this.leadingImageNode();
+            if (e)
+                return e;
+            if (this.article &amp;&amp; this.article.element)
+                for (var t = this.article.element.querySelectorAll(&quot;img&quot;), n = t.length, i = 0; i &lt; n; ++i) {
+                    var r = t[i],
+                        a = r._cachedElementBoundingRect;
+                    if (a || (a = r.getBoundingClientRect()), a.width &gt;= MainImageMinimumWidthAndHeight &amp;&amp; a.height &gt;= MainImageMinimumWidthAndHeight)
+                        return r
+                }
+            return null
+        },
+        articleTitle: function() {
+            function e(e, t) {
+                var n = e ? t.indexOf(e) : -1;
+                return -1 !== n &amp;&amp; (0 === n || n + e.length === t.length)
+            }
+            if (this.articleNode()) {
+                if (this._articleTitle)
+                    return this._articleTitle;
+                var t = /header|title|headline|instapaper_title/i,
+                    n = /byline|author/i,
+                    i = function(e) {
+                        var t = this.contentDocument.querySelector(e),
+                            n = t &amp;&amp; 2 === t.attributes.length ? t.content : null;
+                        if (n) {
+                            var i = this.articleTitleAndSiteNameFromTitleString(n);
+                            i &amp;&amp; (n = i.articleTitle)
+                        }
+                        return n
+                    }.bind(this),
+                    r = this.contentDocument.title,
+                    a = i(&quot;head meta[property=&apos;og:title&apos;]&quot;),
+                    l = i(&quot;head meta[name=&apos;twitter:title&apos;]&quot;),
+                    o = cachedElementBoundingRect(this.articleNode());
+                this.extraArticleNode() &amp;&amp; this.extraArticle.isPrepended &amp;&amp; (o = cachedElementBoundingRect(this.extraArticleNode()));
+                var s = o.left + o.width / 2,
+                    c = o.top,
+                    h = c;
+                if (this._articleWidth = o.width, this.leadingImage = this.leadingImageNode(), this.leadingImage)
+                    h = (cachedElementBoundingRect(this.leadingImage).top + c) / 2;
+                var u = &quot;h1, h2, h3, h4, h5, .headline, .article_title, #hn-headline, .inside-head, .instapaper_title&quot;,
+                    d = this.article.element.tagName;
+                &quot;DL&quot; !== d &amp;&amp; &quot;DD&quot; !== d || (u += &quot;, dt&quot;);
+                var m = this.contentDocument.querySelectorAll(u);
+                m = Array.prototype.slice.call(m, 0);
+                for (var g, f, p = this.contentDocument.location, v = this.article.element.getElementsByTagName(&quot;a&quot;), E = 0; E &lt; v.length; E++) {
+                    var N = v[E];
+                    if (N.offsetTop &gt; this.articleNode().offsetTop + 20)
+                        break;
+                    if (f = p, (g = N).host === f.host &amp;&amp; g.pathname === f.pathname) {
+                        m.push(N);
+                        break
+                    }
+                }
+                var S,
+                    T = m.map(innerTextOrTextContent),
+                    A = m.length,
+                    x = 0,
+                    C = [],
+                    y = [],
+                    b = [];
+                for (E = 0; E &lt; A; ++E) {
+                    var R = m[E],
+                        D = stringSimilarity(r, q = T[E]);
+                    if (a) {
+                        var L = stringSimilarity(a, q);
+                        D += L, StringSimilarityToDeclareStringsNearlyIdentical &lt; L &amp;&amp; y.push(R)
+                    }
+                    if (l) {
+                        var M = stringSimilarity(l, q);
+                        D += M, StringSimilarityToDeclareStringsNearlyIdentical &lt; M &amp;&amp; b.push(R)
+                    }
+                    D === x ? C.push(R) : x &lt; D &amp;&amp; (x = D, C = [R])
+                }
+                if (1 === y.length ? (S = y[0]).headerText = innerTextOrTextContent(S) : 1 === b.length &amp;&amp; ((S = b[0]).headerText = innerTextOrTextContent(S)), !S)
+                    for (E = 0; E &lt; A; ++E) {
+                        if (isElementVisible(R = m[E])) {
+                            var I = cachedElementBoundingRect(R),
+                                B = I.left + I.width / 2,
+                                P = B - s,
+                                w = I.top + I.height / 2 - h,
+                                F = -1 !== y.indexOf(R),
+                                O = -1 !== b.indexOf(R),
+                                _ = R.classList.contains(&quot;instapaper_title&quot;),
+                                k = &quot;headline&quot; === R.getAttribute(&quot;itemprop&quot;),
+                                H = F || O || _ || k,
+                                W = Math.sqrt(P * P + w * w),
+                                V = H ? 500 : Math.max(500 - W, 0),
+                                q = T[E],
+                                U = R.getAttribute(&quot;property&quot;);
+                            if (U) {
+                                var z = /dc.title/i.exec(U);
+                                if (z &amp;&amp; z[0])
+                                    if (1 === this.contentDocument.querySelectorAll(&apos;*[property~=&quot;&apos; + z[0] + &apos;&quot;]&apos;).length) {
+                                        (S = R).headerText = q;
+                                        break
+                                    }
+                            }
+                            if (!n.test(R.className)) {
+                                if (!H) {
+                                    if (500 &lt; W)
+                                        continue;
+                                    if (B &lt; o.left || B &gt; o.right)
+                                        continue
+                                }
+                                if (r &amp;&amp; stringsAreNearlyIdentical(q, r))
+                                    V *= 3;
+                                else if (e(q, r))
+                                    V *= 1.5;
+                                else if (q.length &lt; 8)
+                                    continue;
+                                var X = !1,
+                                    Y = nearestAncestorElementWithTagName(R, &quot;A&quot;);
+                                if (Y || (Y = R.querySelector(&quot;a&quot;)), Y) {
+                                    var J = Y.host === p.host,
+                                        K = Y.pathname === p.pathname;
+                                    if (J &amp;&amp; K)
+                                        V *= 1.5;
+                                    else {
+                                        if (J &amp;&amp; nearestAncestorElementWithTagName(R, &quot;LI&quot;))
+                                            continue;
+                                        V *= .6, X = !0
+                                    }
+                                }
+                                var j = fontSizeFromComputedStyle(getComputedStyle(R));
+                                X || (V *= j / BaseFontSize), V *= 1 + TitleCandidateDepthScoreMultiplier * elementDepth(R);
+                                var $ = parseInt(this.contentTextStyle().fontSize);
+                                parseInt(j) &gt; 1.1 * $ &amp;&amp; (V *= 1.25), (t.test(R.className) || t.test(R.getAttribute(&quot;id&quot;))) &amp;&amp; (V *= 1.5);
+                                var G = R.parentElement;
+                                G &amp;&amp; (t.test(G.className) || t.test(G.getAttribute(&quot;id&quot;))) &amp;&amp; (V *= 1.5), -1 !== C.indexOf(R) &amp;&amp; (V *= 1.8), (!S || V &gt; S.headerScore) &amp;&amp; ((S = R).headerScore = V, S.headerText = q)
+                            }
+                        }
+                    }
+                if (S &amp;&amp; 9 &lt; domDistance(S, this.articleNode(), 10) &amp;&amp; parseInt(getComputedStyle(S).fontSize) &lt; 1.5 * $ &amp;&amp; (S = null), S) {
+                    var Q = (this._articleTitleElement = S).headerText.trim();
+                    a &amp;&amp; e(a, Q) ? this._articleTitle = a : r &amp;&amp; e(r, Q) ? this._articleTitle = r : this._articleTitle = Q
+                }
+                return this._articleTitle || (a &amp;&amp; e(a, r) ? this._articleTitle = a : this._articleTitle = r), this._articleTitle
+            }
+        },
+        articleIsLTR: function() {
+            if (!this._articleIsLTR) {
+                var e = getComputedStyle(this.article.element);
+                this._articleIsLTR = !e || &quot;ltr&quot; === e.direction
+            }
+            return this._articleIsLTR
+        },
+        findSuggestedCandidate: function() {
+            var e,
+                t,
+                n = this.suggestedRouteToArticle;
+            if (!n || !n.length)
+                return null;
+            for (t = n.length - 1; 0 &lt;= t &amp;&amp; (!n[t].id || !(e = this.contentDocument.getElementById(n[t].id))); --t)
+                ;
+            for (t++, e || (e = this.contentDocument); t &lt; n.length;) {
+                for (var i = n[t], r = e.nodeType === Node.DOCUMENT_NODE ? e.documentElement : e.firstElementChild, a = 1; r &amp;&amp; a &lt; i.index; r = r.nextElementSibling)
+                    this.shouldIgnoreInRouteComputation(r) || a++;
+                if (!r)
+                    return null;
+                if (r.tagName !== i.tagName)
+                    return null;
+                if (i.className &amp;&amp; r.className !== i.className)
+                    return null;
+                e = r, t++
+            }
+            return isElementVisible(e) ? new CandidateElement(e, this.contentDocument) : null
+        },
+        canRunReaderDetection: function() {
+            var e = this.contentDocument.location.hostname,
+                t = this.contentDocument.location.pathname;
+            for (var n in BlacklistedHostsAllowedPathRegexMap) {
+                if (new RegExp(escapeForRegExp(n)).test(e)) {
+                    var i = BlacklistedHostsAllowedPathRegexMap[n];
+                    return i instanceof RegExp &amp;&amp; i.test(t)
+                }
+            }
+            return !0
+        },
+        findArticleBySearchingAllElements: function(e) {
+            var t = this.findSuggestedCandidate(),
+                n = this.findCandidateElements();
+            if (!n || !n.length)
+                return t;
+            if (t &amp;&amp; t.basicScore() &gt;= ReaderMinimumScore)
+                return t;
+            for (var i = this.highestScoringCandidateFromCandidates(n), r = i.element; r !== this.contentDocument; r = r.parentNode)
+                if (&quot;BLOCKQUOTE&quot; === r.tagName) {
+                    for (var a = r.parentNode, l = n.length, o = 0; o &lt; l; ++o) {
+                        var s = n[o];
+                        if (s.element === a) {
+                            i = s;
+                            break
+                        }
+                    }
+                    break
+                }
+            if (t &amp;&amp; i.finalScore() &lt; ReaderMinimumScore)
+                return t;
+            if (!e) {
+                if (i.shouldDisqualifyDueToScoreDensity())
+                    return null;
+                if (i.shouldDisqualifyDueToHorizontalRuleDensity())
+                    return null;
+                if (i.shouldDisqualifyDueToHeaderDensity())
+                    return null;
+                if (i.shouldDisqualifyDueToSimilarElements(n))
+                    return null
+            }
+            return i
+        },
+        findExtraArticle: function() {
+            if (!this.article)
+                return null;
+            for (var e = 0, t = this.article.element; e &lt; 3 &amp;&amp; t; ++e, t = t.parentNode) {
+                var n = this.findExtraArticleCandidateElements(t);
+                if (n &amp;&amp; n.length)
+                    for (var i, r = this.sortCandidateElementsInDescendingScoreOrder(n), a = 0; a &lt; r.length &amp;&amp; ((i = r[a]) &amp;&amp; i.basicScore()); a++)
+                        if (!i.shouldDisqualifyDueToScoreDensity() &amp;&amp; !i.shouldDisqualifyDueToHorizontalRuleDensity() &amp;&amp; !(i.shouldDisqualifyDueToHeaderDensity() || cachedElementBoundingRect(i.element).height &lt; PrependedArticleCandidateMinimumHeight &amp;&amp; cachedElementBoundingRect(this.article.element).width !== cachedElementBoundingRect(i.element).width)) {
+                            var l = contentTextStyleForNode(this.contentDocument, i.element);
+                            if (l &amp;&amp; l.fontFamily === this.contentTextStyle().fontFamily &amp;&amp; l.fontSize === this.contentTextStyle().fontSize &amp;&amp; i)
+                                return i
+                        }
+            }
+            return null
+        },
+        highestScoringCandidateFromCandidates: function(e) {
+            for (var t = 0, n = null, i = e.length, r = 0; r &lt; i; ++r) {
+                var a = e[r],
+                    l = a.basicScore();
+                t &lt;= l &amp;&amp; (t = l, n = a)
+            }
+            return n
+        },
+        sortCandidateElementsInDescendingScoreOrder: function(e) {
+            return e.sort(function(e, t) {
+                return e.basicScore() !== t.basicScore() ? t.basicScore() - e.basicScore() : t.depth() - e.depth()
+            })
+        },
+        findCandidateElements: function() {
+            for (var e = Date.now() + 1e3, t = this.contentDocument.getElementsByTagName(&quot;*&quot;), n = t.length, i = [], r = 0; r &lt; n; ++r) {
+                var a = t[r];
+                if (!CandidateTagNamesToIgnore[a.tagName]) {
+                    var l = CandidateElement.candidateIfElementIsViable(a, this.contentDocument);
+                    if (l &amp;&amp; i.push(l), Date.now() &gt; e) {
+                        i = [];
+                        break
+                    }
+                }
+            }
+            var o = i.length;
+            for (r = 0; r &lt; o; ++r)
+                i[r].element.candidateElement = i[r];
+            for (r = 0; r &lt; o; ++r) {
+                var s = i[r];
+                if (&quot;BLOCKQUOTE&quot; === s.element.tagName) {
+                    var c = s.element.parentElement.candidateElement;
+                    c &amp;&amp; c.addTextNodesFromCandidateElement(s)
+                }
+            }
+            for (r = 0; r &lt; o; ++r)
+                i[r].element.candidateElement = null;
+            return i
+        },
+        findExtraArticleCandidateElements: function(e) {
+            if (!this.article)
+                return [];
+            e || (e = this.article.element);
+            for (var t = &quot;preceding-sibling::*/descendant-or-self::*&quot;, n = this.contentDocument.evaluate(t, e, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null), i = n.snapshotLength, r = [], a = 0; a &lt; i; ++a) {
+                var l = n.snapshotItem(a);
+                if (!CandidateTagNamesToIgnore[l.tagName])
+                    (o = CandidateElement.extraArticleCandidateIfElementIsViable(l, this.article, this.contentDocument, !0)) &amp;&amp; r.push(o)
+            }
+            t = &quot;following-sibling::*/descendant-or-self::*&quot;, i = (n = this.contentDocument.evaluate(t, e, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null)).snapshotLength;
+            for (a = 0; a &lt; i; ++a) {
+                var o;
+                l = n.snapshotItem(a);
+                if (!CandidateTagNamesToIgnore[l.tagName])
+                    (o = CandidateElement.extraArticleCandidateIfElementIsViable(l, this.article, this.contentDocument, !1)) &amp;&amp; r.push(o)
+            }
+            return r
+        },
+        isGeneratedBy: function(e) {
+            var t = this.contentDocument.head ? this.contentDocument.head.querySelector(&quot;meta[name=generator]&quot;) : null;
+            if (!t)
+                return !1;
+            var n = t.content;
+            return !!n &amp;&amp; e.test(n)
+        },
+        isMediaWikiPage: function() {
+            return this.isGeneratedBy(/^MediaWiki /)
+        },
+        isWordPressSite: function() {
+            return this.isGeneratedBy(/^WordPress/)
+        },
+        nextPageURLString: function() {
+            if (!this.article)
+                return null;
+            if (this.isMediaWikiPage())
+                return null;
+            var e,
+                t = 0,
+                n = this.article.element;
+            n.parentNode &amp;&amp; &quot;inline&quot; === getComputedStyle(n).display &amp;&amp; (n = n.parentNode);
+            for (var i = n, r = cachedElementBoundingRect(n).bottom + LinkMaxVerticalDistanceFromArticle; isElementNode(i) &amp;&amp; cachedElementBoundingRect(i).bottom &lt;= r;)
+                i = i.parentNode;
+            i !== n &amp;&amp; (i === this.contentDocument || isElementNode(i)) &amp;&amp; (n = i);
+            var a = this.contentDocument.evaluate(LinkCandidateXPathQuery, n, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null),
+                l = a.snapshotLength;
+            if (this.pageNumber &lt;= 2 &amp;&amp; !this.prefixWithDateForNextPageURL) {
+                var o = this.contentDocument.location.pathname,
+                    s = o.match(LinkDateRegex);
+                s &amp;&amp; (s = s[0], this.prefixWithDateForNextPageURL = o.substring(0, o.indexOf(s) + s.length))
+            }
+            for (var c = 0; c &lt; l; ++c) {
+                var h = a.snapshotItem(c),
+                    u = this.scoreNextPageLinkCandidate(h);
+                t &lt; u &amp;&amp; (e = h, t = u)
+            }
+            return e ? e.href : null
+        },
+        scoreNextPageLinkCandidate: function(e) {
+            function t(e, t, n, i) {
+                t.substring(0, e.length) === e &amp;&amp; (t = t.substring(e.length), e = &quot;&quot;);
+                var r = lastInteger(t);
+                if (isNaN(r))
+                    return !1;
+                var a = e ? lastInteger(e) : NaN;
+                return (isNaN(a) || MaximumExactIntegralValue &lt;= a) &amp;&amp; (a = i), r === a ? lastInteger(n) === a + 1 : r === a + 1
+            }
+            function n(e) {
+                for (var t = {}, n = e.substring(1).split(&quot;&amp;&quot;), i = n.length, r = 0; r &lt; i; ++r) {
+                    var a = n[r],
+                        l = a.indexOf(&quot;=&quot;);
+                    -1 === l ? t[a] = null : t[a.substring(0, l)] = a.substring(l + 1)
+                }
+                return t
+            }
+            var i = this.contentDocument.location;
+            if (e.host !== i.host)
+                return 0;
+            if (e.pathname === i.pathname &amp;&amp; e.search === i.search)
+                return 0;
+            if (-1 !== e.toString().indexOf(&quot;#&quot;))
+                return 0;
+            if (anchorLinksToAttachment(e) || anchorLinksToTagOrCategoryPage(e))
+                return 0;
+            if (!isElementVisible(e))
+                return 0;
+            var r = cachedElementBoundingRect(e),
+                a = this._articleBoundingRect,
+                l = Math.max(0, Math.max(a.top - (r.top + r.height), r.top - (a.top + a.height)));
+            if (r.top &lt; a.top)
+                return 0;
+            if (LinkMaxVerticalDistanceFromArticle &lt; l)
+                return 0;
+            if (0 &lt; Math.max(0, Math.max(a.left - (r.left + r.width), r.left - (a.left + a.width))))
+                return 0;
+            var o = i.pathname,
+                s = e.pathname;
+            if (this.prefixWithDateForNextPageURL) {
+                if (-1 === e.pathname.indexOf(this.prefixWithDateForNextPageURL))
+                    return 0;
+                o = o.substring(this.prefixWithDateForNextPageURL.length), s = s.substring(this.prefixWithDateForNextPageURL.length)
+            }
+            var c = s.substring(1).split(&quot;/&quot;);
+            c[c.length - 1] || c.pop();
+            var h = c.length,
+                u = o.substring(1).split(&quot;/&quot;),
+                d = !1;
+            u[u.length - 1] || (d = !0, u.pop());
+            var m = u.length;
+            if (h &lt; m)
+                return 0;
+            for (var g = 0, f = 0, p = e.textContent, v = 0; v &lt; h; ++v) {
+                var E = c[v],
+                    N = v &lt; m ? u[v] : &quot;&quot;;
+                if (N !== E) {
+                    if (v &lt; m - 2)
+                        return 0;
+                    if (E.length &gt;= N.length) {
+                        for (var S = 0; E[E.length - 1 - S] === N[N.length - 1 - S];)
+                            S++;
+                        S &amp;&amp; (E = E.substring(0, E.length - S), N = N.substring(0, N.length - S));
+                        var T = E.indexOf(N);
+                        -1 !== T &amp;&amp; (E = E.substring(T))
+                    }
+                    t(N, E, p, this.pageNumber) ? f = Math.pow(LinkNextOrdinalValueBase, v - h + 1) : g++
+                }
+                if (1 &lt; g)
+                    return 0
+            }
+            var A = !1;
+            if (e.search)
+                for (var x in linkParameters = n(e.search), referenceParameters = n(i.search), linkParameters) {
+                    var C = linkParameters[x],
+                        y = x in referenceParameters ? referenceParameters[x] : null;
+                    if (y !== C)
+                        if (null === y &amp;&amp; (y = &quot;&quot;), null === C &amp;&amp; (C = &quot;&quot;), C.length &lt; y.length)
+                            g++;
+                        else if (t(y, C, p, this.pageNumber)) {
+                            if (LinkURLSearchParameterKeyMatchRegex.test(x)) {
+                                if (o.toLowerCase() !== s.toLowerCase())
+                                    return 0;
+                                if (this.isWordPressSite() &amp;&amp; d)
+                                    return 0;
+                                A = !0
+                            }
+                            if (LinkURLBadSearchParameterKeyMatchRegex.test(x)) {
+                                g++;
+                                continue
+                            }
+                            f = Math.max(f, 1 / LinkNextOrdinalValueBase)
+                        } else
+                            g++
+                }
+            if (!f)
+                return 0;
+            if ((LinkURLPageSlashNumberMatchRegex.test(e.href) || LinkURLSlashDigitEndMatchRegex.test(e.href)) &amp;&amp; (A = !0), !A &amp;&amp; h === m &amp;&amp; stringSimilarity(o, s) &lt; LinkMinimumURLSimilarityRatio)
+                return 0;
+            if (LinkURLArchiveSlashDigitEndMatchRegex.test(e))
+                return 0;
+            var b = LinkMatchWeight * (Math.pow(LinkMismatchValueBase, -g) + f) + LinkVerticalDistanceFromArticleWeight * l / LinkMaxVerticalDistanceFromArticle;
+            A &amp;&amp; (b += LinkURLSemanticMatchBonus), &quot;LI&quot; === e.parentNode.tagName &amp;&amp; (b += LinkListItemBonus);
+            p = e.innerText;
+            return LinkNextMatchRegEx.test(p) &amp;&amp; (b += LinkNextMatchBonus), LinkPageMatchRegEx.test(p) &amp;&amp; (b += LinkPageMatchBonus), LinkContinueMatchRegEx.test(p) &amp;&amp; (b += LinkContinueMatchBonus), b
+        },
+        elementContainsEnoughTextOfSameStyle: function(e) {
+            for (var t, s, c, h, u, n = &quot;BODY&quot; === e.tagName, d = n ? 2 : 3, i = (t = e, s = 110, c = 0, h = [], u = {
+                    P: 1,
+                    STRONG: 1,
+                    B: 1,
+                    EM: 1,
+                    I: 1,
+                    SPAN: 1
+                }, n &amp;&amp; (u.CENTER = 1, u.FONT = 1), function e(t, n) {
+                    if (t.nodeType !== Node.TEXT_NODE) {
+                        if (t.nodeType === Node.ELEMENT_NODE &amp;&amp; isElementVisible(t) &amp;&amp; !(s &amp;&amp; ++c &gt; s || t._evaluatedForTextContent)) {
+                            var i = t.tagName;
+                            if (&quot;IFRAME&quot; !== i &amp;&amp; &quot;FORM&quot; !== i) {
+                                u[i] ? n-- : (&quot;UL&quot; === i || &quot;OL&quot; === i || &quot;TR&quot; === i || &quot;TD&quot; === i || &quot;TABLE&quot; === i || &quot;TBODY&quot; === i) &amp;&amp; function(e) {
+                                    var t = e.children[0];
+                                    if (t)
+                                        for (var n = t.children, i = n.length, r = 0; r &lt; i; ++r)
+                                            if (&quot;none&quot; !== getComputedStyle(n[r]).float)
+                                                return !1;
+                                    return !0
+                                }(t) &amp;&amp; n--;
+                                var r = n + 1;
+                                if (r &lt; d)
+                                    for (var a = t.childNodes, l = a.length, o = 0; o &lt; l; ++o)
+                                        e(a[o], r)
+                            }
+                        }
+                    } else
+                        /\S/.test(t.nodeValue) &amp;&amp; h.push(t)
+                }(t, 0), h), r = 1800 / scoreMultiplierForElementTagNameAndAttributes(e) / languageScoreMultiplierForTextNodes(i), a = {}, l = i.length, o = 0; o &lt; l; ++o) {
+                var m = i[o],
+                    g = m.length,
+                    f = m.parentElement,
+                    p = window.getComputedStyle(f),
+                    v = p.fontFamily + &quot;|&quot; + p.fontSize,
+                    E = Math.pow(g, TextNodeLengthPower);
+                if (a[v]) {
+                    if ((a[v] += E) &gt; r)
+                        break
+                } else
+                    a[v] = E
+            }
+            for (var v in a)
+                if (a[v] &gt; r)
+                    return !0;
+            return !1
+        },
+        pointsToUseForHitTesting: function() {
+            var e = window.innerWidth,
+                t = e / 4,
+                n = e / 2;
+            return [[n, 800], [n, 600], [t, 800], [n, 400], [n - 128, 1100], [320, 700], [3 * t, 800], [e - 320, 700], [n - 128, 1300]]
+        },
+        clearVisualExaminationState: function() {
+            for (var e = this._elementsEvaluatedForTextContent.length, t = 0; t &lt; e; ++t)
+                delete this._elementsEvaluatedForTextContent[t]._evaluatedForTextContent;
+            this._elementsEvaluatedForTextContent = []
+        },
+        findArticleByVisualExamination: function() {
+            this.clearVisualExaminationState();
+            for (var e = this.pointsToUseForHitTesting(), t = e.length, n = 0; n &lt; t; n++)
+                for (var i = elementsFromPoint(e[n][0], e[n][1]), r = 0; r &lt; i.length; r++)
+                    for (var a = i[r]; a &amp;&amp; !a._evaluatedForTextContent; a = a.parentElement) {
+                        if (VeryPositiveClassNameRegEx.test(a.className))
+                            return new CandidateElement(a, this.contentDocument);
+                        if (!CandidateTagNamesToIgnore[a.tagName]) {
+                            var l = a.offsetWidth,
+                                o = a.offsetHeight;
+                            if (!l &amp;&amp; !o) {
+                                var s = cachedElementBoundingRect(a);
+                                l = s.width, o = s.height
+                            }
+                            if (!(l &lt; CandidateMinimumWidth || o &lt; CandidateMinimumHeight || l * o &lt; CandidateMinimumArea)) {
+                                var c = this.elementContainsEnoughTextOfSameStyle(a);
+                                if (a._evaluatedForTextContent = !0, this._elementsEvaluatedForTextContent.push(a), c &amp;&amp; !(CandidateElement.candidateElementAdjustedHeight(a) &lt; CandidateMinimumHeight)) {
+                                    var h = new CandidateElement(a, this.contentDocument);
+                                    if (h.shouldDisqualifyDueToSimilarElements())
+                                        return null;
+                                    if (h.shouldDisqualifyDueToHorizontalRuleDensity())
+                                        return null;
+                                    if (h.shouldDisqualifyDueToHeaderDensity())
+                                        return null;
+                                    if (!h.shouldDisqualifyForDeepLinking())
+                                        return h
+                                }
+                            }
+                        }
+                    }
+            return null
+        },
+        articleTextContent: function() {
+            return this._articleTextContent
+        },
+        pageDescription: function() {
+            for (var e = this.contentDocument.querySelectorAll(&quot;head meta[name]&quot;), t = e.length, n = 0; n &lt; t; ++n) {
+                var i = e[n];
+                if (&quot;description&quot; === i.getAttribute(&quot;name&quot;).toLowerCase()) {
+                    var r = i.getAttribute(&quot;content&quot;);
+                    if (r)
+                        return r.trim()
+                }
+            }
+            return null
+        },
+        articleTitleAndSiteNameFromTitleString: function(e) {
+            for (var t, n, i = [&quot; - &quot;, &quot; – &quot;, &quot; — &quot;, &quot;: &quot;, &quot; | &quot;, &quot; » &quot;], r = i.length, a = this.contentDocument.location.host.replace(/^(www|m)\./, &quot;&quot;), l = a.replace(/\.(com|info|net|org|edu)$/, &quot;&quot;).toLowerCase(), o = 0; o &lt; r; ++o) {
+                var s = e.split(i[o]);
+                if (2 === s.length) {
+                    var c = s[0].trim(),
+                        h = s[1].trim(),
+                        u = c.toLowerCase(),
+                        d = h.toLowerCase(),
+                        m = Math.max(stringSimilarity(u, a), stringSimilarity(u, l)),
+                        g = Math.max(stringSimilarity(d, a), stringSimilarity(d, l)),
+                        f = Math.max(m, g);
+                    (!n || n &lt; f) &amp;&amp; (n = f, t = g &lt; m ? {
+                        siteName: c,
+                        articleTitle: h
+                    } : {
+                        siteName: h,
+                        articleTitle: c
+                    })
+                }
+            }
+            return t &amp;&amp; .6 &lt;= n ? t : null
+        },
+        readingListItemInformation: function() {
+            var e,
+                t = this.pageDescription(),
+                n = !1;
+            this.adoptableArticle() ? (e = this.articleTitle(), t = t || this.articleTextContent(), n = !0) : (e = this.contentDocument.title, this.contentDocument.body &amp;&amp; (t = t || this.contentDocument.body.innerText));
+            var i = &quot;&quot;,
+                r = this.mainImageNode();
+            return r &amp;&amp; (i = r.src), e || (e = userVisibleURLString(this.contentDocument.location.href)), t || (t = &quot;&quot;), {
+                title: e = e.trim().substring(0, 220),
+                previewText: t = t.trim().substring(0, 220).replace(/[\s]+/g, &quot; &quot;),
+                mainImageURL: i,
+                isReaderAvailable: n
+            }
+        }
+    };
+    var ReaderArticleFinderJS = new ReaderArticleFinder(document);
+    ;
+    window.__firefox__ || Object.defineProperty(window, &quot;__firefox__&quot;, {
+        enumerable: !1,
+        configurable: !1,
+        writable: !1,
+        value: {}
+    });
+    var n = null,
+        o = null,
+        i = null,
+        d = null,
+        r = null,
+        c = null,
+        s = !1,
+        u = null,
+        g = null,
+        l = null,
+        m = null,
+        a = null,
+        f = null,
+        e = /^http:\/\/127.0.0.1.*\/reader-mode\/page/,
+        y = &quot;.content p &gt; img:only-child, .content p &gt; a:only-child &gt; img:only-child, .content .wp-caption img, .content figure img&quot;;
+    function t() {
+        if (!window.alookDisableReaderMode) {
+            if (!document.location.href.match(e))
+                return &quot;http:&quot; !== document.location.protocol &amp;&amp; &quot;https:&quot; !== document.location.protocol || &quot;/&quot; === document.location.pathname ? void webkit.messageHandlers.readerModeMessageHandler.postMessage({
+                    Type: &quot;ReaderModeStateChange&quot;,
+                    Value: &quot;Unavailable&quot;
+                }) : n &amp;&amp; n.content ? void webkit.messageHandlers.readerModeMessageHandler.postMessage({
+                    Type: &quot;ReaderModeStateChange&quot;,
+                    Value: &quot;Available&quot;
+                }) : (b(), void (n &amp;&amp; n.content ? webkit.messageHandlers.readerModeMessageHandler.postMessage({
+                    Type: &quot;ReaderModeStateChange&quot;,
+                    Value: &quot;Available&quot;
+                }) : webkit.messageHandlers.readerModeMessageHandler.postMessage({
+                    Type: &quot;ReaderModeStateChange&quot;,
+                    Value: &quot;Unavailable&quot;
+                })));
+            webkit.messageHandlers.readerModeMessageHandler.postMessage({
+                Type: &quot;ReaderModeStateChange&quot;,
+                Value: &quot;Active&quot;
+            })
+        }
+    }
+    function b() {
+        var e = n;
+        return ReaderArticleFinderJS = new ReaderArticleFinder(document), window.__firefox__.forceReaderMode ? n = p(!0) : ReaderArticleFinderJS.isReaderModeAvailable() &amp;&amp; (n = p(!1)), n || e
+    }
+    function p(e) {
+        var n = null,
+            t = ReaderArticleFinderJS.adoptableArticle(e);
+        return t &amp;&amp; t.outerHTML &amp;&amp; (n = {
+            content: t.outerHTML,
+            title: ReaderArticleFinderJS.articleTitle()
+        }), n
+    }
+    function h(e) {
+        null != o &amp;&amp; document.body.classList.remove(o.theme), document.body.classList.add(e.theme);
+        for (var n = document.body.getElementsByClassName(&quot;toolbar&quot;), t = 0; t &lt; n.length; t++)
+            &quot;black&quot; == e.theme ? n[t].classList.add(&quot;black&quot;) : n[t].classList.remove(&quot;black&quot;);
+        null != o &amp;&amp; document.body.classList.remove(&quot;font-size&quot; + o.fontSize), document.body.classList.add(&quot;font-size&quot; + e.fontSize), o = e
+    }
+    function w(e) {
+        e.style.display = &quot;inline-block&quot;
+    }
+    function _(e) {
+        if (o.theme != e) {
+            var n = {};
+            n.fontSize = o.fontSize, n.theme = e, h(n), v()
+        }
+    }
+    function k(e) {
+        if (!(e &lt; 1 || 13 &lt; e)) {
+            var n = {};
+            n.theme = o.theme, n.fontSize = e, h(n), v()
+        }
+    }
+    function v() {
+        webkit.messageHandlers.readerModeMessageHandler.postMessage({
+            Type: &quot;StyleChange&quot;,
+            Value: JSON.stringify(o)
+        })
+    }
+    function M(e, n) {
+        s = !0, m = n, u.style.display = &quot;none&quot;, g.style.display = e ? &quot;none&quot; : &quot;block&quot;, T(e)
+    }
+    function T(e) {
+        m &amp;&amp; 0 &lt; m.length ? (a.style.display = &quot;block&quot;, l.style.display = &quot;none&quot;, w(f)) : (a.style.display = &quot;none&quot;, e &amp;&amp; (l.style.display = &quot;block&quot;))
+    }
+    Object.defineProperty(window.__firefox__, &quot;reader&quot;, {
+        enumerable: !1,
+        configurable: !1,
+        writable: !1,
+        value: {}
+    }), Object.defineProperty(window.__firefox__.reader, &quot;checkReadability&quot;, {
+        enumerable: !1,
+        configurable: !1,
+        writable: !1,
+        value: t
+    }), Object.defineProperty(window.__firefox__.reader, &quot;readerize&quot;, {
+        enumerable: !1,
+        configurable: !1,
+        writable: !1,
+        value: b
+    }), window.__firefox__.reader.setNextPageErrorAndIndexPage = M, window.__firefox__.reader.setNextPageContentAndNewNextPageAndIndexPage = function(e, n, t, o) {
+        s = !1, d = i, i = t, o &amp;&amp; 0 &lt; o.length &amp;&amp; (m = o, w(f));
+        var l = document.getElementById(&quot;article&quot;),
+            a = document.createElement(&quot;div&quot;);
+        a.className = &quot;readerpage&quot;, a.innerHTML = decodeURI(n), l.appendChild(a), r = a, e &amp;&amp; 0 &lt; e.length &amp;&amp; (document.title = e, c = e), u.style.display = &quot;none&quot;, g.style.display = &quot;none&quot;, i &amp;&amp; 0 != i.length || M(!0, m)
+    }, window.__firefox__.reader.getCurrentPageAndTitle = function() {
+        return {
+            currentPage: d,
+            currentTitle: c
+        }
+    };
+    var x = null,
+        S = null;
+    function A() {
+        s = !0, u.style.display = &quot;block&quot;;
+        var e = document.getElementById(&quot;loadingText&quot;),
+            n = e.getAttribute(&quot;loadingText&quot;),
+            t = e.getAttribute(&quot;clickText&quot;);
+        x &amp;&amp; (clearTimeout(x), x = null), S &amp;&amp; (clearTimeout(S), S = null), e.innerText = n, u.onclick = null, x = window.setTimeout(function() {
+            e.innerText = t, u.onclick = H, S = setTimeout(function() {
+                e.innerText = n
+            }, 1500)
+        }, 3e3), g.style.display = &quot;none&quot;, l.style.display = &quot;none&quot;, a.style.display = &quot;none&quot;, webkit.messageHandlers.readerModeMessageHandler.postMessage({
+            Type: &quot;LoadingNextPage&quot;,
+            Value: i
+        })
+    }
+    function H() {
+        s = !1, u.style.display = &quot;none&quot;, g.style.display = &quot;block&quot;, l.style.display = &quot;none&quot;, a.style.display = &quot;none&quot;, webkit.messageHandlers.readerModeMessageHandler.postMessage({
+            Type: &quot;StopLoadingNextPage&quot;,
+            Value: i
+        })
+    }
+    document.location.href.match(e) ? (t(), u = document.getElementById(&quot;loading&quot;), (g = document.getElementById(&quot;error&quot;)).onclick = function() {
+        A()
+    }, l = document.getElementById(&quot;end&quot;), (a = document.getElementById(&quot;index&quot;)).onclick = function() {
+        m &amp;&amp; 0 &lt; m.length &amp;&amp; window.location.replace(m)
+    }, (f = document.getElementById(&quot;topIndex&quot;)).onclick = function() {
+        m &amp;&amp; 0 &lt; m.length &amp;&amp; window.location.replace(m)
+    }, function() {
+        i = document.body.getAttribute(&quot;nextPage&quot;), m = document.body.getAttribute(&quot;indexPage&quot;);
+        var e = document.getElementsByClassName(&quot;readerpage&quot;);
+        e &amp;&amp; 0 &lt; e.length &amp;&amp; (r = e[0]), i &amp;&amp; 0 != i.length || T(!0), m &amp;&amp; 0 &lt; m.length &amp;&amp; w(f);
+        var n = JSON.parse(document.body.getAttribute(&quot;data-readerStyle&quot;));
+        -1 != document.body.className.indexOf(&quot;dark&quot;) ? window.setTimeout(function() {
+            document.body.classList.remove(&quot;dark&quot;), h(n)
+        }, 100) : h(n), function() {
+            for (var e = function(e) {
+                    var n = document.getElementsByClassName(&quot;readerpage&quot;)[0].clientWidth;
+                    e._originalWidth || (e._originalWidth = e.offsetWidth);
+                    var t = e._originalWidth,
+                        o = 0;
+                    0 &lt; n - t &amp;&amp; (o = (n - t) / 2);
+                    var l = o + &quot;px !important&quot;,
+                        a = &quot;margin-left: &quot; + l + &quot;;margin-right: &quot; + l + &quot;;&quot;;
+                    e.style.cssText = a
+                }, n = document.querySelectorAll(y), t = n.length; 0 &lt;= --t;) {
+                var o = n[t];
+                0 &lt; o.width ? e(o) : o.onload = function() {
+                    e(o)
+                }
+            }
+        }(), document.getElementById(&quot;bg_light&quot;).onclick = function() {
+            _(&quot;light&quot;)
+        }, document.getElementById(&quot;bg_green&quot;).onclick = function() {
+            _(&quot;green&quot;)
+        }, document.getElementById(&quot;bg_sepia&quot;).onclick = function() {
+            _(&quot;sepia&quot;)
+        }, document.getElementById(&quot;bg_sheep&quot;).onclick = function() {
+            _(&quot;sheep&quot;)
+        }, document.getElementById(&quot;bg_black&quot;).onclick = function() {
+            _(&quot;black&quot;)
+        }, document.getElementById(&quot;decrease&quot;).onclick = function() {
+            k(o.fontSize - 1)
+        }, document.getElementById(&quot;increase&quot;).onclick = function() {
+            k(o.fontSize + 1)
+        }, window.scrollTo(document.body.scrollLeft, 44)
+    }(), window.addEventListener(&quot;scroll&quot;, function() {
+        if (i &amp;&amp; 0 &lt; i.length &amp;&amp; !s) {
+            var e = document.body.scrollTop + window.innerHeight,
+                n = document.body.scrollHeight;
+            r &amp;&amp; e + .33 * r.clientHeight &gt;= n ? A() : n &lt;= e &amp;&amp; A()
+        }
+    })) : window.setTimeout(function() {
+        t()
+    }, 0)
+}();
+
+</string>
+		<key>injectionTime</key>
+		<integer>1</integer>
+		<key>forMainFrameOnly</key>
+		<true/>
+		<key>message</key>
+		<array>
+			<string>readerModeMessageHandler</string>
+		</array>
+	</dict>
+</array>
+</plist>
