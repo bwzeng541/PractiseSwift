@@ -19,6 +19,7 @@ var window: UIWindow?
         self.window?.frame = UIScreen.main.bounds
         self.window?.makeKeyAndVisible()
         self.window?.rootViewController = HomeController()
+        print("add from dev_zeng")
         return true
     }
 
