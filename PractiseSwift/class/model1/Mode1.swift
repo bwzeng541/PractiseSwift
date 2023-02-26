@@ -12,6 +12,7 @@ public extension CTMediator{
     
     
     @objc public func A_showSwift(callback:@escaping (String) -> Void) -> UIViewController? {
+        //PractiseSwift 是工程的名字
         let params = [
             "callback":callback,
             kCTMediatorParamsKeySwiftTargetModuleName:"PractiseSwift"

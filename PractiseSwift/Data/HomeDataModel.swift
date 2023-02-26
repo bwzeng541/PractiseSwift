@@ -27,4 +27,9 @@ class HomeDataModel{
          }
 
     }
+    
+    open func addItem(){
+        let  r:DataItem = self.dataArray.randomElement() ?? DataItem();
+        self.dataArray.append(r.copy() as! DataItem);
+    }
 }

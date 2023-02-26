@@ -8,7 +8,19 @@
 import Foundation
 import HandyJSON
 
-class DataItem: HandyJSON, Codable {
+class DataItem: HandyJSON, Codable,NSCopying {
+    func copy(with zone: NSZone? = nil) -> Any {
+        let newItem = DataItem();
+        newItem.name = self.name;
+        newItem.avatar = self.avatar;
+        newItem.message = self.message;
+        newItem.image = self.image;
+        newItem.video = self.video;
+            return newItem
+    }
+    
+     
+    
     var name: String? = nil
     var avatar: String? = nil
     var message: String? = nil

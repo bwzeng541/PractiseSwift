@@ -17,6 +17,7 @@ target 'PractiseSwift' do
   pod 'HandyJSON'
   pod 'SwiftDate'
   pod 'SnapKit'
+  pod 'WCDB.swift' #本地数据库缓存
 
   # Pods for PractiseSwift
 
