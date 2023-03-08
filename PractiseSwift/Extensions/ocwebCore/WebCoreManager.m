@@ -14,6 +14,7 @@
 //#import "JsServiceManager.h"
 //#import "AppDelegate.h"
 //#import "MKNetworkEngine.h"
+//#define UseBeatifyAppJs 1
 #import "MajorAdBlockNode.h"
 #define adBlockNetVersionKey @"adBlockNetVersionKey"
 #define adBlockNetContentKey @"adBlockNetContentKey"

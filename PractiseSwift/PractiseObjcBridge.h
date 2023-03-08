@@ -10,4 +10,6 @@
 #import <UITableView+FDTemplateLayoutCell.h> ///< cell高度动态计算
 #import <MBProgressHUD/MBProgressHUD.h>
 #import "WebCoreManager.h"
+#import "WCDataManager.h"
+#import  "UrlHistoryItem.h"
 #endif /* PractiseObjcBridge_h */

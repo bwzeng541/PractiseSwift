@@ -17,8 +17,14 @@ target 'PractiseSwift' do
   pod 'HandyJSON'
   pod 'SwiftDate'
   pod 'SnapKit'
-  pod 'WCDB.swift' #本地数据库缓存
-
+  pod 'Toast-Swift'
+  pod 'SwifterSwift'
+  pod 'SwiftDate'
+  pod 'WCDB' #本地数据库缓存
+  pod 'TagListView'
+  #pod 'R.swift'
+  pod 'Moya/RxSwift'
+  pod  'ObjectMapper'
   # Pods for PractiseSwift
 
   target 'PractiseSwiftTests' do

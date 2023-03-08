@@ -68,6 +68,17 @@
 		E6498443299F5D6100B3F322 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6498442299F5D6100B3F322 /* WebContentView.swift */; };
 		E6498447299F5E6D00B3F322 /* WebTopTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6498446299F5E6D00B3F322 /* WebTopTools.swift */; };
 		E6498449299F5F3100B3F322 /* WebTopTools.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6498448299F5F3100B3F322 /* WebTopTools.xib */; };
+		E65DF11629B08999001F6E51 /* UrlHistoryItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = E65DF11529B08999001F6E51 /* UrlHistoryItem.mm */; };
+		E65DF11C29B08DF2001F6E51 /* WCDataManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E65DF11B29B08DF2001F6E51 /* WCDataManager.mm */; };
+		E65DF12229B0D564001F6E51 /* AddressSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65DF12129B0D564001F6E51 /* AddressSearchView.xib */; };
+		E65DF12429B0DB32001F6E51 /* AddressField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65DF12329B0DB32001F6E51 /* AddressField.swift */; };
+		E65DF12629B18B2F001F6E51 /* WebInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65DF12529B18B2F001F6E51 /* WebInputView.swift */; };
+		E679667829B31B2700B52CAD /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679667729B31B2700B52CAD /* SearchViewModel.swift */; };
+		E679667A29B34BDD00B52CAD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679667929B34BDD00B52CAD /* BaseViewModel.swift */; };
+		E679668029B34DC400B52CAD /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679667D29B34DC400B52CAD /* ActivityIndicator.swift */; };
+		E679668129B34DC400B52CAD /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679667F29B34DC400B52CAD /* ErrorTracker.swift */; };
+		E679668329B3505D00B52CAD /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679668229B3505D00B52CAD /* Observable+Operators.swift */; };
+		E679668629B45A1200B52CAD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679668529B45A1200B52CAD /* APIManager.swift */; };
 		E6A68AA029A1D67500BACB32 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A68A9F29A1D67500BACB32 /* AppCommon.swift */; };
 		E6A68AA229A1E7AC00BACB32 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A68AA129A1E7AB00BACB32 /* UIView+Layout.swift */; };
 		E6AF5ADB299CB4420057E75E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5ADA299CB4420057E75E /* AppDelegate.swift */; };
@@ -76,6 +87,13 @@
 		E6AF5AF2299CB4440057E75E /* PractiseSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5AF1299CB4440057E75E /* PractiseSwiftTests.swift */; };
 		E6AF5AFC299CB4440057E75E /* PractiseSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5AFB299CB4440057E75E /* PractiseSwiftUITests.swift */; };
 		E6AF5AFE299CB4440057E75E /* PractiseSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5AFD299CB4440057E75E /* PractiseSwiftUITestsLaunchTests.swift */; };
+		E6B7FD4229AEF7FD002A6256 /* WCDataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FD4129AEF7FD002A6256 /* WCDataBaseManager.swift */; };
+		E6B7FD4429AEFB84002A6256 /* WCDataBaseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FD4329AEFB84002A6256 /* WCDataBaseTable.swift */; };
+		E6B7FD4629AEFC0C002A6256 /* AppDelegate+Wcdb.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FD4529AEFC0C002A6256 /* AppDelegate+Wcdb.swift */; };
+		E6B7FD4829AEFC7E002A6256 /* UrlHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B7FD4729AEFC7E002A6256 /* UrlHistoryItem.swift */; };
+		E6C866FB29B1AC6B00097465 /* AddressSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C866FA29B1AC6B00097465 /* AddressSearchView.swift */; };
+		E6E5D51729B596EE00F698D4 /* Searchcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E5D51629B596EE00F698D4 /* Searchcell.xib */; };
+		E6E5D51929B5973900F698D4 /* Searchcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5D51829B5973900F698D4 /* Searchcell.swift */; };
 		E6E9DC29808B569D74A91529 /* Pods_PractiseSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6587414D4B2EA975480C36 /* Pods_PractiseSwift.framework */; };
 		E6F453B8299E2E5300D108E1 /* text.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6F453B7299E2E5300D108E1 /* text.plist */; };
 		E6F453BD299E3A3100D108E1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F453BB299E3A3000D108E1 /* String+Extension.swift */; };
@@ -210,6 +228,20 @@
 		E6498442299F5D6100B3F322 /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		E6498446299F5E6D00B3F322 /* WebTopTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTopTools.swift; sourceTree = "<group>"; };
 		E6498448299F5F3100B3F322 /* WebTopTools.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebTopTools.xib; sourceTree = "<group>"; };
+		E65DF11429B08999001F6E51 /* UrlHistoryItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UrlHistoryItem.h; sourceTree = "<group>"; };
+		E65DF11529B08999001F6E51 /* UrlHistoryItem.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UrlHistoryItem.mm; sourceTree = "<group>"; };
+		E65DF11729B08CE7001F6E51 /* UrlHistoryItem+Fts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UrlHistoryItem+Fts.h"; sourceTree = "<group>"; };
+		E65DF11A29B08DF2001F6E51 /* WCDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCDataManager.h; sourceTree = "<group>"; };
+		E65DF11B29B08DF2001F6E51 /* WCDataManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WCDataManager.mm; sourceTree = "<group>"; };
+		E65DF12129B0D564001F6E51 /* AddressSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressSearchView.xib; sourceTree = "<group>"; };
+		E65DF12329B0DB32001F6E51 /* AddressField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressField.swift; sourceTree = "<group>"; };
+		E65DF12529B18B2F001F6E51 /* WebInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInputView.swift; sourceTree = "<group>"; };
+		E679667729B31B2700B52CAD /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E679667929B34BDD00B52CAD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E679667D29B34DC400B52CAD /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E679667F29B34DC400B52CAD /* ErrorTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		E679668229B3505D00B52CAD /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		E679668529B45A1200B52CAD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		E6A68A9F29A1D67500BACB32 /* AppCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommon.swift; sourceTree = "<group>"; };
 		E6A68AA129A1E7AB00BACB32 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		E6AF5AD7299CB4420057E75E /* PractiseSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PractiseSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +254,13 @@
 		E6AF5AF7299CB4440057E75E /* PractiseSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PractiseSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AF5AFB299CB4440057E75E /* PractiseSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PractiseSwiftUITests.swift; sourceTree = "<group>"; };
 		E6AF5AFD299CB4440057E75E /* PractiseSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PractiseSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6B7FD4129AEF7FD002A6256 /* WCDataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCDataBaseManager.swift; sourceTree = "<group>"; };
+		E6B7FD4329AEFB84002A6256 /* WCDataBaseTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCDataBaseTable.swift; sourceTree = "<group>"; };
+		E6B7FD4529AEFC0C002A6256 /* AppDelegate+Wcdb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Wcdb.swift"; sourceTree = "<group>"; };
+		E6B7FD4729AEFC7E002A6256 /* UrlHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlHistoryItem.swift; sourceTree = "<group>"; };
+		E6C866FA29B1AC6B00097465 /* AddressSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSearchView.swift; sourceTree = "<group>"; };
+		E6E5D51629B596EE00F698D4 /* Searchcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Searchcell.xib; sourceTree = "<group>"; };
+		E6E5D51829B5973900F698D4 /* Searchcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchcell.swift; sourceTree = "<group>"; };
 		E6F453B5299E2D5C00D108E1 /* PractiseObjcBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PractiseObjcBridge.h; sourceTree = "<group>"; };
 		E6F453B7299E2E5300D108E1 /* text.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = text.plist; sourceTree = "<group>"; };
 		E6F453BB299E3A3000D108E1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -310,9 +349,12 @@
 		E630A53E299DE21D001FBFD0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E65DF11329B08972001F6E51 /* oc */,
 				E630A53C299DE20D001FBFD0 /* HomeDataModel.swift */,
 				E6373E76299DEF9800A356F1 /* HomeViewCell.swift */,
 				E6373E7A299DF0CB00A356F1 /* DataItem.swift */,
+				E6B7FD4729AEFC7E002A6256 /* UrlHistoryItem.swift */,
+				E679668529B45A1200B52CAD /* APIManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -429,6 +471,7 @@
 		E6498434299F25CE00B3F322 /* WebFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E65DF12029B0D20F001F6E51 /* SearchBar */,
 				E638853C29AA1B9300E29059 /* data */,
 				E649843E299F59EF00B3F322 /* BrowerCtrl.swift */,
 				E6498440299F5A6F00B3F322 /* AppWebViewDelegate.swift */,
@@ -448,9 +491,63 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		E65DF11329B08972001F6E51 /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				E65DF11429B08999001F6E51 /* UrlHistoryItem.h */,
+				E65DF11529B08999001F6E51 /* UrlHistoryItem.mm */,
+				E65DF11729B08CE7001F6E51 /* UrlHistoryItem+Fts.h */,
+				E65DF11A29B08DF2001F6E51 /* WCDataManager.h */,
+				E65DF11B29B08DF2001F6E51 /* WCDataManager.mm */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
+		E65DF12029B0D20F001F6E51 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				E65DF12129B0D564001F6E51 /* AddressSearchView.xib */,
+				E65DF12329B0DB32001F6E51 /* AddressField.swift */,
+				E65DF12529B18B2F001F6E51 /* WebInputView.swift */,
+				E6C866FA29B1AC6B00097465 /* AddressSearchView.swift */,
+				E679667729B31B2700B52CAD /* SearchViewModel.swift */,
+				E679667929B34BDD00B52CAD /* BaseViewModel.swift */,
+				E6E5D51629B596EE00F698D4 /* Searchcell.xib */,
+				E6E5D51829B5973900F698D4 /* Searchcell.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		E679667B29B34DA600B52CAD /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				E679668229B3505D00B52CAD /* Observable+Operators.swift */,
+				E679667C29B34DC400B52CAD /* RxActivityIndicator */,
+				E679667E29B34DC400B52CAD /* RxErrorTracker */,
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		E679667C29B34DC400B52CAD /* RxActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				E679667D29B34DC400B52CAD /* ActivityIndicator.swift */,
+			);
+			path = RxActivityIndicator;
+			sourceTree = "<group>";
+		};
+		E679667E29B34DC400B52CAD /* RxErrorTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E679667F29B34DC400B52CAD /* ErrorTracker.swift */,
+			);
+			path = RxErrorTracker;
+			sourceTree = "<group>";
+		};
 		E6A68A9E29A1D65900BACB32 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E6B7FD4029AEF7AF002A6256 /* Cache */,
 				E6A68A9F29A1D67500BACB32 /* AppCommon.swift */,
 			);
 			path = Common;
@@ -517,14 +614,25 @@
 			path = PractiseSwiftUITests;
 			sourceTree = "<group>";
 		};
+		E6B7FD4029AEF7AF002A6256 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				E6B7FD4129AEF7FD002A6256 /* WCDataBaseManager.swift */,
+				E6B7FD4329AEFB84002A6256 /* WCDataBaseTable.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		E6F453B4299E2D2900D108E1 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				E679667B29B34DA600B52CAD /* Thirdparty */,
 				E6A68A9E29A1D65900BACB32 /* Common */,
 				E649843D299F573000B3F322 /* base */,
 				E6498434299F25CE00B3F322 /* WebFramework */,
 				E6498433299F25AD00B3F322 /* model1 */,
 				E6AF5ADA299CB4420057E75E /* AppDelegate.swift */,
+				E6B7FD4529AEFC0C002A6256 /* AppDelegate+Wcdb.swift */,
 				E6AF5ADE299CB4420057E75E /* HomeController.swift */,
 			);
 			path = class;
@@ -758,7 +866,9 @@
 				E6498449299F5F3100B3F322 /* WebTopTools.xib in Resources */,
 				E6F453B8299E2E5300D108E1 /* text.plist in Resources */,
 				E630A53B299DC6DA001FBFD0 /* Main.storyboard in Resources */,
+				E65DF12229B0D564001F6E51 /* AddressSearchView.xib in Resources */,
 				E6AF5AE4299CB4430057E75E /* Assets.xcassets in Resources */,
+				E6E5D51729B596EE00F698D4 /* Searchcell.xib in Resources */,
 				E648EE2129A105CF0016A071 /* AdBlockPlug.bundle in Resources */,
 				E630A538299DC483001FBFD0 /* HomeLaunchScreen.storyboard in Resources */,
 				E6F453C4299E3F1600D108E1 /* HUDAssets.bundle in Resources */,
@@ -919,11 +1029,16 @@
 				E648EDFD29A0A3470016A071 /* SectionModel.swift in Sources */,
 				E648EDFB29A0A3470016A071 /* Utilities.swift in Sources */,
 				E648EDED29A0A3460016A071 /* RxCollectionViewSectionedReloadDataSource.swift in Sources */,
+				E65DF12429B0DB32001F6E51 /* AddressField.swift in Sources */,
+				E679668629B45A1200B52CAD /* APIManager.swift in Sources */,
 				E648EDFF29A0A3470016A071 /* AnimatableSectionModel.swift in Sources */,
+				E6B7FD4829AEFC7E002A6256 /* UrlHistoryItem.swift in Sources */,
 				E6A68AA029A1D67500BACB32 /* AppCommon.swift in Sources */,
+				E679667829B31B2700B52CAD /* SearchViewModel.swift in Sources */,
 				E648EDEE29A0A3460016A071 /* DataSources.swift in Sources */,
 				E648EDF629A0A3470016A071 /* RxCollectionViewSectionedAnimatedDataSource.swift in Sources */,
 				E6F453C7299E412B00D108E1 /* UIColor+Extension.swift in Sources */,
+				E6B7FD4629AEFC0C002A6256 /* AppDelegate+Wcdb.swift in Sources */,
 				E648EDF429A0A3460016A071 /* IntegerType+IdentifiableType.swift in Sources */,
 				E648EE0429A0A3470016A071 /* Changeset.swift in Sources */,
 				E648EE0829A0EA4C0016A071 /* WebBottomTools.swift in Sources */,
@@ -944,22 +1059,33 @@
 				E648EE1A29A0FAB90016A071 /* MajorAdBlockNode.m in Sources */,
 				E648EE1129A0F9010016A071 /* MajorSchemeHelper.m in Sources */,
 				E6AF5ADB299CB4420057E75E /* AppDelegate.swift in Sources */,
+				E6C866FB29B1AC6B00097465 /* AddressSearchView.swift in Sources */,
+				E65DF12629B18B2F001F6E51 /* WebInputView.swift in Sources */,
 				E648EDE929A0A3460016A071 /* Array+Extensions.swift in Sources */,
 				E649843A299F29DB00B3F322 /* Target_Mode1.swift in Sources */,
 				E648EDF029A0A3460016A071 /* RxPickerViewAdapter.swift in Sources */,
+				E65DF11629B08999001F6E51 /* UrlHistoryItem.mm in Sources */,
+				E679668329B3505D00B52CAD /* Observable+Operators.swift in Sources */,
 				E6498439299F29DB00B3F322 /* ViewController.swift in Sources */,
 				E648EDEB29A0A3460016A071 /* FloatingPointType+IdentifiableType.swift in Sources */,
 				E6498436299F28A500B3F322 /* Mode1.swift in Sources */,
+				E679668129B34DC400B52CAD /* ErrorTracker.swift in Sources */,
 				E6498443299F5D6100B3F322 /* WebContentView.swift in Sources */,
 				E648EDF729A0A3470016A071 /* TableViewSectionedDataSource.swift in Sources */,
 				E648EE0629A0A3470016A071 /* AnimatableSectionModelType.swift in Sources */,
+				E6E5D51929B5973900F698D4 /* Searchcell.swift in Sources */,
+				E65DF11C29B08DF2001F6E51 /* WCDataManager.mm in Sources */,
+				E679667A29B34BDD00B52CAD /* BaseViewModel.swift in Sources */,
 				E6F453BE299E3A3100D108E1 /* String+Date.swift in Sources */,
 				E648EDF229A0A3460016A071 /* CollectionViewSectionedDataSource.swift in Sources */,
+				E679668029B34DC400B52CAD /* ActivityIndicator.swift in Sources */,
 				E6498441299F5A6F00B3F322 /* AppWebViewDelegate.swift in Sources */,
 				E648EDEA29A0A3460016A071 /* AnimationConfiguration.swift in Sources */,
+				E6B7FD4429AEFB84002A6256 /* WCDataBaseTable.swift in Sources */,
 				E648EE0129A0A3470016A071 /* ItemPath.swift in Sources */,
 				E648EE0329A0A3470016A071 /* AnimatableSectionModelType+ItemPath.swift in Sources */,
 				E648EDF829A0A3470016A071 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
+				E6B7FD4229AEF7FD002A6256 /* WCDataBaseManager.swift in Sources */,
 				E6373E78299DEF9800A356F1 /* HomeViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1125,6 +1251,7 @@
 		E6AF5AFF299CB4440057E75E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1180,12 +1307,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		E6AF5B00299CB4440057E75E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1234,6 +1363,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
