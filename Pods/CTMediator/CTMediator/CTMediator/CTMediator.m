@@ -9,10 +9,13 @@
 #import "CTMediator.h"
 #import <objc/runtime.h>
 #import <CoreGraphics/CoreGraphics.h>
+#define ModuleID(x) ((x)>>16)
+#define CapabilityID(x) (((x)<<16)>>16)
 
 NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParamsKeySwiftTargetModuleName";
 
 @interface CTMediator ()
+@property (nonatomic, strong)NSMutableDictionary *businessModuleDict;
 @property (nonatomic, strong)NSMutableArray *businessListenerArray;
 @property (nonatomic, strong) NSMutableDictionary *cachedTarget;
  
@@ -125,6 +128,7 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     }
 }
 
+
 - (void)releaseCachedTargetWithFullTargetName:(NSString *)fullTargetName
 {
     /*
@@ -138,25 +142,42 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     }
 }
 
-- (void)broadcastBusinessNotify:(NSString*_Nullable)moudel capacity:(NSString*_Nullable)capcity  withInParam:(nullable id)inParam {
+- (void)broadcastBusinessNotify:(int)notifcationId  withInParam:(nullable id)inParam {
     
     //for (id<BusinessListenerProtocol> listener in businessListenerArray_)
     for (int i = 0; i < [_businessListenerArray count]; ++i){
         
         //todo 此句通知到viewcontroller里面， 可能发生viewcontroller切换， 调用UIBaseViewController的viewDidLoad或者viewDidUnload，从而导致businessListenerArray_数组内容发生变化。 可能有的不能通知到。
         //for in语句会因此当机。
-        [[_businessListenerArray objectAtIndex:i] processBusinessNotify:moudel capacity:capcity withInParam:inParam];
+        [[_businessListenerArray objectAtIndex:i] processBusinessNotify:notifcationId  withInParam:inParam];
     }
 
 }
 
-- (void)registerBusinessListener:(nullable id<CTMediatorModuleProtocol>) businessListener {
+- (void)registerBusinessModule:(id<CTMeditorBusinessModuleProtocol>_Nonnull) businessModule{
+    CTMediatorBusinessModuleInfo* info = [[CTMediatorBusinessModuleInfo alloc] init];
+    info.businessFramework = self;
+    [businessModule initBusinessModule:info];
+    
+    [_businessModuleDict setValue:businessModule forKey:[NSString stringWithFormat:@"%d", info.businessModuleId]];
+}
+
+- (int)callBusinessProcess:(int)funcId withInParam:(id)inParam   {
+    NSString* key = [NSString stringWithFormat:@"%d", ModuleID(funcId)];
+    id<CTMeditorBusinessModuleProtocol> module =  [_businessModuleDict valueForKey:key];
+    if (module) {
+        return [module callBusinessProcess:CapabilityID(funcId) withInParam:inParam ];
+    }
+    return -1;
+}
+
+- (void)registerBusinessListener:(nullable id<CTMediatorBusinessListenerProtocol>) businessListener {
     if (![_businessListenerArray containsObject:businessListener]) {
         [_businessListenerArray addObject:businessListener];
     }
 }
 
-- (void)unregisterBusinessListener:(nullable id<CTMediatorModuleProtocol>)businessListener {
+- (void)unregisterBusinessListener:(nullable id<CTMediatorBusinessListenerProtocol>)businessListener {
     if ([_businessListenerArray containsObject:businessListener]) {
         [_businessListenerArray removeObject:businessListener];
     }
@@ -252,6 +273,9 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
     if (_businessListenerArray == nil) {
         _businessListenerArray = [[NSMutableArray alloc] init];
     }
+    if (_businessModuleDict == nil) {
+        _businessModuleDict = [[NSMutableDictionary alloc] init];
+    }
     return _cachedTarget;
 }
 
@@ -273,3 +297,8 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
 CTMediator* _Nonnull CT(void){
     return [CTMediator sharedInstance];
 };
+
+
+int MakeID(int32_t moudleID,int32_t capabilityID){
+    return  (((moudleID)<<16) + (capabilityID));
+}

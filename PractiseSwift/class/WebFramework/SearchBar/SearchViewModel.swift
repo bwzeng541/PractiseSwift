@@ -25,7 +25,7 @@ class SearchViewModel: BaseViewModel,ViewModelType {
     
     private let provider = MoyaProvider<APISearchManager>()
     
-    func transform(input: SearchViewModel.Input) -> SearchViewModel.Output {
+    func transform(_ input: SearchViewModel.Input) -> SearchViewModel.Output {
         let outMessage = BehaviorRelay<[UrlHistoryItem]>(value: [])
         let databaseReuslt = BehaviorRelay<[UrlHistoryItem]>(value: [])
         input.makeSearchText.filter(

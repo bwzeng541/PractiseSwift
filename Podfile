@@ -22,7 +22,8 @@ target 'PractiseSwift' do
   pod 'SwiftDate'
   pod 'WCDB' #本地数据库缓存
   pod 'TagListView'
-  #pod 'R.swift'
+  pod  'Kingfisher'
+  pod 'R.swift','~> 6.1.0'
   pod 'Moya/RxSwift'
   pod  'ObjectMapper'
   # Pods for PractiseSwift

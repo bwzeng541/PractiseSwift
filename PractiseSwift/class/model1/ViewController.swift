@@ -36,13 +36,17 @@ let parap1 = ("subscribe",Model1_Capacity.Capactity1.rawValue)
         timerDispose =  Observable<Int>.timer(.seconds(5), scheduler: SerialDispatchQueueScheduler(internalSerialQueueName: "testTimer4"))
             .subscribe(onNext: {[weak self] num in
                 print(Thread.current, "subscribe===>", num)
-                CTMediator.sharedInstance().broadcastBusinessNotify(Model1_Name, capacity: Model1_Capacity.Capactity1.rawValue, withInParam: self?.clickDelegate)
+                
+                CTMediator.sharedInstance().broadcastBusinessNotify(MakeID((Int32)(TModuleID.HomeController.rawValue),Int32(HomeControllerCapacity.Capactity1.rawValue)), withInParam: self?.clickDelegate)
+
             })
         
         timerDispose2 = Observable<Int>.timer(.seconds(10), scheduler:MainScheduler.instance)
             .subscribe(onNext: {[weak self]  num in
                 print(Thread.current, "subscribe2===>", num)
-                CTMediator.sharedInstance().broadcastBusinessNotify(Model1_Name, capacity: Model1_Capacity.Capactity2.rawValue, withInParam: self?.parap2)
+                CTMediator.sharedInstance().broadcastBusinessNotify(MakeID((Int32)(TModuleID.HomeController.rawValue),Int32(HomeControllerCapacity.Capactity2.rawValue)), withInParam: self?.parap2)
+
+                
                 self?.clickDelegate.onNext(1)
 
             })

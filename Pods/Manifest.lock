@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.6.4)
   - CTMediator (46)
   - HandyJSON (5.0.2)
+  - Kingfisher (7.6.2)
   - MBProgressHUD (1.1.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
@@ -9,6 +10,9 @@ PODS:
     - Moya/Core
     - RxSwift (~> 6.0)
   - ObjectMapper (4.2.0)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -57,9 +61,11 @@ DEPENDENCIES:
   - Alamofire
   - CTMediator
   - HandyJSON
+  - Kingfisher
   - MBProgressHUD (~> 1.1.0)
   - Moya/RxSwift
   - ObjectMapper
+  - R.swift (~> 6.1.0)
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -75,9 +81,12 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - HandyJSON
+    - Kingfisher
     - MBProgressHUD
     - Moya
     - ObjectMapper
+    - R.swift
+    - R.swift.Library
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -98,9 +107,12 @@ SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   CTMediator: f1cf58d509fb3192086c367711f039efd769b907
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
@@ -115,6 +127,6 @@ SPEC CHECKSUMS:
   WCDB: 3767097e36d1cf3179620368593ccc585278fbc1
   WCDBOptimizedSQLCipher: fc5d49fe6761e54aad29e88da01b6fc1283e5759
 
-PODFILE CHECKSUM: be4454065585004128efc8ca2aad0f91e118c99c
+PODFILE CHECKSUM: 6e3ca633ca719aa0d52a086baf1fb4ca5886354c
 
 COCOAPODS: 1.11.3

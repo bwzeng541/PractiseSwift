@@ -17,7 +17,7 @@ private let kSessionsCellReuseIdentifier = "kSessionsCellReuseIdentifier"
 
 
 
-class HomeController: UIViewController, UITableViewDelegate ,CTMediatorModuleProtocol, WebCoreManagerDelegate{
+class HomeController: UIViewController, UITableViewDelegate , WebCoreManagerDelegate, CTMediatorBusinessListenerProtocol{
    // @IBOutlet weak var tableView: UITableView!
     
    private var ModeluName = Model1_Name;
@@ -59,6 +59,7 @@ class HomeController: UIViewController, UITableViewDelegate ,CTMediatorModulePro
     override func viewDidLoad() {
         super.viewDidLoad()
         print("add from dev")
+        
         CTMediator.sharedInstance().registerBusinessListener(self);
         //HomeDataModel.share.requestData();
 
@@ -165,6 +166,14 @@ class HomeController: UIViewController, UITableViewDelegate ,CTMediatorModulePro
         let request = NSURLRequest(url: "http://www.baidu.com".URLValue!)
         webView.load(request as URLRequest)
         bindWebViewAttribute()
+        
+//        DispatchQueue.main.asyncAfter(deadline:  DispatchTime.now() + 3, execute: {
+//            let controller = CTMediator.sharedInstance().A_showSwift { (result) in
+//                       print(result)
+//                  }
+//            self.present(controller!, animated: true,completion: nil);
+//          })
+      
      }
 
     func bindWebViewAttribute(){
@@ -256,7 +265,9 @@ class HomeController: UIViewController, UITableViewDelegate ,CTMediatorModulePro
             historyItem.urlUid = md5;
             historyItem.timeDate = Date().string(withFormat: "yyyy-MM-dd HH:mm:ss")
             WCDataManager.shared().insertOrReplace(historyItem, tableName: urlHistoryTable)
-            /*WCDataBaseManager.shared.insertOrReplace(objects: [historyItem], intoTable:  kTABLE.urlHistory)*/
+            
+            CTMediator.sharedInstance().callBusinessProcess(MakeID(Int32(TModuleID.ModeAManager.rawValue), Int32(ModeAManagerCapacity.Capactity2.rawValue)),withInParam: historyItem)
+            
       }
     }
     
@@ -287,23 +298,37 @@ class HomeController: UIViewController, UITableViewDelegate ,CTMediatorModulePro
       
     }
     
-    func processBusinessNotify(_ moudel: String?, capacity capcity: String?, withInParam inParam: Any?) {
-        if moudel != ModeluName {
-            return;
-        }
-        switch capcity {
-        case Model1_Capacity.Capactity1.rawValue:
-            print("Capactity1");
-            clickDelegate  = inParam as? PublishSubject<Int>;
-            clickDelegate?.subscribe(onNext: { event in
-                print("subscribe Capactity1 %d" , event);
-            }).disposed(by: disposeBag)
-        case Model1_Capacity.Capactity2.rawValue:
+    func processBusinessNotify(_ notifcationId: Int32, withInParam inParam: Any!) {
+        switch notifcationId{
+        case MakeID((TModuleID.HomeController.rawValue), (HomeControllerCapacity.Capactity1.rawValue)):
+                        print("Capactity1");
+        case MakeID(TModuleID.HomeController.rawValue, (HomeControllerCapacity.Capactity2.rawValue)):
             print("Capactity2");
-        
-        default: break
-            
+        case MakeID(TModuleID.ModeAManager.rawValue, ModeAManagerCapacity.Capactity2.rawValue):
+            print("ModeAManager Capactity2");
+        case MakeID(TModuleID.ModeAManager.rawValue,ModeAManagerCapacity.Capactity1.rawValue):
+            print("ModeAManager Capactity2");
+        default:
+            break
         }
     }
+//    func processBusinessNotify(_ moudel: String?, capacity capcity: String?, withInParam inParam: Any?) {
+//        if moudel != ModeluName {
+//            return;
+//        }
+//        switch capcity {
+//        case Model1_Capacity.Capactity1.rawValue:
+//            print("Capactity1");
+//            clickDelegate  = inParam as? PublishSubject<Int>;
+//            clickDelegate?.subscribe(onNext: { event in
+//                print("subscribe Capactity1 %d" , event);
+//            }).disposed(by: disposeBag)
+//        case Model1_Capacity.Capactity2.rawValue:
+//            print("Capactity2");
+//        
+//        default: break
+//            
+//        }
+//    }
 }
 

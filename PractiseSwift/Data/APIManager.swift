@@ -9,6 +9,7 @@ import Foundation
 import Moya
 enum APISearchManager{
     case baiduSearch(String)
+    case postSearch
 }
 
 //data里面有中文
@@ -45,11 +46,20 @@ extension APISearchManager: TargetType {
         switch self {//https://suggestion.baidu.com/su?wd=wq&p=3&cb=window.bdsug.sug
            case .baiduSearch(let word):
             return "su?wd=\(word.urlEscaped)&p=3&cb=window.bdsug.sug"
+        case .postSearch: break
+            
         }
+        return ""
     }
     
     var method: Moya.Method {
-        return .get
+        switch self {
+        case .baiduSearch:
+            return .get
+
+        case .postSearch:
+            return .post
+        }
     }
     
     var task: Task {

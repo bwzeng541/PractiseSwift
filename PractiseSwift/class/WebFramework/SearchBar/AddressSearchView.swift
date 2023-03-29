@@ -52,7 +52,8 @@ class AddressSearchView: UIView, TagListViewDelegate {
     
     
     class func addressSearchView() -> AddressSearchView {
-          return Bundle.main.loadNibNamed("AddressSearchView", owner: nil, options: [:])?.first as! AddressSearchView;
+        return R.nib.addressSearchView.firstView(owner: nil)!
+        //  return Bundle.main.loadNibNamed("AddressSearchView", owner: nil, options: [:])?.first as! AddressSearchView;
       }
     
     deinit {
@@ -94,7 +95,7 @@ class AddressSearchView: UIView, TagListViewDelegate {
     
         addressField.becomeFirstResponder()
         let input = SearchViewModel.Input(makeSearchText:self.addressField.rx.text.asObservable())
-        let out = searchModel.transform(input: input)
+        let out = searchModel.transform( input)
         out.searchReulst.asDriver(onErrorJustReturn: []).drive(
             onNext: { [weak self] (objects) in
                 guard let self = self else { return }

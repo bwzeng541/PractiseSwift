@@ -39,7 +39,8 @@ class WebTopTools: UIView {
     }()
     
     class func webTopTools() -> WebTopTools {
-          return Bundle.main.loadNibNamed("WebTopTools", owner: nil, options: [:])?.first as! WebTopTools;
+        return R.nib.webTopTools.firstView(owner: nil)!
+         // return Bundle.main.loadNibNamed("WebTopTools", owner: nil, options: [:])?.first as! WebTopTools;
       }
     
     required init?(coder aDecoder: NSCoder) {

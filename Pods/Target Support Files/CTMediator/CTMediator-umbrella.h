@@ -12,6 +12,8 @@
 
 #import "CTMediator+HandyTools.h"
 #import "CTMediator.h"
+#import "CTMediatorBusinessModuleInfo.h"
+#import "CTMeditorBusinessModuleProtocol.h"
 
 FOUNDATION_EXPORT double CTMediatorVersionNumber;
 FOUNDATION_EXPORT const unsigned char CTMediatorVersionString[];
